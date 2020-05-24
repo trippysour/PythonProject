@@ -1,6 +1,7 @@
 import os
 from waapi import WaapiClient, CannotConnectToWaapiException
 from PySide2.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QComboBox, QCheckBox, QMessageBox, QApplication
+from PySide2.QtGui import QIcon
 import json
 
 '''
@@ -83,6 +84,7 @@ class Form(QWidget):
 
 
 app = QApplication([])
+app.setWindowIcon(QIcon("ncsound.ico")) # app 아이콘 지정
 GUI = Form()
 
 '''
@@ -207,6 +209,6 @@ except CannotConnectToWaapiException: # WAAPI에 연결 되지 않으면 바로 
     GUI.message0.setIcon(QMessageBox.Warning)
     GUI.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크 해주세요.")
     GUI.message0.exec()
+#pyinstaller.exe --onefile --noconsole --icon=D:\02_Python\Wwise_TSV_File_Importer\ncsound.ico --add-data="D:\02_Python\Wwise_TSV_File_Importer\ncsound.ico;." D:\02_Python\Wwise_TSV_File_Importer\Wwise_TSV_File_Importer_1.1.py
 
-
-#pyinstaller --onefile --noconsole E:\01_Work\Python\Wwise_TSV_File_Importer\Wwise_TSV_File_Importer.py
+#pyinstaller --onefile --noconsole -i"path of icon" path of python file
