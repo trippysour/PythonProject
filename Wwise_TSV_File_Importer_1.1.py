@@ -211,4 +211,5 @@ except CannotConnectToWaapiException: # WAAPI에 연결 되지 않으면 바로 
     GUI.message0.exec()
 #pyinstaller.exe --onefile --noconsole --icon=D:\02_Python\Wwise_TSV_File_Importer\ncsound.ico --add-data="D:\02_Python\Wwise_TSV_File_Importer\ncsound.ico;." D:\02_Python\Wwise_TSV_File_Importer\Wwise_TSV_File_Importer_1.1.py
 
-#pyinstaller --onefile --noconsole -i"path of icon" path of python file
+#https://www.learnpyqt.com/courses/packaging-and-distribution/packaging-pyqt5-pyside2-applications-windows-pyinstaller/
+#https://slays.tistory.com/42
