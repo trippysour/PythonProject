@@ -77,14 +77,17 @@ class Form(QWidget):
             findworkunitandcreate('\Actor-Mixer Hierarchy', 'Dialogue')
             findworkunitandcreate('\Events', 'Dialogue')
             ImportToWwise(texts[0], self.check.isChecked(), self.combo2.currentText(), self.combo1.currentText())
+            print('s')
             self.message2 = QMessageBox()
             self.message2.setWindowTitle("Wwise TSV Importer")
             self.message2.setIcon(QMessageBox.Information)
             self.message2.setText("총 " + str(texts[1]) + "개의 TSV 파일을 임포트 했습니다.")
+            self.message2.exec()
+        return
 
 
 app = QApplication([])
-app.setWindowIcon(QIcon("D:\\02_Python\\WwiseTSVImporter\\ncsound.ico")) # app 아이콘 지정
+app.setWindowIcon(QIcon("E:\\01_Work\\Python\\WwiseTSVImporter\\ncsound.ico")) # app 아이콘 지정
 GUI = Form()
 
 '''
@@ -212,7 +215,3 @@ except CannotConnectToWaapiException: # WAAPI에 연결 되지 않으면 바로 
 
 
 
-#pyinstaller.exe --onefile --noconsole --icon=D:\02_Python\WwiseTSVImporter\ncsound.ico --add-data="D:\02_Python\WwiseTSVImporter\ncsound.ico;." D:\02_Python\WwiseTSVImporter\WwiseTSVImporter1.0.py
-
-#아이콘 안묵이는 문제는 spec 파일에서 ico 부분을 엔터쳐서 내려쓰기 하니 잘 됨, pyinstaller WwiseTSVImporter1.0.spec
-#https://www.learnpyqt.com/courses/packaging-and-distribution/packaging-pyqt5-pyside2-applications-windows-pyinstaller/
