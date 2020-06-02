@@ -17,4 +17,7 @@ import pandas as pd
 
 df = pd.read_json("./EventSound.json")
 
-https://youtu.be/SrQlQrfcFwY
+# https://youtu.be/SrQlQrfcFwY
+
+#   datas - bt - home_bt_moving_walk - animname/sequncetime/soundname ...
+#   datas - theme - animname - ...
