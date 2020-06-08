@@ -16,11 +16,6 @@ with open('./EventSound.json') as json_file:
     obj = Json2Xls('test.xls', json_str)
     obj.make()
 
-    edges = []
-    leaves = []
-    nodes = []
-
-
     def paths(data):
         for key, value in data.items():
             yield key
@@ -29,8 +24,6 @@ with open('./EventSound.json') as json_file:
                     for path in paths(child):
                         yield f'{key}/{path}'
 
-
-    print(list(paths(json_dict['datas'][0])))
 
     for i in range(len(json_dict['datas'])):
         print(list(paths(json_dict['datas'][i])))
