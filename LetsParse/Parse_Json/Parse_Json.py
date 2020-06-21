@@ -10,7 +10,7 @@ with open('./EventSound.json') as json_file:
     json_str = json.dumps(json_data)
     json_dict = json.loads(json_str)
 
-all = []
+all = [] # WAAPI와도 통신 하기 위해서 따로 빼놓기
 
 for i in range(len(json_dict['datas'])):
     for k in json_dict['datas'][i].keys():  # k = theme, 캐릭터 이름
@@ -20,6 +20,11 @@ for i in range(len(json_dict['datas'])):
             for r in range(len(json_dict['datas'][i][k][0][n])):
                 dict.update(json_dict['datas'][i][k][0][n][r])  # dict = 노티파이 딕셔너
                 all.append(dict)
+
+'''
+엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
+all로 다른 함수도 돌리기 위해서 따로 함수로 
+'''
 
 def toxls(all):
 
