@@ -1,11 +1,10 @@
 import json
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
-from openpyxl.worksheet.dimensions import ColumnDimension
 
-wb = Workbook()
-ws = wb.active
-ws.title = 'EventSound'
+'''
+Json --> Dictionary
+'''
 
 with open('./EventSound.json') as json_file:
     json_data = json.load(json_file)
@@ -16,21 +15,21 @@ all = [] # WAAPI와도 통신 하기 위해서 따로 빼놓기
 
 for i in range(len(json_dict['datas'])):
     for k in json_dict['datas'][i].keys():  # k = theme, 캐릭터 이름
-        # dict = {}
-        # dict['Theme Or Character'] = k
+        dict1 = {}
+        dict1['Theme Or Character'] = k
         for n in json_dict['datas'][i][k][0].keys():  # n = 애니메인션 이름
             for r in range(len(json_dict['datas'][i][k][0][n])):
-                dict = json_dict['datas'][i][k][0][n][r]
-                dict['Theme Or Character'] = k
-                all.append(dict)
+                dict2 = json_dict['datas'][i][k][0][n][r]
+                dict3 = {**dict1, **dict2} # 딕셔너리 더하기
+                all.append(dict3)
 
-
-print(all)
 '''
 엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
-all로 다른 함수도 돌리기 위해서 따로 함수로 
 '''
 
+wb = Workbook()
+ws = wb.active
+ws.title = 'EventSound'
 
 def toxls(all):
 
@@ -66,3 +65,23 @@ def toxls(all):
 toxls(all)
 wb.save('./EventSound.xlsx')
 wb.close()
+
+
+
+'''
+GUI 코드
+'''
+from PySide2.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QComboBox, QCheckBox, QMessageBox, QApplication
+
+
+class Form(QWidget):
+    def __init__(self):
+        super(Form, self).__init__()
+        self.setWindowTitle("Wwise TSV Importer")
+        self.setMinimumSize(350, 200)
+        self.setMaximumSize(350, 200)
+
+
+
+app = QApplication([])
+GUI = Form()
