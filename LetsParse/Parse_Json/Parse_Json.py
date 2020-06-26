@@ -1,28 +1,30 @@
 import json
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
-
+import pprint
 '''
 Json --> Dictionary
 '''
-
+pp = pprint.PrettyPrinter(indent=4)
 with open('./EventSound.json') as json_file:
     json_data = json.load(json_file)
     json_str = json.dumps(json_data)
     json_dict = json.loads(json_str)
 
 all = [] # WAAPI와도 통신 하기 위해서 따로 빼놓기
-
+# pp.pprint(json_dict)
 for i in range(len(json_dict['datas'])):
     for k in json_dict['datas'][i].keys():  # k = theme, 캐릭터 이름
         dict1 = {}
         dict1['Theme Or Character'] = k
-        for n in json_dict['datas'][i][k][0].keys():  # n = 애니메인션 이름
-            for r in range(len(json_dict['datas'][i][k][0][n])):
-                dict2 = json_dict['datas'][i][k][0][n][r]
-                dict3 = {**dict1, **dict2} # 딕셔너리 더하기
-                all.append(dict3)
-
+        for s in range(len(json_dict['datas'][i][k])):
+            print(json_dict['datas'][i][k][s])
+            for n in json_dict['datas'][i][k][0].keys():  # n = 애니메인션 이름
+                for r in range(len(json_dict['datas'][i][k][0][n])):
+                    dict2 = json_dict['datas'][i][k][0][n][r]
+                    dict3 = {**dict1, **dict2} # 딕셔너리 더하기
+                    all.append(dict3)
+print(all)
 '''
 엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
 '''
