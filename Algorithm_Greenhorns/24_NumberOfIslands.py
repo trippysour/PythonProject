@@ -1,8 +1,8 @@
 grid = [
-  ["1","1","1","1","0"],
-  ["1","1","0","1","0"],
   ["1","1","0","0","0"],
-  ["0","0","0","0","0"]
+  ["1","1","0","0","0"],
+  ["0","0","1","0","0"],
+  ["0","0","0","1","1"]
 ]
 
 def numIslands1(grid):
@@ -27,24 +27,22 @@ def numIsland2(grid):
     q = [[x,y]]
     visited = []
     island = []
+    count = 0
 
     while q:
         vertex = q.pop(0)
+        if vertex in visited: pass
 
-        if grid[x][y] in visited: pass
-
-        elif grid[x][y] == '1' and grid[x][y] not in island:
+        elif grid[vertex[0]][vertex[1]] == '1' and vertex not in island:
             count += 1
             island.append([x,y])
 
-            x += 1
-            q.append(grid[x][y])
+            q.append([x + 1, y])
 
-            y += 1
-            q.append(grid[x][y])
+            q.append([x, y + 1])
 
         visited.append([x,y])
-        print(count, q)
+        return count
 
 
 
