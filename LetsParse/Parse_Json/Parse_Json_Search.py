@@ -1,5 +1,5 @@
 import json
-from jsonpath_ng import jsonpath, parse
+from jsonpath_ng import parse
 
 
 with open('EventSound.json') as j:
