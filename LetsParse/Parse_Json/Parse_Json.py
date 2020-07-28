@@ -27,14 +27,14 @@ def ParseJson():
         if 'm_saveDataList' in all[i]:
             dicttemp1 = {}
             for n in range(len(all[i]['m_saveDataList'])):
-                dicttemp1['CharacterName'] = all[i]["ContentsKey"]
+                dicttemp1['Json'] = all[i]["ContentsKey"]
                 for k in range(len(all[i]['m_saveDataList'][n]['EventSoundDataList'])):
                     dicttemp2 = all[i]['m_saveDataList'][n]['EventSoundDataList'][k]
                     alldict.append({**dicttemp1, **dicttemp2})
         elif 'ObjectDataList' in all[i]:
             dicttemp1 = {}
             for o in range(len(all[i]['ObjectDataList'])):
-                dicttemp1['CharacterName'] = all[i]["ThemeKey"]
+                dicttemp1['Json'] = all[i]["ThemeKey"]
                 for m in range(len(all[i]['ObjectDataList'][o]['m_saveDataList'])):
                     for h in range(len(all[i]['ObjectDataList'][o]['m_saveDataList'][m]['EventSoundDataList'])):
                         dicttemp2 = all[i]['ObjectDataList'][o]['m_saveDataList'][m]['EventSoundDataList'][h]
@@ -68,7 +68,7 @@ def toxls():
     ws.column_dimensions['D'].width = 30
     ws.column_dimensions['E'].width = 30
 
-    ws.auto_filter.ref = "A1:E1"
+    ws.auto_filter.ref = "A1:G1"
 
     colindex = 1
     rowindex = 2
