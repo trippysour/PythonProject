@@ -124,3 +124,4 @@ allsoundtoxlsx() #절대경로여야할듯
 # GUI.show()
 # app.exec_()
 
+ 
