@@ -4,13 +4,11 @@ from openpyxl.styles import PatternFill, Font
 import os
 from jsonpath_ng import parse
 
-
+parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
+#parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
+os.chdir(parents)  # json 폴더 지정
 
 def searchReference(sound):
-    # parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
-    parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
-    os.chdir(parents)  # json 폴더 지정
-
     results = []  # json 이름, Contents Key, 노티파이정보'
 
     for root, dirs, files in os.walk('./'):
@@ -22,35 +20,42 @@ def searchReference(sound):
                     json_str = json.dumps(json_data)
                     json_dict = json.loads(json_str)
 
-                searchsoundName = parse('$..soundName') # '$..EventSoundDataList.[*].soundName'와 같음
+                searchsoundName = parse('$..soundName')
                 searchContentsKey = parse('$..ContentsKey')
 
                 for match in searchsoundName.find(json_dict):
-                    results.append(file)
-                    results.append(searchContentsKey.find(json_dict)[0].value)
-                    results.append(match.context.value)
+                    if match.value == sound:
+                        print(file)
+                        #print(searchContentsKey.find(json_dict)[*].value) # value의 상위 컨텐츠키 찾는 방법
+                        print(match.context.value)
     return results
 
-def allsoundtoxlsx(jsons):
+searchReference('Viking_Bird')
+
+def allsoundtoxlsx():
     results = []  # json 이름, Contents Key, 노티파이정보'
-    result = {}
 
-    for json in jsons:
-        fpath = os.path.join(json)
-        print(fpath)
-        with open(fpath, encoding='cp949') as json_file:  # 인코딩 지정하지 않으면 에러 발
-            json_data = json.load(json_file)
-            json_str = json.dumps(json_data)
-            json_dict = json.loads(json_str)
+    for root, dirs, files in os.walk('./'):
+        for file in files:
+            if file.lower().endswith('.json'):  # 특정 확장자만 열기
+                fpath = os.path.join(root, file)  # join 으로 합쳐야지 str이 아닌 dir로 인식
+                with open(fpath, encoding='cp949') as json_file:  # 인코딩 지정하지 않으면 에러 발
+                    json_data = json.load(json_file)
+                    json_str = json.dumps(json_data)
+                    json_dict = json.loads(json_str)
 
-        searchsoundName = parse('$..')
+                ContentsKeys = parse('$..ContentsKey')
 
-        for match in searchsoundName.find(json_dict):
-            print(match.value)
+                for match in ContentsKeys.find(json_dict):
+                    print(file)
+                    print(match.context.value['ContentsKey'])
 
-    return results
+                    for soundnodes in match.context.value['m_saveDataList']:
+                        for data in soundnodes['EventSoundDataList']:
+                            print(data)
+    return
 
-print(allsoundtoxlsx(['../Assets/Resources/Outgame/Data/Sound/Theme/theme_1.json'])) #절대경로여야할듯
+allsoundtoxlsx() #절대경로여야할듯
 
 #
 #
