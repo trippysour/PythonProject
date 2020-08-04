@@ -4,9 +4,10 @@ from openpyxl.styles import PatternFill, Font
 import os
 from jsonpath_ng import parse
 
-parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
-#parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
+#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound'  # Windows
+parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
 os.chdir(parents)  # json 폴더 지정
+
 
 def searchReference(sound):
     results = []  # json 이름, Contents Key, 노티파이정보'
@@ -15,22 +16,41 @@ def searchReference(sound):
         for file in files:
             if file.lower().endswith('.json'):  # 특정 확장자만 열기
                 fpath = os.path.join(root, file)  # join 으로 합쳐야지 str이 아닌 dir로 인식
-                with open(fpath, encoding='cp949') as json_file: # 인코딩 지정하지 않으면 에러 발
+                with open(fpath, encoding='cp949') as json_file:  # 인코딩 지정하지 않으면 에러 발
                     json_data = json.load(json_file)
                     json_str = json.dumps(json_data)
                     json_dict = json.loads(json_str)
 
-                searchsoundName = parse('$..soundName')
+                searchsoundNames = parse('$..soundName')
+                searchsoundName = parse('$..m_saveDataList[*].EventSoundDataList[*].soundName')
                 searchContentsKey = parse('$..ContentsKey')
 
+
+                # for match in searchsoundNames.find(json_dict):
+                #     #print(match.context.value['m_saveDataList'])
+                #     if match.value == sound:
+                #         print(file)
+                #         # print(searchContentsKey.find(json_dict)[*].value) # value의 상위 컨텐츠키 찾는 방법
+                #         print(match.context.value)
+                #         print(match)
+                #     # for sound in searchsoundNames.find(json_dict):
+                #     #     if sound.value == sound:
+                #     #         print(file)
+                #     #         print(match.context.value)
+
                 for match in searchsoundName.find(json_dict):
+                    #print(match.context.value['ContentsKey'])
+                    #print(match)
+
                     if match.value == sound:
-                        print(file)
-                        #print(searchContentsKey.find(json_dict)[*].value) # value의 상위 컨텐츠키 찾는 방법
                         print(match.context.value)
+
+
     return results
 
-searchReference('Viking_Bird')
+
+searchReference('CloudDeco_3D_Loop')
+
 
 def allsoundtoxlsx():
     results = []  # json 이름, Contents Key, 노티파이정보'
@@ -55,7 +75,8 @@ def allsoundtoxlsx():
                             print(data)
     return
 
-allsoundtoxlsx() #절대경로여야할듯
+
+#allsoundtoxlsx()
 
 #
 #
@@ -124,4 +145,3 @@ allsoundtoxlsx() #절대경로여야할듯
 # GUI.show()
 # app.exec_()
 
- 
