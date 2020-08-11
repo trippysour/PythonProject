@@ -3,16 +3,16 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 import os
 from jsonpath_ng import parse
+from collections import defaultdict
 
-parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
-#parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
+#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
+parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
 os.chdir(parents)  # json 폴더 지정
 
 
 
 def searchReference(sound):
-    results = []  # json 이름, Contents Key, 노티파이정보'
-    dict = {}
+    results = defaultdict(dict) #json 이름, Contents Key, 노티파이정보'
     index = 0
 
     for root, dirs, files in os.walk('./'):
@@ -31,21 +31,19 @@ def searchReference(sound):
                     data = key.context.value['m_saveDataList']
                     for match in searchsoundName.find(data): # data 안에서 soundname 필터링
                         if match.value == sound:
-                            dict['file'] = file
-                            # print(file)
-                            # print(key.context.value['ContentsKey'])
-                            dict['ContentsKey'] = key.context.value['ContentsKey']
-                            # print(match.context.value)
-                            dict['Notify'] = match.context.value
-                            print(dict)
+                            results[index]['file'] = file
+                            results[index]['ContentsKey'] = key.context.value['ContentsKey']
+                            results[index].update(match.context.value)
                             index += 1
 
     return results
 
 
-print(searchReference('CloudDeco_3D_Loop'))
+#print(searchReference('Camera_Shutter'))
+
 def allsoundtoxlsx():
-    results = []  # json 이름, Contents Key, 노티파이정보'
+    results = defaultdict(dict)  # json 이름, Contents Key, 노티파이정보'
+    index = 0
 
     for root, dirs, files in os.walk('./'):
         for file in files:
@@ -59,61 +57,76 @@ def allsoundtoxlsx():
                 ContentsKeys = parse('$..ContentsKey')
 
                 for match in ContentsKeys.find(json_dict):
-                    print(file)
-                    print(match.context.value['ContentsKey'])
-
                     for soundnodes in match.context.value['m_saveDataList']:
                         for data in soundnodes['EventSoundDataList']:
-                            print(data)
-    return
+                            results[index]['file'] = file
+                            results[index]['ContentsKey'] = match.context.value['ContentsKey']
+                            results[index].update(data)
+                            index += 1
+    return results
 
-#allsoundtoxlsx() #절대경로여야할듯
+#print(allsoundtoxlsx())
 
-#
-#
-# '''
-# 엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
-# '''
-#
-# wb = Workbook()
-# ws = wb.active
-# ws.title = 'EventSound'
-#
-# def toxls():
-#
-#     rowindex = 1
-#     colindex = 1
-#
-#     for key in ParseJson()[0]:
-#         ws.cell(row=rowindex, column=colindex).value = key
-#         ws.cell(row=rowindex, column=colindex).font = Font(bold=True, color='ffffff')
-#         ws.cell(row=rowindex, column=colindex).fill = PatternFill("solid", fgColor="404040")
-#         colindex += 1
-#
-#     ws.freeze_panes = 'A2'
-#     ws.column_dimensions['A'].width = 30
-#     ws.column_dimensions['B'].width = 30
-#     ws.column_dimensions['C'].width = 30
-#     ws.column_dimensions['D'].width = 30
-#     ws.column_dimensions['E'].width = 30
-#
-#     ws.auto_filter.ref = "A1:G1"
-#
-#     colindex = 1
-#     rowindex = 2
-#
-#     for dict in ParseJson():
-#         for data in dict:
-#             ws.cell(row=rowindex, column=colindex).value = dict[data]
-#             colindex += 1
-#         rowindex += 1
-#         colindex = 1
-#
-#
-# toxls()
-# wb.save('C:\\Users\\trippysour\\Desktop\\EventSound.xlsx')
-# wb.close()
-#
+
+
+'''
+엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
+'''
+
+wb = Workbook()
+ws = wb.active
+ws.title = 'EventSound'
+
+def toxls():
+
+    rowindex = 1
+    colindex = 1
+
+    sounds = allsoundtoxlsx()
+
+    for key in sounds[0]:
+        ws.cell(row=rowindex, column=colindex).value = key
+        ws.cell(row=rowindex, column=colindex).font = Font(bold=True, color='ffffff')
+        ws.cell(row=rowindex, column=colindex).fill = PatternFill("solid", fgColor="404040")
+        colindex += 1
+
+    ws.freeze_panes = 'A2'
+    ws.column_dimensions['A'].width = 30
+    ws.column_dimensions['B'].width = 30
+    ws.column_dimensions['C'].width = 30
+    ws.column_dimensions['D'].width = 30
+    ws.column_dimensions['E'].width = 30
+    ws.column_dimensions['F'].width = 30
+    ws.column_dimensions['G'].width = 30
+    ws.column_dimensions['H'].width = 30
+
+
+    ws.auto_filter.ref = "A1:H1"
+
+    colindex = 1
+    rowindex = 2
+
+    # for dict in allsoundtoxlsx():
+    #     for data in dict:
+    #         ws.cell(row=rowindex, column=colindex).value = dict[data]
+    #         colindex += 1
+    #     rowindex += 1
+    #     colindex = 1
+
+    for i in range(len(sounds)):
+        for value in sounds[i].values():
+            ws.cell(row=rowindex, column=colindex).value = value
+            colindex += 1
+        rowindex += 1
+
+
+
+toxls()
+#wb.save('C:\\Users\\trippysour\\Desktop\\EventSound.xlsx')
+wb.save('EventSound.xlsx')
+wb.close()
+
+#print(searchReference('Camera_Shutter')[0]['file'])
 
 #
 # '''
@@ -135,4 +148,3 @@ def allsoundtoxlsx():
 #
 # GUI.show()
 # app.exec_()
-
