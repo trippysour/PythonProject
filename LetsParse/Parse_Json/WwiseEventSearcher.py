@@ -11,9 +11,9 @@ os.chdir(parents)  # json 폴더 지정
 
 
 
-def jsontodict():
-    alldicts = defaultdict(dict)
-    index = 0
+def jsontodict(sound):
+    results = defaultdict(dict)
+    i = 0
 
     for root, dirs, files in os.walk('./'):
         for file in files:
@@ -23,37 +23,26 @@ def jsontodict():
                     json_data = json.load(json_file)
                     json_str = json.dumps(json_data)
 
-                    alldicts[index] = json.loads(json_str)
-                    alldicts[index]['file'] = file
-                    index += 1
-
-    return alldicts
-
-
-def findsound(sound):
-    json_dicts = jsontodict()
-    results = defaultdict(dict)
-    index = 0
-
-    # 하위 코드의 모든 Key를 뜻하는 Str 값은 Json에서 변경될 경우 반영 필요
-
-    for key in parse('$..ContentsKey').find(json_dicts):
-        data = key.context.value['m_saveDataList']
-        for match in parse('$..soundName').find(data):
-            if sound == '': # 빈 칸이면 모두
-                results[index]['ContentsKey'] = key.context.value['ContentsKey']
-                results[index].update(match.context.value)
-                index += 1
-            elif sound in match.value: # 특정 단어 포함하는지
-                results[index]['ContentsKey'] = key.context.value['ContentsKey']
-                results[index].update(match.context.value)
-                index += 1
+                    for key in parse('$..ContentsKey').find(json.loads(json_str)):
+                        data = key.context.value['m_saveDataList']
+                        for match in parse('$..soundName').find(data):
+                            if sound == '':  # 빈 칸이면 모두
+                                results[i]['ContentsKey'] = key.context.value['ContentsKey']
+                                results[i].update(match.context.value)
+                                i += 1
+                            elif sound in match.value:  # 특정 단어 포함하는지
+                                results[i]['ContentsKey'] = key.context.value['ContentsKey']
+                                results[i].update(match.context.value)
+                                i += 1
 
     return len(results), results
 
 
-print(findsound(''))
-print(findsound('Choco'))
+
+
+
+print(jsontodict(''))
+print(jsontodict('Choco'))
 
 '''
 엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
