@@ -23,41 +23,37 @@ def jsontodict():
                     json_data = json.load(json_file)
                     json_str = json.dumps(json_data)
 
-                    alldicts[index]['data'] = json.loads(json_str)
-                    alldicts[index]['data']['file'] = file
+                    alldicts[index] = json.loads(json_str)
+                    alldicts[index]['file'] = file
                     index += 1
+
     return alldicts
 
-json_dicts = jsontodict()
-
-print(json_dicts)
 
 def findsound(sound):
-
+    json_dicts = jsontodict()
     results = defaultdict(dict)
     index = 0
 
-    searchsoundName = parse('$..soundName') # 하위 모든 경로 중 'soundname' 탐색
-    searchContentsKey = parse('$..ContentsKey')
-    file = parse('$..file')
+    # 하위 코드의 모든 Key를 뜻하는 Str 값은 Json에서 변경될 경우 반영 필요
 
-    for key in searchContentsKey.find(json_dicts):
+    for key in parse('$..ContentsKey').find(json_dicts):
         data = key.context.value['m_saveDataList']
-        for match in searchsoundName.find(data):  # data 안에서 soundname 필터링
-            if sound == '':
+        for match in parse('$..soundName').find(data):
+            if sound == '': # 빈 칸이면 모두
                 results[index]['ContentsKey'] = key.context.value['ContentsKey']
                 results[index].update(match.context.value)
                 index += 1
-            elif match.value == sound:
+            elif sound in match.value: # 특정 단어 포함하는지
                 results[index]['ContentsKey'] = key.context.value['ContentsKey']
                 results[index].update(match.context.value)
                 index += 1
 
-    return results
+    return len(results), results
 
 
-print(len(findsound('')))
-print(findsound('Choco_Idle_VOX'))
+print(findsound(''))
+print(findsound('Choco'))
 
 '''
 엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
