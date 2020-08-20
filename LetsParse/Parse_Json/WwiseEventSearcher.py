@@ -27,10 +27,12 @@ def jsontodict(sound):
                         data = key.context.value['m_saveDataList']
                         for match in parse('$..soundName').find(data):
                             if sound == '':  # 빈 칸이면 모두
+                                results[i]['file'] = file
                                 results[i]['ContentsKey'] = key.context.value['ContentsKey']
                                 results[i].update(match.context.value)
                                 i += 1
                             elif sound in match.value:  # 특정 단어 포함하는지
+                                results[i]['file'] = file
                                 results[i]['ContentsKey'] = key.context.value['ContentsKey']
                                 results[i].update(match.context.value)
                                 i += 1
@@ -38,11 +40,8 @@ def jsontodict(sound):
     return len(results), results
 
 
-
-
-
 print(jsontodict(''))
-print(jsontodict('Choco'))
+print(jsontodict('Choco_Idle_VOX'))
 
 '''
 엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
