@@ -108,7 +108,7 @@ class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SearchSound")
-        self.setMinimumSize(875, 200)
+        self.setMinimumSize(875, 500)
 
         self.vb = QVBoxLayout()
         self.setLayout(self.vb)
@@ -144,19 +144,21 @@ class Form(QWidget):
         self.btn_all.clicked.connect(self.search_all)
 
     def search_all(self):
-        self.showresult(jsontodict(''))
+        dict = jsontodict('')
+        self.showresult(dict)
+        self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
         return
 
     def search(self):
-        self.showresult(jsontodict(self.ln.text()))
+        dict = jsontodict(self.ln.text())
+        self.showresult(dict)
+        self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
         return
 
 
     def showresult(self, dict):
         self.tb_result.setRowCount(len(dict))
 
-        c = 2
-        r = 2
         header = []
 
         for key in dict[0].keys(): # 헤더 지정
@@ -168,17 +170,8 @@ class Form(QWidget):
 
         for i in dict:
             for k in range(len(header)):
-                #print(dict[i][header[k]])
-                item = QTableWidgetItem(dict[i][header[k]])
-                self.tb_result.setItem(c, r, item)
-
-        # ?column_idx_lookup = {'file' : 0, 'ContentsKey': 1, 'animName': 2, 'soundName': 3, 'targetObjName': 4, 'sequenceTime': 5, 'playOneShot': 6, 'dontDestroy' : 7}
-        # for i in dict:
-        #     for k, v in dict[i].items():
-        #         # # col = i
-        #         # for row, val in enumerate(v):
-        #         #     self.tb_result.setItem(row, i, item)
-        #         print(k, v)
+                item = QTableWidgetItem(str(dict[i][header[k]]))
+                self.tb_result.setItem(i, k, item)
 
 app = QApplication([])
 GUI = Form()
