@@ -10,7 +10,6 @@ parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
 os.chdir(parents)  # json 폴더 지정
 
 
-
 def jsontodict(sound):
     results = defaultdict(dict)
     i = 0
@@ -19,7 +18,7 @@ def jsontodict(sound):
         for file in files:
             if file.lower().endswith('.json'):  # 특정 확장자만 열기
                 fpath = os.path.join(root, file)  # join 으로 합쳐야지 str이 아닌 dir로 인식
-                with open(fpath, encoding='cp949') as json_file: # 인코딩 지정하지 않으면 에러 발
+                with open(fpath, encoding='cp949') as json_file:  # 인코딩 지정하지 않으면 에러 발
                     json_data = json.load(json_file)
                     json_str = json.dumps(json_data)
 
@@ -37,88 +36,152 @@ def jsontodict(sound):
                                 results[i].update(match.context.value)
                                 i += 1
 
-    return len(results), results
+    return results
 
-
-print(jsontodict(''))
-print(jsontodict('Choco_Idle_VOX'))
 
 '''
 엑셀로 쓰는 함수, 첫번째 행은 key들을 넣어주고 두번째 행부터는 value들
 '''
-#
-# wb = Workbook()
-# ws = wb.active
-# ws.title = 'EventSound'
-#
-# def toxls():
-#
-#     rowindex = 1
-#     colindex = 1
-#
-#     sounds = allsoundtoxlsx()
-#
-#     for key in sounds[0]:
-#         ws.cell(row=rowindex, column=colindex).value = key
-#         ws.cell(row=rowindex, column=colindex).font = Font(bold=True, color='ffffff')
-#         ws.cell(row=rowindex, column=colindex).fill = PatternFill("solid", fgColor="404040")
-#         colindex += 1
-#
-#     ws.freeze_panes = 'A2'
-#     ws.column_dimensions['A'].width = 30
-#     ws.column_dimensions['B'].width = 30
-#     ws.column_dimensions['C'].width = 30
-#     ws.column_dimensions['D'].width = 30
-#     ws.column_dimensions['E'].width = 30
-#     ws.column_dimensions['F'].width = 30
-#     ws.column_dimensions['G'].width = 30
-#     ws.column_dimensions['H'].width = 30
-#
-#
-#     ws.auto_filter.ref = "A1:H1"
-#
-#     colindex = 1
-#     rowindex = 2
-#
-#     # for dict in allsoundtoxlsx():
-#     #     for data in dict:
-#     #         ws.cell(row=rowindex, column=colindex).value = dict[data]
-#     #         colindex += 1
-#     #     rowindex += 1
-#     #     colindex = 1
-#
-#     for i in range(len(sounds)):
-#         for value in sounds[i].values():
-#             ws.cell(row=rowindex, column=colindex).value = value
-#             colindex += 1
-#         rowindex += 1
-#
-#
-#
-# toxls()
-# #wb.save('C:\\Users\\trippysour\\Desktop\\EventSound.xlsx')
-# wb.save('EventSound.xlsx')
-# wb.close()
-#
-#print(searchReference('Camera_Shutter')[0]['file'])
+def saveasxlsx(name, path):
 
-#
+    wb = Workbook()
+    ws = wb.active
+    ws.title = 'Sound'
+
+    def toxls():
+
+        rowindex = 1
+        colindex = 1
+
+        sounds = jsontodict()[0]
+
+        for key in sounds[0]:
+            ws.cell(row=rowindex, column=colindex).value = key
+            ws.cell(row=rowindex, column=colindex).font = Font(bold=True, color='ffffff')
+            ws.cell(row=rowindex, column=colindex).fill = PatternFill("solid", fgColor="404040")
+            colindex += 1
+
+        ws.freeze_panes = 'A2'
+        ws.column_dimensions['A'].width = 30
+        ws.column_dimensions['B'].width = 30
+        ws.column_dimensions['C'].width = 30
+        ws.column_dimensions['D'].width = 30
+        ws.column_dimensions['E'].width = 30
+        ws.column_dimensions['F'].width = 30
+        ws.column_dimensions['G'].width = 30
+        ws.column_dimensions['H'].width = 30
+
+
+        ws.auto_filter.ref = "A1:H1"
+
+        colindex = 1
+        rowindex = 2
+
+        # for dict in allsoundtoxlsx():
+        #     for data in dict:
+        #         ws.cell(row=rowindex, column=colindex).value = dict[data]
+        #         colindex += 1
+        #     rowindex += 1
+        #     colindex = 1
+
+        for i in range(len(sounds)):
+            for value in sounds[i].values():
+                ws.cell(row=rowindex, column=colindex).value = value
+                colindex += 1
+            rowindex += 1
+
+
+
+    toxls()
+    #wb.save('C:\\Users\\trippysour\\Desktop\\EventSound.xlsx')
+    wb.save('path'+'name')
+    wb.close()
+
+    return
+
+'''
+GUI 코드
 # '''
-# GUI 코드
-# # '''
-# from PySide2.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QComboBox, QCheckBox, QMessageBox, QApplication
-#
-# class Form(QWidget):
-#     def __init__(self):
-#         super(Form, self).__init__()
-#         self.setWindowTitle("JSON To XLSX")
-#         self.setMinimumSize(350, 200)
-#         self.setMaximumSize(350, 200)
-#
-# #결과 팝업창, json 열기 버튼, exel 시트 만들기버튼
-#
-# app = QApplication([])
-# GUI = Form()
-#
-# GUI.show()
-# app.exec_()
+from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem
+
+class Form(QWidget):
+    def __init__(self):
+        super(Form, self).__init__()
+        self.setWindowTitle("SearchSound")
+        self.setMinimumSize(875, 200)
+
+        self.vb = QVBoxLayout()
+        self.setLayout(self.vb)
+        self.hbTop = QHBoxLayout()
+        self.hbMid = QVBoxLayout()
+        self.hbMid3 = QHBoxLayout()
+        self.hbBot = QHBoxLayout()
+        self.vb.addLayout(self.hbTop)
+        self.vb.addLayout(self.hbMid)
+        self.vb.addLayout(self.hbBot)
+
+        self.ln = QLineEdit("Wwise Event 명")
+        self.btn_name = QPushButton("Search By Name")
+        self.btn_all = QPushButton("Search All")
+
+        self.lb_result = QLabel("결과 :")
+        self.tb_result = QTableWidget()
+        self.tb_result.setAutoScroll(True)
+        self.tb_result.showGrid()
+
+
+        self.btn_save = QPushButton("Save As Xlsx")
+        self.message = QMessageBox()
+
+        self.hbTop.addWidget(self.ln)
+        self.hbTop.addWidget(self.btn_name)
+        self.hbTop.addWidget(self.btn_all)
+        self.hbMid.addWidget(self.lb_result)
+        self.hbMid.addWidget(self.tb_result)
+        self.hbBot.addWidget(self.btn_save)
+
+        self.btn_name.clicked.connect(self.search)
+        self.btn_all.clicked.connect(self.search_all)
+
+    def search_all(self):
+        self.showresult(jsontodict(''))
+        return
+
+    def search(self):
+        self.showresult(jsontodict(self.ln.text()))
+        return
+
+
+    def showresult(self, dict):
+        self.tb_result.setRowCount(len(dict))
+
+        c = 2
+        r = 2
+        header = []
+
+        for key in dict[0].keys(): # 헤더 지정
+            header.append(key)
+
+        self.tb_result.setColumnCount(len(header))
+        self.tb_result.setHorizontalHeaderLabels(header)
+        self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
+
+        for i in dict:
+            for k in range(len(header)):
+                #print(dict[i][header[k]])
+                item = QTableWidgetItem(dict[i][header[k]])
+                self.tb_result.setItem(c, r, item)
+
+        # ?column_idx_lookup = {'file' : 0, 'ContentsKey': 1, 'animName': 2, 'soundName': 3, 'targetObjName': 4, 'sequenceTime': 5, 'playOneShot': 6, 'dontDestroy' : 7}
+        # for i in dict:
+        #     for k, v in dict[i].items():
+        #         # # col = i
+        #         # for row, val in enumerate(v):
+        #         #     self.tb_result.setItem(row, i, item)
+        #         print(k, v)
+
+app = QApplication([])
+GUI = Form()
+
+GUI.show()
+app.exec_()
