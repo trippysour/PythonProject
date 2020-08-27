@@ -30,7 +30,7 @@ def jsontodict(sound):
                                 results[i]['ContentsKey'] = key.context.value['ContentsKey']
                                 results[i].update(match.context.value)
                                 i += 1
-                            elif sound in match.value:  # 특정 단어 포함하는지
+                            elif sound.lower() in match.value.lower():  # 특정 단어 포함하는지, 대소문자 구분 없이 하기 위해 둘다 소문자 처리해서 비교
                                 results[i]['file'] = file
                                 results[i]['ContentsKey'] = key.context.value['ContentsKey']
                                 results[i].update(match.context.value)
@@ -129,7 +129,6 @@ class Form(QWidget):
         self.tb_result.setAutoScroll(True)
         self.tb_result.showGrid()
 
-
         self.btn_save = QPushButton("Save As Xlsx")
         self.message = QMessageBox()
 
@@ -153,6 +152,9 @@ class Form(QWidget):
 
 
     def showresult(self, dict):
+
+        self.tb_result.clear() # 채우기 전에 초기화
+
         self.tb_result.setRowCount(len(dict))
         self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
         self.repaint() # 이걸 해줘야 레이블이 업데이트 됨
@@ -169,6 +171,7 @@ class Form(QWidget):
             for k in range(len(header)):
                 item = QTableWidgetItem(str(dict[i][header[k]]))
                 self.tb_result.setItem(i, k, item)
+
         # len(dict) == i 는 row, 행의 갯수
         # len(dict[0]) == len(header) == k 는 col, 열의 갯수
 
