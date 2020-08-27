@@ -144,20 +144,18 @@ class Form(QWidget):
         self.btn_all.clicked.connect(self.search_all)
 
     def search_all(self):
-        dict = jsontodict('')
-        self.showresult(dict)
-        self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
+        self.showresult(jsontodict(''))
         return
 
     def search(self):
-        dict = jsontodict(self.ln.text())
-        self.showresult(dict)
-        self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
+        self.showresult(jsontodict(self.ln.text()))
         return
 
 
     def showresult(self, dict):
         self.tb_result.setRowCount(len(dict))
+        self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
+        self.repaint() # 이걸 해줘야 레이블이 업데이트 됨
 
         header = []
 
@@ -166,12 +164,13 @@ class Form(QWidget):
 
         self.tb_result.setColumnCount(len(header))
         self.tb_result.setHorizontalHeaderLabels(header)
-        self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 사운드를 찾았습니다.")
 
         for i in dict:
             for k in range(len(header)):
                 item = QTableWidgetItem(str(dict[i][header[k]]))
                 self.tb_result.setItem(i, k, item)
+        # len(dict) == i 는 row, 행의 갯수
+        # len(dict[0]) == len(header) == k 는 col, 열의 갯수
 
 app = QApplication([])
 GUI = Form()
