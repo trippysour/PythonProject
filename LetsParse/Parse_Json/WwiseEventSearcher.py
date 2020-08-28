@@ -182,8 +182,20 @@ class Form(QWidget):
         # len(dict[0]) == len(header) == k 는 col, 열의 갯수
 
     def savefile(self):
-        self.fileName = QFileDialog.getSaveFileName(self, self.tr("Save Data files"), "./", self.tr("Data Files (*.xls)"))
+        filename = QFileDialog.getSaveFileName(self, self.tr("Save Data files"), "./", self.tr("Data Files (*.xls)"))
+        wbk = xlwt.Workbook()
+        sheet = wbk.add_sheet("sheet", cell_overwrite_ok=True)
+        self.add2(sheet)
+        wbk.save(filename)
 
+    def add2(self, sheet):
+        for currentColumn in range(self.tb_result.columnCount()):
+            for currentRow in range(self.tb_result.rowCount()):
+                try:
+                    teext = str(self.tb_result.item(currentRow, currentColumn).text())
+                    sheet.write(currentRow, currentColumn, teext)
+                except AttributeError:
+                    pass
 app = QApplication([])
 GUI = Form()
 
