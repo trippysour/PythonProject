@@ -182,7 +182,7 @@ class Form(QWidget):
         # len(dict[0]) == len(header) == k 는 col, 열의 갯수
 
     def savefile(self):
-        filename = QFileDialog.getSaveFileName(self, self.tr("Save Data files"), "./", self.tr("Data Files (*.xls)"))
+        filename = QFileDialog.getSaveFileName(self, self.tr("Save Data files")) # 여기가 문제인듯
         wbk = xlwt.Workbook()
         sheet = wbk.add_sheet("sheet", cell_overwrite_ok=True)
         self.add2(sheet)
