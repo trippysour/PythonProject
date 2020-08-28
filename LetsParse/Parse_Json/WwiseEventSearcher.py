@@ -1,12 +1,14 @@
 import json
-from openpyxl import Workbook
-from openpyxl.styles import PatternFill, Font
+# from openpyxl import Workbook
+# from openpyxl.styles import PatternFill, Font
+import xlwt
+
 import os
 from jsonpath_ng import parse
 from collections import defaultdict
 
-#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
-parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
+parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
+#parents = '../Assets/Resources/Outgame/Data/Sound'  # MacOS
 os.chdir(parents)  # json 폴더 지정
 
 
@@ -53,9 +55,9 @@ def saveasxlsx(name, path):
         rowindex = 1
         colindex = 1
 
-        sounds = jsontodict()[0]
+        sounds = jsontodict('')
 
-        for key in sounds[0]:
+        for key in sounds:
             ws.cell(row=rowindex, column=colindex).value = key
             ws.cell(row=rowindex, column=colindex).font = Font(bold=True, color='ffffff')
             ws.cell(row=rowindex, column=colindex).fill = PatternFill("solid", fgColor="404040")
@@ -84,17 +86,17 @@ def saveasxlsx(name, path):
         #     rowindex += 1
         #     colindex = 1
 
-        for i in range(len(sounds)):
-            for value in sounds[i].values():
-                ws.cell(row=rowindex, column=colindex).value = value
-                colindex += 1
-            rowindex += 1
+        # for i in range(len(sounds)):
+        #     for value in sounds[i].values():
+        #         ws.cell(row=rowindex, column=colindex).value = value
+        #         colindex += 1
+        #     rowindex += 1
 
 
 
     toxls()
-    #wb.save('C:\\Users\\trippysour\\Desktop\\EventSound.xlsx')
-    wb.save('path'+'name')
+    wb.save('C:\\Users\\trippysour\\Desktop\\EventSound.xlsx') #try, exept 구현 파일 닫기 같은거
+    #wb.save('path'+'name')
     wb.close()
 
     return
@@ -102,7 +104,7 @@ def saveasxlsx(name, path):
 '''
 GUI 코드
 # '''
-from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem
+from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog
 
 class Form(QWidget):
     def __init__(self):
@@ -132,6 +134,7 @@ class Form(QWidget):
         self.btn_save = QPushButton("Save As Xlsx")
         self.message = QMessageBox()
 
+
         self.hbTop.addWidget(self.ln)
         self.hbTop.addWidget(self.btn_name)
         self.hbTop.addWidget(self.btn_all)
@@ -141,6 +144,9 @@ class Form(QWidget):
 
         self.btn_name.clicked.connect(self.search)
         self.btn_all.clicked.connect(self.search_all)
+        self.btn_save.clicked.connect(self.savefile)
+
+
 
     def search_all(self):
         self.showresult(jsontodict(''))
@@ -174,6 +180,9 @@ class Form(QWidget):
 
         # len(dict) == i 는 row, 행의 갯수
         # len(dict[0]) == len(header) == k 는 col, 열의 갯수
+
+    def savefile(self):
+        self.fileName = QFileDialog.getSaveFileName(self, self.tr("Save Data files"), "./", self.tr("Data Files (*.xls)"))
 
 app = QApplication([])
 GUI = Form()
