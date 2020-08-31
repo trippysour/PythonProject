@@ -1,0 +1,278 @@
+<animations>
+	<animation animation_length="2" name="Ffly_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyB_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound file="Sounds\embrak\UFO\UFO_Back_01.ogg" TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="11" TOOL_Stream="0" type="file" vol="100" when="0"/>
+		<sound file="Sounds\embrak\UFO\UFO_Back_01.ogg" TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="99" TOOL_Stream="0" type="file" vol="100" when="1"/>
+	</animation>
+	<animation animation_length="2" name="FflyD_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyF_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyFD_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyFU_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyL_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyR_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyU_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="Fglide_001">
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="0.83" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Fly_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="Fglidedown_001">
+		<sound TOOL_desc="" TOOL_duration="0.73" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Start_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Start_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.13" name="Fglideend_001">
+		<sound TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_End_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_End_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="1.33" name="Fglideup_001">
+		<sound TOOL_desc="" TOOL_duration="0.73" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Start_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Start_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="4" name="Fidle_001"/>
+	<animation animation_length="1.83" name="Ftakeoff_001">
+		<sound TOOL_desc="" TOOL_duration="1.4" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.5">
+			<probsound file="Sounds\embrak\UFO\UFO_TakeOff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_TakeOff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="1.3" name="Ftakeoff_jump_001">
+		<sound TOOL_desc="" TOOL_duration="1.1" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.1">
+			<probsound file="Sounds\embrak\UFO\UFO_TakeOff_Jump_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_TakeOff_Jump_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="1.3" name="Ftakeoff_run_001">
+		<sound TOOL_desc="" TOOL_duration="1.1" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.12">
+			<probsound file="Sounds\embrak\UFO\UFO_TakeOff_Jump_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_TakeOff_Jump_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="Ndive_001">
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.13" name="Nglideend_001">
+		<sound TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_End_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_End_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="4" name="Nidle_001"/>
+	<animation animation_length="4" name="Nidle_002"/>
+	<animation animation_length="0.53" name="Njump_air_001">
+		<sound TOOL_desc="" TOOL_duration="0.9" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_End_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_End_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.33" name="Njump_end_001">
+		<sound file="Sounds\embrak\UFO\UFO_Land_01.ogg" TOOL_desc="" TOOL_duration="0.57" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="file" vol="255" when="0"/>
+	</animation>
+	<animation animation_length="0.33" name="Njump_end_run_001">
+		<sound file="Sounds\embrak\UFO\UFO_Land_01.ogg" TOOL_desc="" TOOL_duration="0.57" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="file" vol="255" when="0"/>
+	</animation>
+	<animation animation_length="0.37" name="Njump_start_001">
+		<sound TOOL_desc="" TOOL_duration="0.69" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Start_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Start_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.33" name="Nland_001">
+		<sound file="Sounds\embrak\UFO\UFO_Land_01.ogg" TOOL_desc="" TOOL_duration="0.9" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="file" vol="255" when="0"/>
+	</animation>
+	<animation animation_length="2" name="Nrun_001">
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="Nrun_fast_001">
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="NrunB_001">
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound file="Sounds\embrak\UFO\UFO_Back_01.ogg" TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="11" TOOL_Stream="0" type="file" vol="100" when="0"/>
+		<sound file="Sounds\embrak\UFO\UFO_Back_01.ogg" TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="99" TOOL_Stream="0" type="file" vol="100" when="1"/>
+	</animation>
+	<animation animation_length="2" name="NrunL_001">
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="NrunR_001">
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="Nwalk_001">
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="NwalkB_001">
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound file="Sounds\embrak\UFO\UFO_Back_01.ogg" TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="11" TOOL_Stream="0" type="file" vol="100" when="0"/>
+		<sound file="Sounds\embrak\UFO\UFO_Back_01.ogg" TOOL_desc="" TOOL_duration="0.93" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_ParamId="99" TOOL_Stream="0" type="file" vol="100" when="1"/>
+	</animation>
+	<animation animation_length="2" name="NwalkL_001">
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="NwalkR_001">
+		<sound TOOL_desc="" TOOL_duration="1.2" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.99">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.13" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\UFO\UFO_Run_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\UFO\UFO_Run_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="-1" name="everytime">
+		<parteff bone="fx_bone" ignorealpha="0" name="sys_ride_v7.ufo.n" offset="0,0,0" slot="1" TOOL_ParamId="76" when="0"/>
+		<parteff bone="Bip01" ignorealpha="0" name="sys_ride_v7.ufo.r" offset="0,0,0" slot="2" TOOL_ParamId="76" when="0"/>
+	</animation>
+</animations>
