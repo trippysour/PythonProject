@@ -1,0 +1,610 @@
+<animations>
+	<animation animation_length="2" name="FflyB_001">
+		<sound TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.133333">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.6" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.167" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.6" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="3.33333" name="FflyD_001">
+		<sound TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="1.91">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.308384">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyF_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="1.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyFD_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="1.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyFU_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="1.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyL_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="1.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyR_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="1.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="FflyU_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="1.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.13">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="1.66667" name="Fglide_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.771" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="1.66667" name="Fglidedown_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.133333" name="Fglideend_001"/>
+	<animation animation_length="1.66667" name="Fglideup_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.771" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="3.33333" name="Fidle_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.34">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1.94">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="2" name="Ftakeoff_001">
+		<attach len="1" to="wing_bone" TOOL_ParamId="36" what="wing" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.wing" offset="0,0,0" slot="1" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.light" offset="0,0,0" slot="2" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.dust" offset="0,0,0" slot="3" TOOL_ParamId="76" when="0.3"/>
+		<sound stream="1" TOOL_desc="" TOOL_duration="5.387" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_TakeOff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_TakeOff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1.42274">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="3.243" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Neuigh_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Neuigh_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.128" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0.475049">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="11.0561">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="11.0894">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="1" name="Ftakeoff_jump_001">
+		<attach len="1" to="wing_bone" TOOL_ParamId="36" what="wing" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.wing" offset="0,0,0" slot="1" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.light" offset="0,0,0" slot="2" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.dust" offset="0,0,0" slot="3" TOOL_ParamId="76" when="0.3"/>
+		<sound stream="1" TOOL_desc="" TOOL_duration="5.387" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_TakeOff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_TakeOff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="3.243" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.0041666">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Neuigh_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Neuigh_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0.0750493">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="11.0561">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="11.0894">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="1" name="Ftakeoff_run_001">
+		<attach len="1" to="wing_bone" TOOL_ParamId="36" what="wing" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.wing" offset="0,0,0" slot="1" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.light" offset="0,0,0" slot="2" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.dust" offset="0,0,0" slot="3" TOOL_ParamId="76" when="0.3"/>
+		<sound stream="1" TOOL_desc="" TOOL_duration="5.387" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_TakeOff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_TakeOff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="3.243" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.0041666">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Neuigh_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Neuigh_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0.108383">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="11.0561">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.879" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="11.0894">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Flap_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="3.33333" name="Ndive_air_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="2.4">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1.61">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.8">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="3.33333" name="Nfall_air_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="2.4">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="1.61">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.8">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation name="Nglideend_001"/>
+	<animation animation_length="2" name="Nidle_001"/>
+	<animation animation_length="4.33333" name="Nidle_002">
+		<sound stream="1" TOOL_desc="" TOOL_duration="0.861" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.8">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="255"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="0.982" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="2.16838">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="255"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="0.982" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="1.20171">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="255"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="0.982" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="2.89426">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="2.361" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="100" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Snort_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Snort_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="3.219" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="3.16066">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Neigh_short_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Neigh_short_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\monster\zzzz_none_1sec.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="160"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="2.361" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="100" TOOL_Stream="0" type="file" when="2.13462">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Snort_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Snort_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.467" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="2.41">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="3.83333" name="Nidle_003">
+		<sound stream="1" TOOL_desc="" TOOL_duration="0.982" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="3.40171">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="255"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="0.982" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.868377">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="255"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Scuff_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="255"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.44" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="3.03798">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="3.219" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="1.69399">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Neuigh_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Neuigh_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="175"/>
+			<probsound file="Sounds\monster\zzzz_none_1sec.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="160"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="2.361" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="100" TOOL_Stream="0" type="file" when="0.0333333">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Snort_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Snort_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="160"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.533333" name="Njump_air_001"/>
+	<animation animation_length="1.66667" name="Njump_air_sprint_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.771" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.633333" name="Njump_end_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.133333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.233333"/>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.44" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.137984">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="2.6077e-008">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.3" name="Njump_end_run_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.133333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.233333"/>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.44" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.137984">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="2.6077e-008">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.3" name="Njump_end_sprint_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.133333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.216667"/>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.44" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.137984">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="2.6077e-008">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.4" name="Njump_start_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="2.6077e-008">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="2.219" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Neuigh_Short_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.25" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Neuigh_Short_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.25" vol="160"/>
+			<probsound file="Sounds\monster\zzzz_none_1sec.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.4" name="Njump_start_sprint_001">
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="2.6077e-008">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="2.219" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Neuigh_Short_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.25" vol="160"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Neuigh_Short_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.25" vol="160"/>
+			<probsound file="Sounds\monster\zzzz_none_1sec.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="255"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.4" name="Nland_001">
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.wing" offset="0,0,0" slot="1" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.light" offset="0,0,0" slot="2" TOOL_ParamId="76" when="0"/>
+		<parteff bone="ride_bone" ignorealpha="1" name="sys_ride.legionhorse.dust" offset="0,0,0" slot="3" TOOL_ParamId="76" when="0.3"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="10" TOOL_Stream="0" type="walk" vol="255" when="0.183333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="10" TOOL_Stream="0" type="walk" vol="255" when="0.3"/>
+		<sound stream="1" TOOL_desc="" TOOL_duration="1.5" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="2.6077e-008">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="241"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Wing_Soft_Long_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="241"/>
+		</sound>
+		<sound stream="1" TOOL_desc="" TOOL_duration="2.44" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="9" TOOL_Stream="0" type="file" when="0.171317">
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+			<probsound file="Sounds\embrak\legionhorse\Horse_Cosmos_Sun_Footstep_Land_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.5" vol="175"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="Nrun_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.433333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.616667"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.434375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="Nrun_002">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.45"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.616667"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.467708">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="Nrun_fast_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.4"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.583333"/>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.401042">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.833333" name="NrunB_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.3"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.666667"/>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.3">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.666667">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="NrunL_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.416667"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.566667"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.434375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="NrunL_002">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.433333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.575"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.434375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="NrunR_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.433333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.583333"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.434375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="NrunR_002">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.45"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.575"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.434375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.4" name="Nsprint_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.133333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.191667"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.134375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="Nwalk_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.433333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.591667"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.434375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.833333" name="NwalkB_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.3"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.725"/>
+		<sound TOOL_desc="" TOOL_duration="1.283" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="10" TOOL_Stream="0" type="file" when="0.3">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.7">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="NwalkL_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.416667"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.566667"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.401042">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation animation_length="0.733333" name="NwalkR_001">
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.433333"/>
+		<sound TOOL_desc="" TOOL_duration="0" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="100" TOOL_pan="127" TOOL_ParamId="9" TOOL_Stream="0" type="walk" vol="255" when="0.583333"/>
+		<sound TOOL_desc="" TOOL_duration="2.488" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="11" TOOL_Stream="0" type="file" when="0.434375">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunA_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+		<sound TOOL_desc="" TOOL_duration="1.403" TOOL_fadeoutStart="0" TOOL_fadeoutTime="0" TOOL_ParamId="99" TOOL_Stream="0" type="file" when="0">
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_01.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_02.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.3" vol="201"/>
+			<probsound file="Sounds\embrak\LegionHorse\Horse_Cosmos_Sun_Footstep_RunB_03.ogg" TOOL_InRadius="10" TOOL_Is3D="1" TOOL_Loop="0" TOOL_OutRadius="25" TOOL_pan="127" TOOL_Prob="0.4" vol="201"/>
+		</sound>
+	</animation>
+	<animation name="everytime">
+		<parteff bone="head" ignorealpha="0" name="FC_Mon_sun_horse.every.Mane" offset="0,0,0" slot="1" TOOL_ParamId="76" when="0"/>
+		<parteff bone="foot" ignorealpha="0" name="FC_Mon_sun_horse.every.foots" offset="0,0,0" slot="2" TOOL_ParamId="76" when="0"/>
+	</animation>
+</animations>
