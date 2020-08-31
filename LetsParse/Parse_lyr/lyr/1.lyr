@@ -1,0 +1,1571 @@
+<ObjectLayer>
+	<Layer Exportable="1" External="0" Frozen="0" GUID="{7A9EA94E-8344-4A50-BD10-8AFEFE71A5A9}" Hidden="0" Name="DC1_Ambient" ParentGUID="{C392DB3B-2AE3-4EEC-B675-1C10B014D2CA}">
+		<LayerObjects>
+			<Object AreaId="26" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="30" Id="{C0926001-F454-483A-91F6-0C53DB67A21B}" Layer="DC1_Ambient" Name="DC1_shape_indoor_17" Pos="808.4043,1367.5393,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-22.412964,22.381958,0"/>
+					<Point Pos="0.38067627,44.780273,0"/>
+					<Point Pos="23.423218,22.265503,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{5FA5F87A-D038-4689-98CF-76AE5B255106}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="797" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{AD7AB601-440E-47A9-94A3-485DC80B5D18}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_16" Pos="2044.9836,1263.5095,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="134" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{54AF4102-0700-475D-B1AE-7351F3BF2625}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_06" Pos="1455.923,1431.8141,186.24974" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.81664002,0.81664002,0.81664002" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AreaId="11" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="55" Id="{44426C02-BFCE-46B4-9DA0-C94CE4761D1E}" Layer="DC1_Ambient" Name="DC1_shape_14" Pos="1225.6619,1150.9597,200" Type="Shape" VerticalFadeInOut="0" Width="5">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-0.14111328,90.325195,0"/>
+					<Point Pos="96.298462,90.357788,0"/>
+					<Point Pos="98.057617,0.81335449,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{D3B616CE-4E57-43D6-9A69-D3ED4928930C}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="101" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="203.9" Id="{E7409D02-938E-410D-BF25-EAE15B7E34B4}" Layer="DC1_Ambient" Name="DC1_shape_07" Pos="1247.4989,1291.396,0.1" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-2.1072998,103.92493,0"/>
+					<Point Pos="69.109985,105.14697,0"/>
+					<Point Pos="62.25647,7.350708,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{8674D3FD-341D-41C7-B4BC-4AE7FBE5DACD}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="18" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{78DE8906-6BCC-4C7F-8146-7CDB081536BD}" Layer="DC1_Ambient" Name="DC1_shape_indoor_09" Pos="1294.0601,1456.37,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="6.8897705,18.575073,-3.0517578e-05"/>
+					<Point Pos="-2.2147217,22.472656,-3.0517578e-05"/>
+					<Point Pos="2.989502,35.888062,-3.0517578e-05"/>
+					<Point Pos="-2.3304443,38.201172,-3.0517578e-05"/>
+					<Point Pos="12.357178,80.413574,-3.0517578e-05"/>
+					<Point Pos="8.1884766,82.007813,-3.0517578e-05"/>
+					<Point Pos="12.236328,93.225952,-3.0517578e-05"/>
+					<Point Pos="9.2293701,94.151123,-3.0517578e-05"/>
+					<Point Pos="15.474487,111.7301,-3.0517578e-05"/>
+					<Point Pos="28.080444,107.91357,-3.0517578e-05"/>
+					<Point Pos="32.012573,116.70313,-3.0517578e-05"/>
+					<Point Pos="88.571777,96.048218,-3.0517578e-05"/>
+					<Point Pos="87.299561,87.258789,-3.0517578e-05"/>
+					<Point Pos="97.014282,81.823242,-3.0517578e-05"/>
+					<Point Pos="90.190918,64.706909,-3.0517578e-05"/>
+					<Point Pos="84.755249,54.067017,-3.0517578e-05"/>
+					<Point Pos="79.476563,56.026123,-3.0517578e-05"/>
+					<Point Pos="64.094971,13.697998,-3.0517578e-05"/>
+					<Point Pos="59.12207,15.317139,-3.0517578e-05"/>
+					<Point Pos="53.875854,1.8868408,-3.0517578e-05"/>
+					<Point Pos="44.720459,4.5405273,-3.0517578e-05"/>
+					<Point Pos="38.163086,-13.46875,-3.0517578e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{5FA79136-4234-4304-8D5C-33741C42DBF7}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="31" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="22" Id="{FD6BA906-469B-4F58-9EC3-B4B8DE3EDA32}" Layer="DC1_Ambient" Name="DC1_shape_indoor_02" Pos="948.22699,1549.8888,198.26721" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="36.152405,36.813843,0"/>
+					<Point Pos="53.236572,18.406982,0"/>
+					<Point Pos="17.525085,-17.524902,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{A5B4ADE5-9A71-495D-A336-240C147371A8}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="22" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{23F11D08-E211-4A60-96C2-6C13EC3BDF72}" Layer="DC1_Ambient" Name="DC1_shape_indoor_13" Pos="1046.3446,1381.208,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-29.082825,29.877808,0"/>
+					<Point Pos="-7.2165527,52.010376,0"/>
+					<Point Pos="22.604858,22.184082,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{0B99AC19-72E5-4676-AD73-0D4F15E439EF}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="52" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{CC98EB08-77E2-4CC3-8756-5E07B5BD5A18}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_bubble_02" Pos="1197.4298,1608.6924,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="180" OuterRadius="7" sndSource="Sounds\ambient\ambient_bubble_2.ogg"/>
+			</Object>
+			<Object AreaId="16" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{9215F308-47A9-4376-9961-5F43D09D70C6}" Layer="DC1_Ambient" Name="DC1_shape_indoor_07" Pos="1236.3477,1483.7496,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-17.48645,47.841797,0"/>
+					<Point Pos="21.233276,61.971313,0"/>
+					<Point Pos="38.494385,13.898438,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{E858169A-A858-4AE8-AE19-E56E0CDE3CB7}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="798" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{C090A009-C8D4-4724-8C9F-5A8438F44F63}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_07" Pos="1687.3995,1449.7767,200.88474" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="180" OuterRadius="50" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="51" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{B86C300A-B78B-4209-93D9-576D6E7CF56D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_bubble_01" Pos="1202.547,1589.9202,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="180" OuterRadius="7" sndSource="Sounds\ambient\ambient_bubble_2.ogg"/>
+			</Object>
+			<Object AreaId="19" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{EE6DEC0A-5224-492D-81ED-1C03EA4BFF4E}" Layer="DC1_Ambient" Name="DC1_shape_indoor_10" Pos="1385.788,1413.8632,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-0.16687012,32.889771,0"/>
+					<Point Pos="39.961182,33.07959,0"/>
+					<Point Pos="40.367798,0.35119629,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{3A0D84F3-F4A0-4191-A014-CD83245D7AF3}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="799" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{298C350D-F2CA-4AAD-BDAF-5733BCE803B3}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_19" Pos="2071.4766,1348.083,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="80" sndSound="Sounds\ambient\ambient_hall_1.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="579" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{CD0C950E-2D44-49BD-AFE7-23CA41DF4851}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_03" Pos="1307.4091,1195.6681,222.95192" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="Sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="273" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{EA874D13-A9A3-4D97-9CA6-1B3E07EA14E4}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_bird_flying_01" Pos="915.21167,1432.0914,217.48074" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="120" OuterRadius="15" sndSource="Sounds\ambient\ambient_bird_flying.ogg"/>
+			</Object>
+			<Object AreaId="29" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="30" Id="{11D68F16-299D-4AF3-B1E2-11F42178BC87}" Layer="DC1_Ambient" Name="DC1_shape_indoor_20" Pos="835.49548,1386.3345,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-31.226196,32.472412,0"/>
+					<Point Pos="4.8511963,68.920776,0"/>
+					<Point Pos="37.601013,35.932373,0"/>
+					<Point Pos="20.336609,19.202515,0"/>
+					<Point Pos="23.30896,15.438354,0"/>
+					<Point Pos="13.899353,6.7613525,0"/>
+					<Point Pos="10.501526,9.3673096,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{B9B48376-EB24-4FDD-973D-A0391DCC3207}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="800" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{28964517-1EC3-4192-B869-ADA10D5A3DCD}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_01" Pos="2019.519,1466.8177,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="120" sndSound="Sounds\ambient\ambient_indoor_store_3.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="801" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{57B2C117-4B70-44DA-BA97-F7D1C4DEDE7A}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_03" Pos="2018.4813,1395.0386,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="802" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{0B99AC19-72E5-4676-AD73-0D4F15E439EF}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_13" Pos="2102.053,1305.9484,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="120" sndSound="Sounds\ambient\ambient_indoor_store_3.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="53" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{FDA1771A-08EA-4A37-9D1B-BF641C0C17BA}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_bubble_03" Pos="1155.8904,1593.6394,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="180" OuterRadius="7" sndSource="Sounds\ambient\ambient_bubble_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="50" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{2FFA5A1D-C3B5-419E-9459-9036C7442E8D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_fire_04" Pos="1170.5317,1578.8785,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="5" iVolume="180" OuterRadius="10" sndSource="Sounds\ambient\ambient_fire_hot.ogg"/>
+			</Object>
+			<Object AreaId="12" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{7B4A8521-7417-4FAA-B60F-276B33DA18D7}" Layer="DC1_Ambient" Name="DC1_shape_indoor_03" Pos="1173.4181,1456.754,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-10.431519,29.239868,0"/>
+					<Point Pos="28.25647,42.801392,0"/>
+					<Point Pos="38.34082,13.898682,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{57B2C117-4B70-44DA-BA97-F7D1C4DEDE7A}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="54" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{EEA51A25-2FC6-4C7B-B9B7-0C3494DD572D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_bubble_04" Pos="1171.2856,1579.3926,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="180" OuterRadius="7" sndSource="Sounds\ambient\ambient_bubble_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="580" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{0637FB27-6B6C-4F3B-BDBE-9CBCBD803B96}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_02" Pos="1243.071,1195.635,222.66263" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="Sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="803" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{C10D9230-6DC6-428D-86A0-F21C0AAFD2D5}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_03" Pos="792.58716,1212.1825,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="100" sndSound="Sounds\ambient\ambient_water_lake.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="804" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{B3B1EC33-B799-4AD2-A03E-CC8BC94FFF5B}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_04" Pos="2019.7361,1370.1067,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="2" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="119" Height="20" Id="{006C5936-E505-48C4-9582-01DB8F0D91B5}" Layer="DC1_Ambient" Name="DC1_shape_04" Pos="894.82471,1481.6895,207.60001" Type="Shape" VerticalFadeInOut="0" Width="13">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-41.343384,-23.538086,-3.0517578e-05"/>
+					<Point Pos="-63.32605,2.8410645,-3.0517578e-05"/>
+					<Point Pos="-42.696167,43.424561,-3.0517578e-05"/>
+					<Point Pos="-3.1273193,91.786499,-3.0517578e-05"/>
+					<Point Pos="37.429749,51.715332,0"/>
+					<Point Pos="36.652161,29.976807,-3.0517578e-05"/>
+					<Point Pos="48.488953,11.883301,-3.0517578e-05"/>
+					<Point Pos="90.089355,10.196411,-3.0517578e-05"/>
+					<Point Pos="140.10767,51.591309,-3.0517578e-05"/>
+					<Point Pos="175.68585,95.11499,-3.0517578e-05"/>
+					<Point Pos="191.4118,109.99561,-3.0517578e-05"/>
+					<Point Pos="226.4151,69.919434,-3.0517578e-05"/>
+					<Point Pos="209.32239,41.324585,-3.0517578e-05"/>
+					<Point Pos="200.8075,50.205444,-3.0517578e-05"/>
+					<Point Pos="110.29181,-39.448364,-3.0517578e-05"/>
+					<Point Pos="73.795837,-50.971313,-3.0517578e-05"/>
+					<Point Pos="54.471802,-45.677612,-3.0517578e-05"/>
+					<Point Pos="44.864624,-29.685425,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{73ECFDE8-67C1-4A4D-9C47-65AC9CC375E8}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="805" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{5FA79136-4234-4304-8D5C-33741C42DBF7}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_09" Pos="2069.6418,1262.3536,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_indoor_bank.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="1" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="118" Height="180" Id="{C0D04B3A-5B19-4E2F-BB85-77469BE80040}" Layer="DC1_Ambient" Name="DC1_shape_17" Pos="895.46002,1394.9301,100" Type="Shape" VerticalFadeInOut="0" Width="20">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-21.430054,27.952393,-3.0517578e-05"/>
+					<Point Pos="-57.086975,64.12915,-3.0517578e-05"/>
+					<Point Pos="1.0643311,96.973267,-3.0517578e-05"/>
+					<Point Pos="64.188843,42.253906,0"/>
+					<Point Pos="186.10358,153.78198,0"/>
+					<Point Pos="215.43073,155.4519,-3.0517578e-05"/>
+					<Point Pos="237.23907,133.86816,-3.0517578e-05"/>
+					<Point Pos="219.02777,115.65698,-3.0517578e-05"/>
+					<Point Pos="211.38373,122.40186,-3.0517578e-05"/>
+					<Point Pos="188.22614,98.794678,-3.0517578e-05"/>
+					<Point Pos="196.09528,90.026367,-3.0517578e-05"/>
+					<Point Pos="173.56683,69.484497,0"/>
+					<Point Pos="119.67883,15.593994,-3.0517578e-05"/>
+					<Point Pos="113.20062,13.157471,-3.0517578e-05"/>
+					<Point Pos="87.07843,-1.942749,-3.0517578e-05"/>
+					<Point Pos="68.19043,-16.019409,-3.0517578e-05"/>
+					<Point Pos="57.173706,-49.519043,-3.0517578e-05"/>
+					<Point Pos="32.21759,-46.37146,-3.0517578e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{C33F2845-153F-4DC0-910E-67691FCC2C17}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="807" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{53BD043B-46CB-417E-9A72-3536CB449BE8}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_12" Pos="2101.9766,1465.6646,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="255" sndSound="Sounds\ambient\ambient_room.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="808" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{1FD4BE3C-CF78-4F66-9FB2-5B2A41275398}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_12" Pos="2042.1504,1349.5199,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="120" sndSound="Sounds\ambient\ambient_indoor_store_3.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="23" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{7EB06F43-6047-4073-B7E6-D0CDEC2C9474}" Layer="DC1_Ambient" Name="DC1_shape_indoor_14" Pos="1070.366,1403.7865,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-29.692383,30.686523,0"/>
+					<Point Pos="-7.3486328,53.303833,0"/>
+					<Point Pos="22.098389,23.352905,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{B5CE6B5A-C07A-497C-BC1A-8566D27BA9B4}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="40" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{C33F2845-153F-4DC0-910E-67691FCC2C17}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_17" Pos="2046.8474,1520.5973,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="200" sndSound="Sounds\ambient\ambient_village_3.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="809" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{37DB8D45-EE19-443D-A1AD-993B2F01BEE0}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_06" Pos="2096.2222,1262.25,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="811" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{DF317B4C-82FB-4F0C-A42A-73CDB3435536}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_05" Pos="1545.4602,1475.7506,173.72279" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="140" OuterRadius="50" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="812" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{D352554D-A110-4C35-8D8B-58536022B905}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_05" Pos="2068.8135,1211.5375,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="813" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{3DC2654F-E7B4-4A1D-91A1-D2D40212730D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_06" Pos="792.47345,1188.9431,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="50" sndSound="Sounds\ambient\ambient_water_lake.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="35" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="190" Id="{4F90B752-52BE-4FC5-97AD-628527ED82E5}" Layer="DC1_Ambient" Name="DC1_shape_10" Pos="1109.74,1272.61,0.1" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="68.510132,1.9952393,0"/>
+					<Point Pos="133.68188,-300.61438,0"/>
+					<Point Pos="-342.68677,-365.75885,0"/>
+					<Point Pos="-414.61707,-16.286133,0"/>
+					<Point Pos="-279.57813,-48.179688,0"/>
+					<Point Pos="-92.966492,21.714844,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{B8F2667B-42D4-49BD-AE29-BE0E3338C525}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="10" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="35" Id="{0FEC3A53-355F-4EED-82CB-6D00DADA4A82}" Layer="DC1_Ambient" Name="DC1_shape_16" Pos="1375.2618,1176.1661,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="0.75061035,67.366333,0"/>
+					<Point Pos="32.838745,67.741699,0"/>
+					<Point Pos="32.275757,0.37536621,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{3B8DF88E-2D87-46CA-857C-14AEC2064878}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="815" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{AD6AC054-EA55-495B-A5BE-BFC9B1596738}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_17" Pos="1395.9073,1361.1323,170.75592" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="3.308712,3.308712,3.308712" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="120" OuterRadius="70" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1271" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{6BC5FD54-CBC2-41F3-9412-5A0E5CB9331D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_weapon_fx_06" Pos="1403.1512,1441.5948,211.19203" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="180" OuterRadius="8" sndSource="Sounds\ambient\ambient_fx_weapon.ogg"/>
+			</Object>
+			<Object AreaId="30" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{BDD7A655-1B66-4C6E-A5BB-CDFF35406B45}" Layer="DC1_Ambient" Name="DC1_shape_15" Pos="1114.214,1464.5787,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-29.331177,29.166016,0"/>
+					<Point Pos="-7.1679688,51.720215,0"/>
+					<Point Pos="22.144287,22.357422,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{393F4E87-1FA7-40C9-BAA3-1F26FB610469}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="4" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="119" Height="20" Id="{7F683C56-DB71-45EE-B928-04BCEFA4BC43}" Layer="DC1_Ambient" Name="DC1_shape_09" Pos="1102.48,1437.4176,201.60001" Type="Shape" VerticalFadeInOut="0" Width="10">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-2.206543,-34.856812,0"/>
+					<Point Pos="-11.255005,-43.822388,-3.0517578e-05"/>
+					<Point Pos="-10.428467,-64.794556,-3.0517578e-05"/>
+					<Point Pos="-25.718506,-62.418335,-3.0517578e-05"/>
+					<Point Pos="-44.713257,-79.855103,-3.0517578e-05"/>
+					<Point Pos="-40.22522,-85.102417,-3.0517578e-05"/>
+					<Point Pos="-6.5025635,-75.952271,-3.0517578e-05"/>
+					<Point Pos="0.69274902,-85.856323,-3.0517578e-05"/>
+					<Point Pos="13.436401,-75.53894,-3.0517578e-05"/>
+					<Point Pos="17.176514,-36.929443,0"/>
+					<Point Pos="39.460205,-5.7590332,-3.0517578e-05"/>
+					<Point Pos="10.638184,15.105957,-3.0517578e-05"/>
+					<Point Pos="11.68335,16.822632,-3.0517578e-05"/>
+					<Point Pos="44.618042,-5.920166,0"/>
+					<Point Pos="53.644165,22.913452,-3.0517578e-05"/>
+					<Point Pos="46.702271,52.909912,-3.0517578e-05"/>
+					<Point Pos="19.343018,22.461426,-3.0517578e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{CA222DAD-790F-405B-A6B2-D73BFC8EE3FF}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="20" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{B76B4756-35EE-43FD-83D0-D98E319E4621}" Layer="DC1_Ambient" Name="DC1_shape_indoor_11" Pos="1392.4082,1354.3792,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-0.27856445,33.51062,0"/>
+					<Point Pos="41.036987,33.460083,0"/>
+					<Point Pos="40.997192,-0.2734375,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{73825F60-FE54-4396-A871-D52889413DC8}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="277" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{1B32C056-F729-4D55-A2AF-77A2DAB9CEEF}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_fx_07" Pos="1293.5527,1216.7985,215.71152" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.70999998,0.70999998,0.70999998" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="180" OuterRadius="6" sndSource="Sounds\ambient\ambient_fx_12.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="816" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{B5CE6B5A-C07A-497C-BC1A-8566D27BA9B4}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_14" Pos="2068.3362,1304.7096,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="120" sndSound="Sounds\ambient\ambient_indoor_store_3.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="818" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="rain" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{78E77B5C-E73E-4251-892E-0F10CEB66C8B}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_01" Pos="555.1333,781.92004,0" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="42.166988,42.166988,42.166988" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="100" sndSound="Sounds\ambient\ambient_wind_natural.ogg"/>
+					<Sound2 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="90" sndSound="Sounds\ambient\ambient_wind_natural_sub.ogg"/>
+					<Sound3 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_jungle_1.ogg"/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="21" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{44AF6D5D-7006-4A87-BDCD-6ACB83A50DA1}" Layer="DC1_Ambient" Name="DC1_shape_indoor_12" Pos="1001.5754,1355.7805,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-20.362732,36.187744,0"/>
+					<Point Pos="6.6974487,51.414917,0"/>
+					<Point Pos="27.453369,16.101807,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{1FD4BE3C-CF78-4F66-9FB2-5B2A41275398}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="820" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{73825F60-FE54-4396-A871-D52889413DC8}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_11" Pos="2041.1296,1416.1969,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_indoor_store_4.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="2542" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{4DFE0167-BE76-4D0E-969B-37AAD193F896}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_12" Pos="1440.7379,1444.7783,186.24974" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.81664002,0.81664002,0.81664002" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1270" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{692B6768-116A-4FF7-AD07-BDA03690EC0E}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_weapon_fx_05" Pos="1413.9667,1442.1035,211.19203" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="180" OuterRadius="8" sndSource="Sounds\ambient\ambient_fx_weapon.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="2541" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{8BC41469-94CF-4DDD-8A31-6262B89F710C}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_11" Pos="1440.9662,1431.7729,186.24974" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.81664002,0.81664002,0.81664002" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="821" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{530F596E-BDD7-4A67-90E0-E912BE2ABBE6}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_01" Pos="1079.1244,1565.6659,206.34906" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="3.7097678,3.7097678,3.7097678" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="180" OuterRadius="100" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1265" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{B28F2372-807B-4628-8D2E-9CE9E0C91D74}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_11" Pos="752.61237,1212.4342,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="40" sndSound="Sounds\ambient\ambient_wind_winter.ogg"/>
+					<Sound2 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="30" sndSound="Sounds\ambient\ambient_wind_winter_sub.ogg"/>
+					<Sound3 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="70" sndSound="Sounds\ambient\ambient_wind_natural.ogg"/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="21" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{B9B48376-EB24-4FDD-973D-A0391DCC3207}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_20" Pos="707.98712,1163.0504,138.79131" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_hall_4.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1268" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{D76FDA7A-282B-4246-B413-18EBC8D57CD2}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_weapon_fx_03" Pos="1422.6395,1437.4446,210.51352" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="180" OuterRadius="6" sndSource="Sounds\ambient\ambient_fx_weapon.ogg"/>
+			</Object>
+			<Object AreaId="102" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="201.6" Id="{2547E97A-0B7D-42E3-B5B4-6A6E43FE39B2}" Layer="DC1_Ambient" Name="DC1_shape_08" Pos="1107.245,1441.9655,0.1" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="42.275024,50.870361,-2.4415553e-05"/>
+					<Point Pos="54.681641,28.776489,-2.4415553e-05"/>
+					<Point Pos="47.220581,0.60107422,0"/>
+					<Point Pos="28.63501,-16.837769,0"/>
+					<Point Pos="8.1143799,-92.060303,-2.4415553e-05"/>
+					<Point Pos="-34.543823,-97.838745,-2.4415553e-05"/>
+					<Point Pos="-52.416504,-85.541138,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{39F34C8B-7B56-4375-9E43-3595A135F037}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="829" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{5FA5F87A-D038-4689-98CF-76AE5B255106}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_17" Pos="2101.6304,1399.4404,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="830" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{B8F2667B-42D4-49BD-AE29-BE0E3338C525}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_10" Pos="768.0976,1216.098,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="240" sndSound="Sounds\ambient\ambient_wind_low.ogg"/>
+					<Sound2 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="120" sndSound="Sounds\ambient\ambient_wind_cliff.ogg"/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="35" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="220" Id="{FD9EDE7B-DFBC-42A9-A409-54AEB09F9548}" Layer="DC1_Ambient" Name="DC1_shape_12" Pos="1429.5001,1298.0424,0.1" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-0.20837402,18.751709,0"/>
+					<Point Pos="17.218018,18.475708,-2.4415553e-05"/>
+					<Point Pos="17.753784,35.505981,-2.4415553e-05"/>
+					<Point Pos="24.172974,35.4104,-2.4415553e-05"/>
+					<Point Pos="24.689575,18.647461,0"/>
+					<Point Pos="24.168579,-5.1043701,0"/>
+					<Point Pos="9.1625977,-8.4412842,-2.4415553e-05"/>
+					<Point Pos="3.7454834,-8.4412842,-2.4415553e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{53BD043B-46CB-417E-9A72-3536CB449BE8}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="267" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{86A5BD7E-F086-4EFA-8B9C-AAA1FF7DA7F1}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_08" Pos="1478.8634,1451.6295,185.70549" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.81664002,0.81664002,0.81664002" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="831" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{2369F084-973A-485D-A35F-FAF064EF2268}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_05" Pos="781.59747,1200.1818,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="200" sndSound="Sounds\ambient\ambient_water_under.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="832" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{393F4E87-1FA7-40C9-BAA3-1F26FB610469}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_15" Pos="2071.1809,1237.8219,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_restaurant.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1266" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{43F24C89-8116-4929-8311-20D29CDF0DE4}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_weapon_fx_01" Pos="1393.5767,1432.2715,209.61096" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="180" OuterRadius="6" sndSource="Sounds\ambient\ambient_fx_weapon.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="833" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{39F34C8B-7B56-4375-9E43-3595A135F037}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_08" Pos="767.08063,1190.3353,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="200" sndSound="Sounds\ambient\ambient_water_under.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1267" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{ADDA3F8C-7D64-4814-B2DD-8B573E9E2D51}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_weapon_fx_02" Pos="1393.767,1437.4175,209.61096" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="180" OuterRadius="6" sndSource="Sounds\ambient\ambient_fx_weapon.ogg"/>
+			</Object>
+			<Object AreaId="28" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="60" Id="{2D7AEE8C-85A8-4728-B0B4-203BBF86613C}" Layer="DC1_Ambient" Name="DC1_shape_indoor_19" Pos="1149.02,1271.04,224" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-24.085571,-0.04284668,0"/>
+					<Point Pos="-33.672852,5.7521973,0"/>
+					<Point Pos="-42.018066,5.3653564,0"/>
+					<Point Pos="-42.165771,35.301392,0"/>
+					<Point Pos="-32.055542,35.39502,0"/>
+					<Point Pos="-26.932007,40.661011,0"/>
+					<Point Pos="0.8470459,40.486084,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{298C350D-F2CA-4AAD-BDAF-5733BCE803B3}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="276" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{3B8DF88E-2D87-46CA-857C-14AEC2064878}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_16" Pos="2110.834,1229.3168,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_restaurant.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="275" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{1FAD5290-7948-4FA4-8CB2-07FD5CA5EF2E}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_bird_flying_03" Pos="970.85413,1102.4624,203.71155" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="120" OuterRadius="15" sndSource="Sounds\ambient\ambient_bird_flying.ogg"/>
+			</Object>
+			<Object AreaId="17" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{1E42A391-B973-425E-B8E0-61F0DEE0A497}" Layer="DC1_Ambient" Name="DC1_shape_indoor_08" Pos="1161.847,1558.6804,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-13.552734,37.906616,0"/>
+					<Point Pos="44.021606,58.756592,0"/>
+					<Point Pos="57.813721,20.364746,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{1B4657D0-5B46-4F4F-9CA4-A1598392D325}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="834" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{30E89293-5930-4664-9AB1-45CE7B26B3B9}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_06" Pos="1627.9073,1496.1189,177.2502" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="150" OuterRadius="150" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="835" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{819FAE95-F993-4F71-A283-60447247DF97}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_14" Pos="1393.2145,1412.5507,174.66167" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="3.308712,3.308712,3.308712" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="120" OuterRadius="70" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="836" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{EA048696-2031-455E-B5A7-AE9604BFD3F1}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_18" Pos="2102.144,1370.8165,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="130" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{1C224397-FF41-4223-970C-3F1EC9876BD0}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_05" Pos="1455.8121,1451.6593,186.6631" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.81664002,0.81664002,0.81664002" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AreaId="40" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="80" Id="{16302F98-7FEB-4358-BF26-556EE3605E30}" Layer="DC1_Ambient" Name="DC1_shape_Event_Deva_01" Pos="1247.8037,1325.7412,156.65967" Type="Shape" VerticalFadeInOut="0" Width="20">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-0.1262207,10.873047,0"/>
+					<Point Pos="8.1287842,26.449463,5.125"/>
+					<Point Pos="8.2563477,86.149048,5.125"/>
+					<Point Pos="16.245972,101.46753,5.125"/>
+					<Point Pos="40.453613,101.62866,5.0577393"/>
+					<Point Pos="46.231323,86.574707,0"/>
+					<Point Pos="46.654175,26.364868,0"/>
+					<Point Pos="52.347412,12.126343,0"/>
+					<Point Pos="51.720337,-0.72412109,0"/>
+					<Point Pos="40.253418,-15.444092,0"/>
+					<Point Pos="11.316406,-15.313599,5.125"/>
+				</Points>
+				<Entities>
+					<Entity Id="{E300C81B-475C-4D33-8D66-A8A81E5D1B3D}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="837" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{E858169A-A858-4AE8-AE19-E56E0CDE3CB7}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_07" Pos="2020.9907,1304.9913,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_indoor_store_4.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="838" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{3C17C99A-EB94-4C94-BB69-B284FBCC9B78}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_16" Pos="1405.7471,1463.1118,173.0237" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="3.308712,3.308712,3.308712" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="120" OuterRadius="70" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="42" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{8C28E19F-FCED-4BBB-8790-CCFFA320F6AE}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_fire_03" Pos="1155.7185,1592.923,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="5" iVolume="180" OuterRadius="10" sndSource="Sounds\ambient\ambient_fire_hot.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1025" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{599811A0-A88A-43A8-97A7-F2743E54AD8D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_fx_06" Pos="1469.1462,1471.2021,186.44753" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.81664002,0.81664002,0.81664002" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="12" sndSource="sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="839" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{AEA772A3-C009-485E-8213-5B73953271E2}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_09" Pos="1618.7665,1319.5582,151.67746" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="150" OuterRadius="150" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="840" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{6A8A13A5-186C-4DF4-9196-601A624C0CCD}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_08" Pos="1685.6294,1327.8058,261.82394" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="180" OuterRadius="80" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AreaId="33" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="200" Id="{AB8F93A9-00FD-4297-8451-715AFBEDFC6F}" Layer="DC1_Ambient" Name="DC1_shape_13" Pos="1380.9824,1327.9963,0.1" Type="Shape" VerticalFadeInOut="0" Width="5">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-19.856323,20.103271,-2.4415553e-05"/>
+					<Point Pos="-34.545654,62.259521,-2.4415553e-05"/>
+					<Point Pos="-34.143188,106.42798,-2.4415553e-05"/>
+					<Point Pos="-18.749634,149.28845,-2.4415553e-05"/>
+					<Point Pos="12.148682,178.66272,-2.4415553e-05"/>
+					<Point Pos="56.119263,186.49084,0"/>
+					<Point Pos="124.15295,184.83337,-2.4415553e-05"/>
+					<Point Pos="123.84387,126.26257,0"/>
+					<Point Pos="123.77637,-12.976807,-2.4415553e-05"/>
+					<Point Pos="12.551392,-10.413696,-2.4415553e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{304AA6EC-2644-49C5-B3F9-6C0B877DF339}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="34" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{9F795BAB-147E-4CE5-9B1A-3AC56C9AF8F5}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_fire_01" Pos="1202.9181,1590.9423,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="5" iVolume="180" OuterRadius="10" sndSource="Sounds\ambient\ambient_fire_hot.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="841" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{CA222DAD-790F-405B-A6B2-D73BFC8EE3FF}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_09" Pos="767.21716,1203.8824,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="50" sndSound="Sounds\ambient\ambient_water_lake.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="274" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{C1AB43AF-01F0-4D55-BD19-C978F8758993}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_bird_flying_02" Pos="1022.0311,1129.8156,206.73074" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="120" OuterRadius="15" sndSource="Sounds\ambient\ambient_bird_flying.ogg"/>
+			</Object>
+			<Object AreaId="3" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="119" Height="20" Id="{EBC802B0-790B-478F-9D4A-462FE579CEA3}" Layer="DC1_Ambient" Name="DC1_shape_06" Pos="1244.4388,1309.9825,203.89999" Type="Shape" VerticalFadeInOut="0" Width="15">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-0.95092773,64.919922,0"/>
+					<Point Pos="16.136353,83.614502,-3.0517578e-05"/>
+					<Point Pos="49.161987,82.793335,-3.0517578e-05"/>
+					<Point Pos="62.183716,62.408081,0"/>
+					<Point Pos="62.66333,1.9074707,-3.0517578e-05"/>
+					<Point Pos="45.009277,-9.3244629,0"/>
+					<Point Pos="35.299072,-0.60693359,-9.1552734e-05"/>
+					<Point Pos="34.886597,54.301758,-9.1552734e-05"/>
+					<Point Pos="26.051025,54.966919,-9.1552734e-05"/>
+					<Point Pos="25.374268,-0.74377441,-9.1552734e-05"/>
+					<Point Pos="16.253174,-9.5977783,-3.0517578e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{3DC2654F-E7B4-4A1D-91A1-D2D40212730D}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="2540" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{D77464B0-8812-46E2-9A0E-33AB9A80941D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_10" Pos="1240.7723,1210.5914,222.95192" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="Sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="842" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{E3AD5CB1-3F1C-4675-98EE-69DC3819D2BD}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_04" Pos="1306.4137,1226.4248,223.1653" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="Sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="843" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{FDE2E0B1-31BA-4C81-B83F-AD699D79A489}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_12" Pos="1606.1666,1349.3746,213.25189" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="150" OuterRadius="150" sndSource="Sounds\ambient\ambient_waterfall_1.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="933" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{8A9809B5-FC60-474D-87BA-EA6B40F3D56D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_13" Pos="1649.506,1456.5182,215.30154" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="150" OuterRadius="150" sndSource="Sounds\ambient\ambient_waterfall_1.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="974" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{EA6A72B5-4574-4FED-B838-F7EE9170B62E}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_01" Pos="1242.4766,1225.7256,222.13167" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="Sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1269" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{2F8B95B5-DF8D-4CAD-9F3C-676A177ED8F6}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_weapon_fx_04" Pos="1422.2084,1432.4655,210.20171" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="2" iVolume="180" OuterRadius="6" sndSource="Sounds\ambient\ambient_fx_weapon.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="975" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{1D56DEB5-0424-4B51-BD75-00B9F9CE7345}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_18" Pos="1379.4407,1378.4213,174.66167" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="3.308712,3.308712,3.308712" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="120" OuterRadius="70" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AreaId="13" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{04B1BBB8-9612-4127-A9D2-B9355FDB2B0C}" Layer="DC1_Ambient" Name="DC1_shape_indoor_04" Pos="1161.0725,1487.6687,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-10.783447,30.193359,0"/>
+					<Point Pos="28.276367,44.331543,0"/>
+					<Point Pos="39.299316,13.89856,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{B3B1EC33-B799-4AD2-A03E-CC8BC94FFF5B}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="976" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{4E70FBBC-7BB8-4AE9-930C-2D324A2A5515}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_03" Pos="1116.2325,1559.9227,217.6476" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="4.01056,4.01056,4.01056" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="80" OuterRadius="50" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="977" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{D3A58CBD-1B79-4E77-8216-F75F0516C829}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_10" Pos="1563.5486,1320.3004,183.39311" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="180" OuterRadius="50" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AreaId="25" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="30" Id="{59B4D1BD-9A83-429A-B321-901EF9757894}" Layer="DC1_Ambient" Name="DC1_shape_indoor_16" Pos="876.58282,1293.2592,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-22.305847,21.701904,0"/>
+					<Point Pos="6.7780762,51.188721,0"/>
+					<Point Pos="29.661682,28.848633,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{AD7AB601-440E-47A9-94A3-485DC80B5D18}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="978" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{650D37BE-E2A7-4F44-95BF-7E93C402CCDB}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_04" Pos="1525.0624,1481.1326,185.84424" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="150" OuterRadius="150" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1257" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{4C46E1BE-07BE-4C9A-B8DD-FC5E07DAECEA}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_02" Pos="781.99554,1211.3829,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="200" sndSound="Sounds\ambient\ambient_water_under.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="215" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{D18D65C3-8C0E-49F8-8270-F588490AC334}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_07" Pos="1479.0186,1431.9236,186.7328" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.81664002,0.81664002,0.81664002" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1258" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{0823A6C4-8869-4D82-A7BA-892E3DBCD821}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_15" Pos="2043.3512,1466.4619,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="130" sndSound="Sounds\ambient\ambient_indoor_library.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="1" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="117" Height="800" Id="{A6F137C7-0EF2-4A3A-9EC7-D2B87C900530}" Layer="DC1_Ambient" Name="DC1_shape_18" Pos="-167.34143,2620.896,0.10009766" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-31.248047,-2892.4722,0"/>
+					<Point Pos="2512.9419,-2859.2366,0"/>
+					<Point Pos="2502.7788,71.445313,0"/>
+					<Point Pos="966.08435,42.416016,0"/>
+					<Point Pos="1078.4143,-946.38086,0"/>
+					<Point Pos="1648.5786,-1011.3004,0"/>
+					<Point Pos="1904.0669,-1151.8801,0"/>
+					<Point Pos="1904.1084,-1312.0052,0"/>
+					<Point Pos="1745.8032,-1371.9044,0"/>
+					<Point Pos="1674.5068,-1664.0502,0"/>
+					<Point Pos="1277.666,-1633.2607,0"/>
+					<Point Pos="990.16711,-1681.8016,0"/>
+					<Point Pos="989.4906,-1407.818,0"/>
+					<Point Pos="876.16736,-1281.3468,0"/>
+					<Point Pos="873.09137,-1245.2531,0"/>
+					<Point Pos="1075.8872,-948.08594,0"/>
+					<Point Pos="962.44757,39.952881,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{E2DD98E9-7B5B-4D92-9D24-D85884279049}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1259" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{4A9A63CC-BE55-4A62-95C0-8952B3E12A04}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_02" Pos="1089.6233,1555.8866,244.33218" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="180" OuterRadius="50" sndSource="Sounds\ambient\ambient_waterfall_1.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="335" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{E8E9F0CC-004B-445F-8D8F-98861E55462D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_fire_02" Pos="1197.7339,1607.8655,215.48163" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="5" iVolume="180" OuterRadius="10" sndSource="Sounds\ambient\ambient_fire_hot.ogg"/>
+			</Object>
+			<Object AreaId="99" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="16.65" Id="{525502CD-44F6-4737-9B0E-8624D1239FCC}" Layer="DC1_Ambient" Name="DC1_shape_02" Pos="850.51001,1335.36,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-23.955444,24.313477,0"/>
+					<Point Pos="6.0305786,55.49646,0"/>
+					<Point Pos="29.230652,30.955444,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{4C46E1BE-07BE-4C9A-B8DD-FC5E07DAECEA}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1260" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{AE0A03CE-2453-4B33-B251-E6F8C2E43873}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_11" Pos="1694.8892,1399.8323,200.88474" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="10.0264,10.0264,10.0264" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="8" iVolume="120" OuterRadius="50" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1261" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{D3B616CE-4E57-43D6-9A69-D3ED4928930C}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_14" Pos="2096.52,1212.1591,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="100" sndSound="Sounds\ambient\ambient_hall_2.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="1" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="119" Height="10" Id="{E9860BCF-5C01-4FF9-9D64-B08939EB6AFE}" Layer="DC1_Ambient" Name="DC1_shape_03" Pos="850.40997,1336.25,216.64999" Type="Shape" VerticalFadeInOut="0" Width="20">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-24.397156,24.421387,0"/>
+					<Point Pos="6.539978,54.38269,0"/>
+					<Point Pos="30.921143,30.394165,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{C10D9230-6DC6-428D-86A0-F21C0AAFD2D5}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1262" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{1B4657D0-5B46-4F4F-9CA4-A1598392D325}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_08" Pos="2043.6851,1212.1837,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="10" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="111" Height="400" Id="{A8FE03D2-D235-4CAB-B0B9-B8E80E68CF9F}" Layer="DC1_Ambient" Name="DC1_shape_11" Pos="877.96997,943.51001,150" Type="Shape" VerticalFadeInOut="0" Width="40">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-9.0153198,321.50092,0"/>
+					<Point Pos="198.92352,328.13251,-2.4408102e-05"/>
+					<Point Pos="253.47888,305.37805,0"/>
+					<Point Pos="265.48584,196.599,0"/>
+					<Point Pos="253.77985,59.665466,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{B28F2372-807B-4628-8D2E-9CE9E0C91D74}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="15" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{4192DED6-C800-458D-A9C2-31A09BD7D695}" Layer="DC1_Ambient" Name="DC1_shape_indoor_06" Pos="1217.0856,1536.3297,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-10.537964,29.808594,0"/>
+					<Point Pos="28.521729,44.309692,0"/>
+					<Point Pos="39.303589,14.440308,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{37DB8D45-EE19-443D-A1AD-993B2F01BEE0}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="2539" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{8F3CDBD7-3911-4A57-B176-FBAFF960C987}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_magic_fx_09" Pos="1307.026,1210.3085,222.95192" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="150" OuterRadius="15" sndSource="Sounds\ambient\ambient_fx_11.ogg"/>
+			</Object>
+			<Object AreaId="14" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{30C372D8-B239-43B0-BEE5-EFCBFD6356C2}" Layer="DC1_Ambient" Name="DC1_shape_indoor_05" Pos="1150.0654,1517.8621,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-9.6647949,29.074829,0"/>
+					<Point Pos="28.276367,42.850098,0"/>
+					<Point Pos="39.299316,14.122314,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{D352554D-A110-4C35-8D8B-58536022B905}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="100" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="207.6" Id="{012604DC-7650-4F12-842A-536739CCCBD3}" Layer="DC1_Ambient" Name="DC1_shape_05" Pos="815.50702,1486.2135,0.1" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="77.557495,90.128418,0"/>
+					<Point Pos="137.40863,26.803101,-2.4415553e-05"/>
+					<Point Pos="144.61536,14.874756,-2.4415553e-05"/>
+					<Point Pos="171.70459,10.502441,-2.4415553e-05"/>
+					<Point Pos="261.91302,116.11853,-2.4415553e-05"/>
+					<Point Pos="314.59686,66.913818,-2.4415553e-05"/>
+					<Point Pos="299.68634,42.560059,-2.4415553e-05"/>
+					<Point Pos="265.26422,32.366577,-2.4415553e-05"/>
+					<Point Pos="177.54077,-44.17395,-2.4415553e-05"/>
+					<Point Pos="121.35864,-36.939697,0"/>
+					<Point Pos="77.938599,-9.40979,-2.4415553e-05"/>
+					<Point Pos="36.189209,-35.254639,-2.4415553e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{2369F084-973A-485D-A35F-FAF064EF2268}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="27" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="45" Id="{E3E164E1-F1C2-47AB-A95A-DDFAD16F4D7A}" Layer="DC1_Ambient" Name="DC1_shape_indoor_18" Pos="794.62378,1275.3644,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-29.802795,29.328613,0"/>
+					<Point Pos="18.328857,76.329712,0"/>
+					<Point Pos="40.602173,54.671021,0"/>
+					<Point Pos="33.353516,47.667969,0"/>
+					<Point Pos="40.450439,40.581665,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{EA048696-2031-455E-B5A7-AE9604BFD3F1}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="1" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="800" Id="{79E5D6E1-F052-46F4-8F75-35E768955BE5}" Layer="DC1_Ambient" Name="DC1_shape_01" Pos="812.73737,1206.8116,0.1" Type="Shape" VerticalFadeInOut="0" Width="40">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="-145.22021,159.0708,9.765476e-05"/>
+					<Point Pos="83.757813,477.52917,0"/>
+					<Point Pos="676.60272,419.16187,0"/>
+					<Point Pos="948.5639,272.78931,9.765476e-05"/>
+					<Point Pos="946.60663,86.845093,9.765476e-05"/>
+					<Point Pos="779.11847,21.579956,9.765476e-05"/>
+					<Point Pos="734.15912,-283.20386,0"/>
+					<Point Pos="602.35919,-278.1098,-2.4415553e-05"/>
+					<Point Pos="605.41754,-128.24597,-2.4415553e-05"/>
+					<Point Pos="507.98431,-128.24597,-2.4415553e-05"/>
+					<Point Pos="500.55658,-263.25452,-2.4415553e-05"/>
+					<Point Pos="339.6889,-266.47998,9.765476e-05"/>
+					<Point Pos="296.41156,-195.11359,9.765476e-05"/>
+					<Point Pos="271.85724,45.283691,9.765476e-05"/>
+				</Points>
+				<Entities>
+					<Entity Id="{78E77B5C-E73E-4251-892E-0F10CEB66C8B}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1263" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{A5B4ADE5-9A71-495D-A336-240C147371A8}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_02" Pos="2071.8044,1467.2271,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound="Sounds\ambient\ambient_mute.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1386" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{73ECFDE8-67C1-4A4D-9C47-65AC9CC375E8}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_04" Pos="793.47711,1201.2609,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="50" sndSound="Sounds\ambient\ambient_water_lake.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1023" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{E2DD98E9-7B5B-4D92-9D24-D85884279049}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_18" Pos="2103.1589,1821.4686,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="40" sndSound="Sounds\ambient\ambient_wind_winter.ogg"/>
+					<Sound2 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="30" sndSound="Sounds\ambient\ambient_wind_winter_sub.ogg"/>
+					<Sound3 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="70" sndSound="Sounds\ambient\ambient_wind_natural.ogg"/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1388" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{304AA6EC-2644-49C5-B3F9-6C0B877DF339}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_13" Pos="2021.5458,1497.2207,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="100" sndSound="Sounds\ambient\ambient_hall_1.ogg"/>
+					<Sound2 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="1389" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{F0F31CF0-A174-49C4-A690-97003972403F}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_Spot-sound_waterfall_15" Pos="1377.964,1442.7062,179.27495" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="3.308712,3.308712,3.308712" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="3" InnerRadius="10" iVolume="120" OuterRadius="70" sndSource="Sounds\ambient\ambient_waterfall_2.ogg"/>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1404" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{3A0D84F3-F4A0-4191-A014-CD83245D7AF3}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_indoor_10" Pos="2071.7517,1416.0062,19.533798" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="19.8528,19.8528,19.8528" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="150" sndSound="Sounds\ambient\ambient_indoor_store_4.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+			<Object AreaId="29" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="28" Id="{4D9227F4-B1DB-419B-98E3-6FB519B6D44E}" Layer="DC1_Ambient" Name="DC1_shape_indoor_01" Pos="1136.6655,1362.8154,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="0.34912109,25.25,0"/>
+					<Point Pos="16.755859,25.482544,0"/>
+					<Point Pos="16.755859,0.11621094,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{28964517-1EC3-4192-B869-ADA10D5A3DCD}"/>
+				</Entities>
+			</Object>
+			<Object AreaId="24" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="110" Height="35" Id="{B0820FFD-518F-4058-9C0B-FFB6FB194AA3}" Layer="DC1_Ambient" Name="DC1_shape_indoor_15" Pos="1326.64,1023.29,200" Type="Shape" VerticalFadeInOut="0" Width="0">
+				<Points>
+					<Point Pos="0,0,0"/>
+					<Point Pos="0.94946289,47.097107,0"/>
+					<Point Pos="34.977173,46.928162,0"/>
+					<Point Pos="35.116211,62.798767,0"/>
+					<Point Pos="48.431152,62.924377,0"/>
+					<Point Pos="48.447754,46.6745,0"/>
+					<Point Pos="82.472168,46.092224,0"/>
+					<Point Pos="82.658325,0.62017822,0"/>
+				</Points>
+				<Entities>
+					<Entity Id="{0823A6C4-8869-4D82-A7BA-892E3DBCD821}"/>
+				</Entities>
+			</Object>
+			<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="1418" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="" HiddenInGame="0" Id="{8674D3FD-341D-41C7-B4BC-4AE7FBE5DACD}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambient" LodRatio="100" Name="DC1_RA_07" Pos="779.99487,1190.1769,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+				<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+				<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+				<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+					<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+						<fReflectionsPan x="0" y="0" z="0"/>
+						<fReverbPan x="0" y="0" z="0"/>
+					</EaxReverbProperties>
+					<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="200" sndSound="Sounds\ambient\ambient_water_under.ogg"/>
+					<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+					<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+				</Properties>
+			</Object>
+		</LayerObjects>
+		<ChildLayers>
+			<Layer Exportable="1" External="0" Frozen="0" GUID="{E2FFEBA7-C150-4057-9316-28CEE27BB306}" Hidden="0" Name="DC1_Ambeint_Event_Deva" ParentGUID="{7A9EA94E-8344-4A50-BD10-8AFEFE71A5A9}">
+				<LayerObjects>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="2622" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_80" HiddenInGame="0" Id="{E300C81B-475C-4D33-8D66-A8A81E5D1B3D}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_Deva" LodRatio="100" Name="DC1_RA_Event_Deva_01" Pos="751.21039,1189.7722,278.51794" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="7.6431999,7.6431999,7.6431999" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+							<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+								<fReflectionsPan x="0" y="0" z="0"/>
+								<fReverbPan x="0" y="0" z="0"/>
+							</EaxReverbProperties>
+							<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="110" sndSound="Sounds\ambient\ambient_crowd_02.ogg"/>
+							<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+						</Properties>
+					</Object>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="2623" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_80" HiddenInGame="0" Id="{4F8F3A89-98D0-4DF1-991D-C6C158108A03}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_Deva" LodRatio="100" Name="DC1_EVENT_deva_day_music" Pos="1275.3444,1335.6213,205.41151" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="1.6008301,1.6008301,1.6008301" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="35" iVolume="240" OuterRadius="90" sndSource="Sounds\object\event_deva_day_mfx.ogg"/>
+					</Object>
+				</LayerObjects>
+			</Layer>
+			<Layer Exportable="1" External="0" Frozen="0" GUID="{689E3FC5-0C65-46E5-AA09-B058554FFD71}" Hidden="0" Name="DC1_Ambeint_Event_SummerVacation" ParentGUID="{7A9EA94E-8344-4A50-BD10-8AFEFE71A5A9}">
+				<LayerObjects>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="819" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_8" HiddenInGame="0" Id="{A5379ED1-8D66-473B-B41E-18C9A6836DD3}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_SummerVacation" LodRatio="100" Name="DC1_EVENT_SummerVacation_water_01" Pos="1275.8988,1320.8604,205.41151" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="1.6008301,1.6008301,1.6008301" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="130" OuterRadius="15" sndSource="Sounds\ambient\spot_waterfall_medium_01.ogg"/>
+					</Object>
+				</LayerObjects>
+			</Layer>
+			<Layer Exportable="1" External="0" Frozen="0" GUID="{A8B18B10-2B84-4CDC-99E0-6C472F1E39F0}" Hidden="0" Name="DC1_Ambeint_Event_WaterPark" ParentGUID="{7A9EA94E-8344-4A50-BD10-8AFEFE71A5A9}">
+				<LayerObjects>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSound" EntityId="2739" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_20" HiddenInGame="0" Id="{997A7066-A0F7-4845-A8F1-4D190383686B}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_WaterPark" LodRatio="100" Name="DC1_Event_WaterPark_RA_01" Pos="1314.7064,1328.3203,284.02966" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="RandomAmbient" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bLIndoorOnly="0" bLOutdoorOnly="0" fScale="1" nEAXEnvironment="0">
+							<EaxReverbProperties fAirAbsorptionHF="0" fDecayHFRatio="0.1" fDecayLFRatio="0.1" fDecayTime="0.1" fDensity="0" fDiffusion="0" fEchoDepth="0" fEchoTime="0.075" fEnvDiffusion="0" fEnvSize="1" fHFReference="1000" fLFReference="20" fModulationDepth="0" fModulationTime="0.04" fReflectionsDelay="0" fReverbDelay="0" fRoomRolloffFactor="0" nEnvironment="0" nFlags="0" nReflections="-10000" nReverb="-10000" nRoom="-10000" nRoomHF="-10000" nRoomLF="-10000">
+								<fReflectionsPan x="0" y="0" z="0"/>
+								<fReverbPan x="0" y="0" z="0"/>
+							</EaxReverbProperties>
+							<Sound1 bCentered="1" bDoNotOverlap="1" iChanceOfOccuring="1000" iVolume="200" sndSound="Sounds\ambient\ambient_water_wave_night.ogg"/>
+							<Sound2 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound3 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound4 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound5 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound6 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+							<Sound7 bCentered="0" bDoNotOverlap="1" iChanceOfOccuring="0" iVolume="0" sndSound=""/>
+						</Properties>
+					</Object>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="48" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_20" HiddenInGame="0" Id="{73175969-26AB-4837-AE54-D94CD13DFCE6}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_WaterPark" LodRatio="100" Name="DC1_Event_WaterPark_water_02" Pos="1271.4465,1334.6816,205.41151" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="1.6008301,1.6008301,1.6008301" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="130" OuterRadius="15" sndSource="Sounds\ambient\spot_waterfall_medium_01.ogg"/>
+					</Object>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="32" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_20" HiddenInGame="0" Id="{6FA5E77F-46A8-4985-A044-32FD7DEDD162}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_WaterPark" LodRatio="100" Name="DC1_Event_WaterPark_water_01" Pos="1280.0309,1334.501,205.41151" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="1.6008301,1.6008301,1.6008301" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="3" iVolume="130" OuterRadius="15" sndSource="Sounds\ambient\ambient_waterfall_3.ogg"/>
+					</Object>
+					<Object AreaId="3" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="118" Height="100" Id="{73BAE2C2-5541-4A47-B884-136A77F8D1B5}" Layer="DC1_Ambeint_Event_WaterPark" Name="DC1_Event_WaterPark_Shape_01" Pos="1225.075,1307.351,185.26759" Type="Shape" VerticalFadeInOut="0" Width="30">
+						<Points>
+							<Point Pos="0,0,0"/>
+							<Point Pos="-0.9510498,74.281006,0"/>
+							<Point Pos="30.092773,100.1239,-3.0517578e-05"/>
+							<Point Pos="68.564819,100.66431,-3.0517578e-05"/>
+							<Point Pos="101.67029,73.130737,0"/>
+							<Point Pos="100.78821,-1.1561279,-3.0517578e-05"/>
+							<Point Pos="69.3479,-23.621338,0"/>
+							<Point Pos="32.081787,-24.405273,-3.0517578e-05"/>
+						</Points>
+						<Entities>
+							<Entity Id="{997A7066-A0F7-4845-A8F1-4D190383686B}"/>
+						</Entities>
+					</Object>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="2603" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_20" HiddenInGame="0" Id="{461CCCDE-BCC0-4CDC-A77D-C8729A583F11}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_WaterPark" LodRatio="100" Name="DC1_Event_WaterPark_music_01" Pos="1275.2001,1331.0554,205.41151" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="1.6008301,1.6008301,1.6008301" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="35" iVolume="180" OuterRadius="75" sndSource="Sounds\object\event_waterpark_mfx.ogg"/>
+					</Object>
+				</LayerObjects>
+			</Layer>
+			<Layer Exportable="1" External="0" Frozen="0" GUID="{F6DC5CAE-32D1-4D0A-B00D-57ED055DC34C}" Hidden="0" Name="DC1_Ambeint_Event_Xmas" ParentGUID="{7A9EA94E-8344-4A50-BD10-8AFEFE71A5A9}">
+				<LayerObjects>
+					<Object AdultsOnly="0" AionFXPartialGlow="0" AionFXPostGlow="0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="2639" EnvSkyBoxObject="" EnvTimeShow="" EnvWeatherHide="" EnvWeatherShow="" EventType="event_1" HiddenInGame="0" Id="{0C327DCD-F83C-46C4-B836-43B91310B54C}" IgnoreFog="0" IgnoreViewDist="0" Layer="DC1_Ambeint_Event_Xmas" LodRatio="100" Name="DC1_EVENT_X-MAS_music" Pos="1275.3781,1342.4553,205.41151" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="5.9166679,5.9166679,5.9166679" SelfShadowing="0" SkipOnLowSpec="0" SyncAnimation="0" Type="SoundSpot" ViewDistRatio="100">
+						<customColors CustomEquipColor1="1,1,1" CustomEquipColor2="1,1,1" CustomHairColor="1,1,1" CustomSkinColor="1,1,1"/>
+						<MRT_Params CastShadowPLSM="0" CastShadowPSSM="1" RecvShadowPLSM="0" RecvShadowPSSM="1"/>
+						<Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="5" iVolume="200" OuterRadius="20" sndSource="Sounds\object\event_snowman_mfx.ogg"/>
+					</Object>
+				</LayerObjects>
+			</Layer>
+		</ChildLayers>
+	</Layer>
+</ObjectLayer>
