@@ -178,17 +178,20 @@ class Form(QWidget):
                 item = QTableWidgetItem(str(dict[i][header[k]]))
                 self.tb_result.setItem(i, k, item)
 
+        self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers) # 에디팅 막음
         # len(dict) == i 는 row, 행의 갯수
         # len(dict[0]) == len(header) == k 는 col, 열의 갯수
+        
 
     def savefile(self):
-        filename = QFileDialog.getSaveFileName(self, self.tr("Save Data files")) # 여기가 문제인듯
+        filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xls(*.xls)") # 여기가 문제인듯
         wbk = xlwt.Workbook()
         sheet = wbk.add_sheet("sheet", cell_overwrite_ok=True)
-        self.add2(sheet)
-        wbk.save(filename)
+        self.add(sheet)
+        wbk.save(filename[0])
 
-    def add2(self, sheet):
+    def add(self, sheet):
+
         for currentColumn in range(self.tb_result.columnCount()):
             for currentRow in range(self.tb_result.rowCount()):
                 try:
@@ -196,6 +199,8 @@ class Form(QWidget):
                     sheet.write(currentRow, currentColumn, teext)
                 except AttributeError:
                     pass
+
+
 app = QApplication([])
 GUI = Form()
 
