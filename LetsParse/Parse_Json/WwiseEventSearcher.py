@@ -5,9 +5,12 @@ from waapi import WaapiClient, CannotConnectToWaapiException
 import os
 from jsonpath_ng import parse
 from collections import defaultdict
+from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
 
-#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # Windows
-parents = os.getcwd()  # MacOS
+
+
+#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
+parents = os.getcwd()  # 개발전용
 os.chdir(parents)  # json 폴더 지정
 
 
@@ -42,18 +45,11 @@ def jsontodict(sound):
     return results
 
 
-
-
-'''
-GUI 코드
-# '''
-from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
-
 class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SearchSound")
-        self.setMinimumSize(875, 500)
+        self.setMinimumSize(875, 400)
 
         self.vb = QVBoxLayout()
         self.setLayout(self.vb)
@@ -79,7 +75,6 @@ class Form(QWidget):
         self.btn_save = QPushButton("Save As Xlsx")
         self.message = QMessageBox()
 
-
         self.hbTop.addWidget(self.ln)
         self.hbTop.addWidget(self.btn_name)
         self.hbTop.addWidget(self.btn_all)
@@ -93,6 +88,9 @@ class Form(QWidget):
         self.btn_all.clicked.connect(self.search_all)
         self.btn_save.clicked.connect(self.savefile)
 
+        self.btn_play.clicked.connect(self.play)
+        self.btn_open.clicked.connect(self.open)
+
 
     def search_all(self):
         self.showresult(jsontodict(''))
@@ -102,22 +100,25 @@ class Form(QWidget):
         self.showresult(jsontodict(self.ln.text()))
         return
 
+    def play(self):
+        self.playsound()
+        return
+
+    def open(self):
+        self.openjson()
+        return
+
     def playsound(self):
         try:
             client = WaapiClient()
-            event = self.tb_result.item(self.tb_result.currentRow(), 3).text()
 
             langargs = {
-                "event": event,
+                "event": self.tb_result.item(self.tb_result.currentRow(), 3).text(),
                 "gameObject": 0
             }
 
-            options = {
-                "return": ['name']
-            }
-
-            result = client.call("ak.soundengine.postEvent", langargs)
             client.call("ak.wwise.ui.bringToForeground")
+            client.call("ak.soundengine.postEvent", langargs)
 
         except CannotConnectToWaapiException:
             self.message0 = QMessageBox()
@@ -126,10 +127,8 @@ class Form(QWidget):
             self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크 해주세요.")
             self.message0.exec()
 
-    def openjson(self):
-        #path = self.tb_result.currentItem().text()
-        path = self.tb_result.item(self.tb_result.currentRow(), 0).text()
-        print(parents + '/' + path)
+    def openjson(self): #아무 응답이 없을 때는 연결프로그램 확인
+        os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
         return
 
 
@@ -154,6 +153,8 @@ class Form(QWidget):
 
         self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers) # 에디팅 막음
         self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection) # 중복선택 불가능 하게
+
+        return
 
     def savefile(self):
         filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xlsx(*.xlsx)")
@@ -211,6 +212,3 @@ GUI = Form()
 
 GUI.show()
 app.exec_()
-
-GUI.btn_play.clicked.connect(GUI.playsound())
-GUI.btn_open.clicked.connect(GUI.openjson())
