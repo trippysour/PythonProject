@@ -64,8 +64,8 @@ class Form(QWidget):
         self.ln = QLineEdit("검색 할 Event 명에 들어간 단어를 입력해 주세요")
         self.btn_name = QPushButton("Search")
         self.btn_all = QPushButton("Search All")
-        self.btn_open = QPushButton("Open Json Path")
-        self.btn_play = QPushButton("Post Event")
+        self.btn_open = QPushButton("Open Selected Json Path")
+        self.btn_play = QPushButton("Post Selected Event")
         self.lb_result = QLabel("결과 :")
         self.tb_result = QTableWidget()
         self.tb_result.setAutoScroll(True)
@@ -161,7 +161,7 @@ class Form(QWidget):
             self.message0 = QMessageBox()
             self.message0.setWindowTitle("Search Sound")
             self.message0.setIcon(QMessageBox.Warning)
-            self.message0.setText("총" + str(len(notfounds)) + "개의 사운드를 찾을 수 없습니다.")
+            self.message0.setText("총 " + str(len(notfounds)) + "개의 사운드를 찾을 수 없습니다.")
             self.message0.exec()
 
 
