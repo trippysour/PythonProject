@@ -1,12 +1,12 @@
+import os
 import json
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 from waapi import WaapiClient, CannotConnectToWaapiException
-import os
 from jsonpath_ng import parse
 from collections import defaultdict
 from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
-
+from PySide2.QtGui import QColor
 
 
 #parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
@@ -48,7 +48,7 @@ class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SearchSound")
-        self.setMinimumSize(875, 400)
+        self.setMinimumSize(875, 600)
 
         self.vb = QVBoxLayout()
         self.setLayout(self.vb)
@@ -65,12 +65,13 @@ class Form(QWidget):
         self.btn_name = QPushButton("Search")
         self.btn_all = QPushButton("Search All")
         self.btn_open = QPushButton("Open Json Path")
-        self.btn_play = QPushButton("Play Sound")
+        self.btn_play = QPushButton("Post Event")
         self.lb_result = QLabel("결과 :")
         self.tb_result = QTableWidget()
         self.tb_result.setAutoScroll(True)
         self.tb_result.showGrid()
 
+        self.btn_check = QPushButton("Check Events in Wwise")
         self.btn_save = QPushButton("Save As Xlsx")
         self.message = QMessageBox()
 
@@ -81,14 +82,16 @@ class Form(QWidget):
         self.hbMid.addWidget(self.tb_result)
         self.hbMidBot.addWidget(self.btn_open)
         self.hbMidBot.addWidget(self.btn_play)
+        self.hbMidBot.addWidget(self.btn_check)
         self.hbBot.addWidget(self.btn_save)
 
+        self.ln.returnPressed.connect(self.search)
         self.btn_name.clicked.connect(self.search)
         self.btn_all.clicked.connect(self.search_all)
         self.btn_save.clicked.connect(self.savefile)
-
         self.btn_play.clicked.connect(self.play)
         self.btn_open.clicked.connect(self.open)
+        self.btn_check.clicked.connect(self.check)
 
 
     def search_all(self):
@@ -100,33 +103,66 @@ class Form(QWidget):
         return
 
     def play(self):
-        self.playsound()
+        self.postevent()
         return
 
     def open(self):
         self.openjson()
         return
 
-    def playsound(self):
+    def check(self):
+        self.checkevents()
 
+
+    def checkevents(self):
         try:
             client = WaapiClient()
 
-            try:
-                event = {
-                    "event": self.tb_result.item(self.tb_result.currentRow(), 3).text(),
-                    "gameObject": 0
+            notfounds = []
+
+            for i in range(self.tb_result.rowCount()):
+                self.tb_result.item(i, 3).setBackgroundColor(QColor(255, 255, 255))
+                event = self.tb_result.item(i, 3).text()
+
+                arg = {
+                    "from": {
+                        "search": [
+                            event
+                        ],
+                    },
+                    "transform": [
+                        {
+                            "where": [
+                                "type:isIn",
+                                [
+                                    "Event"
+                                ]
+                            ],
+                            "where": [
+                                "name:matches", event
+                            ]
+                        }
+                    ]
+                }
+                options = {
+                "return": ['name']
                 }
 
-                client.call("ak.wwise.ui.bringToForeground")
-                client.call("ak.soundengine.postEvent", event)
+                if not client.call("ak.wwise.core.object.get", arg, options=options)['return']:
+                    notfounds.append(event)
+                    self.tb_result.item(i, 3).setBackgroundColor(QColor(255,0,0))
+                    self.tb_result.repaint()
 
-            except AttributeError:
-                self.message0 = QMessageBox()
-                self.message0.setWindowTitle("Search Sound")
-                self.message0.setIcon(QMessageBox.Warning)
-                self.message0.setText("재생할 사운드를 선택해 주세요.")
-                self.message0.exec()
+                elif event != client.call("ak.wwise.core.object.get", arg, options=options)['return'][0]['name']:
+                    notfounds.append(event)
+                    self.tb_result.item(i, 3).setBackgroundColor(QColor(255, 0, 0))
+                    self.tb_result.repaint()
+
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("Search Sound")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("총" + str(len(notfounds)) + "개의 사운드를 찾을 수 없습니다.")
+            self.message0.exec()
 
 
         except CannotConnectToWaapiException:
@@ -135,18 +171,6 @@ class Form(QWidget):
             self.message0.setIcon(QMessageBox.Warning)
             self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크해 주세요.")
             self.message0.exec()
-
-
-    def openjson(self): #아무 응답이 없을 때는 연결프로그램 확인
-        try:
-            os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
-        except AttributeError:
-            self.message0 = QMessageBox()
-            self.message0.setWindowTitle("Search Sound")
-            self.message0.setIcon(QMessageBox.Warning)
-            self.message0.setText("실행할 Json을 선택해 주세요.")
-            self.message0.exec()
-        return
 
 
     def showresult(self, dict):
@@ -171,6 +195,92 @@ class Form(QWidget):
         self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers) # 에디팅 막음
         self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection) # 중복선택 불가능 하게
 
+        return
+
+
+    def postevent(self):
+
+        try:
+            client = WaapiClient()
+
+            try:
+                event = self.tb_result.item(self.tb_result.currentRow(), 3).text()
+
+                arg = {
+                    "from": {
+                        "search": [
+                            event
+                        ],
+                    },
+                    "transform": [
+                        {
+                            "where": [
+                                "type:isIn",
+                                [
+                                    "Event"
+                                ]
+                            ],
+                            "where": [
+                                "name:matches", event
+                            ]
+                        }
+                    ]
+                }
+                result = client.call("ak.wwise.core.object.get", arg)
+
+                try:
+                    if result['return'][0]['name'] == event:
+                        arg = {
+                            "event": result['return'][0]['id'],
+                            "gameObject": 18446744073709551614  # Transport ID
+                        }
+
+                        client.call("ak.wwise.ui.bringToForeground")
+                        client.call("ak.soundengine.postEvent", arg)
+
+                    else:
+                        self.message0 = QMessageBox()
+                        self.message0.setWindowTitle("Search Sound")
+                        self.message0.setIcon(QMessageBox.Warning)
+                        self.message0.setText("사운드를 찾을 수 없습니다.")
+                        self.message0.exec()
+
+
+                except IndexError:
+                    self.message0 = QMessageBox()
+                    self.message0.setWindowTitle("Search Sound")
+                    self.message0.setIcon(QMessageBox.Warning)
+                    self.message0.setText("사운드를 찾을 수 없습니다.")
+                    self.message0.exec()
+
+
+            except AttributeError:
+                self.message0 = QMessageBox()
+                self.message0.setWindowTitle("Search Sound")
+                self.message0.setIcon(QMessageBox.Warning)
+                self.message0.setText("재생할 사운드를 선택해 주세요.")
+                self.message0.exec()
+
+
+        except CannotConnectToWaapiException:
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("Search Sound")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크해 주세요.")
+            self.message0.exec()
+
+
+    def openjson(self): #아무 응답이 없을 때는 연결프로그램 확인
+
+        try:
+            os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
+
+        except AttributeError:
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("Search Sound")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("실행할 Json을 선택해 주세요.")
+            self.message0.exec()
         return
 
     def savefile(self):
