@@ -9,8 +9,8 @@ from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QT
 from PySide2.QtGui import QColor
 
 
-parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
-#parents = os.getcwd()  # 개발전용
+#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
+parents = os.getcwd()  # 개발전용
 os.chdir(parents)  # json 폴더 지정
 
 header = ['file', 'ContentsKey', 'animName', 'soundName', 'targetObjName', 'sequenceTime', 'playOneShot', 'dontDestroy']
