@@ -13,7 +13,6 @@ from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QT
 parents = os.getcwd()  # 개발전용
 os.chdir(parents)  # json 폴더 지정
 
-
 header = ['file', 'ContentsKey', 'animName', 'soundName', 'targetObjName', 'sequenceTime', 'playOneShot', 'dontDestroy']
 
 def jsontodict(sound):
@@ -109,26 +108,44 @@ class Form(QWidget):
         return
 
     def playsound(self):
+
         try:
             client = WaapiClient()
 
-            langargs = {
-                "event": self.tb_result.item(self.tb_result.currentRow(), 3).text(),
-                "gameObject": 0
-            }
+            try:
+                event = {
+                    "event": self.tb_result.item(self.tb_result.currentRow(), 3).text(),
+                    "gameObject": 0
+                }
 
-            client.call("ak.wwise.ui.bringToForeground")
-            client.call("ak.soundengine.postEvent", langargs)
+                client.call("ak.wwise.ui.bringToForeground")
+                client.call("ak.soundengine.postEvent", event)
+
+            except AttributeError:
+                self.message0 = QMessageBox()
+                self.message0.setWindowTitle("Search Sound")
+                self.message0.setIcon(QMessageBox.Warning)
+                self.message0.setText("재생할 사운드를 선택해 주세요.")
+                self.message0.exec()
+
 
         except CannotConnectToWaapiException:
             self.message0 = QMessageBox()
             self.message0.setWindowTitle("Search Sound")
             self.message0.setIcon(QMessageBox.Warning)
-            self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크 해주세요.")
+            self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크해 주세요.")
             self.message0.exec()
 
+
     def openjson(self): #아무 응답이 없을 때는 연결프로그램 확인
-        os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
+        try:
+            os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
+        except AttributeError:
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("Search Sound")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("실행할 Json을 선택해 주세요.")
+            self.message0.exec()
         return
 
 
