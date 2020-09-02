@@ -64,7 +64,7 @@ class Form(QWidget):
         self.ln = QLineEdit("검색 할 Event 명에 들어간 단어를 입력해 주세요")
         self.btn_name = QPushButton("Search")
         self.btn_all = QPushButton("Search All")
-        self.btn_open = QPushButton("Open Selected Json Path")
+        self.btn_open = QPushButton("Open Selected Json")
         self.btn_play = QPushButton("Post Selected Event")
         self.lb_result = QLabel("결과 :")
         self.tb_result = QTableWidget()
