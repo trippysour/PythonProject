@@ -8,9 +8,8 @@ from collections import defaultdict
 from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
 from PySide2.QtGui import QColor
 
-
-#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
-parents = os.getcwd()  # 개발전용
+parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
+#parents = os.getcwd()  # 개발전용
 os.chdir(parents)  # json 폴더 지정
 
 header = ['file', 'ContentsKey', 'animName', 'soundName', 'targetObjName', 'sequenceTime', 'playOneShot', 'dontDestroy']
@@ -66,6 +65,7 @@ class Form(QWidget):
         self.btn_all = QPushButton("Search All")
         self.btn_open = QPushButton("Open Selected Json")
         self.btn_play = QPushButton("Post Selected Event")
+        self.btn_stop = QPushButton("Stop All")
         self.lb_result = QLabel("결과 :")
         self.tb_result = QTableWidget()
         self.tb_result.setAutoScroll(True)
@@ -82,6 +82,7 @@ class Form(QWidget):
         self.hbMid.addWidget(self.tb_result)
         self.hbMidBot.addWidget(self.btn_open)
         self.hbMidBot.addWidget(self.btn_play)
+        self.hbMidBot.addWidget(self.btn_stop)
         self.hbMidBot.addWidget(self.btn_check)
         self.hbBot.addWidget(self.btn_save)
 
@@ -90,9 +91,9 @@ class Form(QWidget):
         self.btn_all.clicked.connect(self.search_all)
         self.btn_save.clicked.connect(self.savefile)
         self.btn_play.clicked.connect(self.play)
+        self.btn_play.clicked.connect(self.stop)
         self.btn_open.clicked.connect(self.open)
         self.btn_check.clicked.connect(self.check)
-
 
     def search_all(self):
         self.showresult(jsontodict(''))
@@ -112,6 +113,9 @@ class Form(QWidget):
 
     def check(self):
         self.checkevents()
+
+    def stop(self):
+        self.stopall()
 
 
     def checkevents(self):
@@ -145,7 +149,7 @@ class Form(QWidget):
                     ]
                 }
                 options = {
-                "return": ['name']
+                    "return": ['name']
                 }
 
                 if not client.call("ak.wwise.core.object.get", arg, options=options)['return']:
@@ -231,7 +235,7 @@ class Form(QWidget):
                 try:
                     if result['return'][0]['name'] == event:
                         arg = {
-                            "event": result['return'][0]['id'],
+                            "event": result['return'][0]['name'],
                             "gameObject": 18446744073709551614  # Transport ID
                         }
 
@@ -261,6 +265,23 @@ class Form(QWidget):
                 self.message0.setText("재생할 Event를 선택해 주세요.")
                 self.message0.exec()
 
+
+        except CannotConnectToWaapiException:
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("SoundSearch_Spoonz")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크해 주세요.")
+            self.message0.exec()
+
+    def stopall(self):
+        try:
+            client = WaapiClient()
+
+            arg = {
+                "gameObject": 18446744073709551614  # Transport ID
+            }
+
+            client.call("ak.soundengine.stopAll", arg)
 
         except CannotConnectToWaapiException:
             self.message0 = QMessageBox()
