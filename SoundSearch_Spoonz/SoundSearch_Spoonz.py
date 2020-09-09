@@ -8,9 +8,10 @@ from collections import defaultdict
 from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
 from PySide2.QtGui import QColor
 
-parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
-#parents = os.getcwd()  # 개발전용
-os.chdir(parents)  # json 폴더 지정
+parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound'
+current = os.getcwd()
+os.chdir(os.path.join(current, parents))  # json 폴더 지정
+
 
 header = ['file', 'ContentsKey', 'animName', 'soundName', 'targetObjName', 'sequenceTime', 'playOneShot', 'dontDestroy']
 
