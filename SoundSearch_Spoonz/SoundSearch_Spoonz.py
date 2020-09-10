@@ -73,7 +73,7 @@ class Form(QWidget):
         self.tb_result.showGrid()
 
         self.btn_check = QPushButton("Check Events in Wwise")
-        self.btn_save = QPushButton("Save And Open xlsx")
+        self.btn_save = QPushButton("Save result as xlsx")
         self.message = QMessageBox()
 
         self.hbTop.addWidget(self.lb_search)
