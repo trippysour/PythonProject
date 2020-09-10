@@ -36,7 +36,7 @@ def jsontodict(sound):
                                 results[i].update(match.context.value)
                                 i += 1
                             elif sound.lower() in match.value.lower():  # 특정 단어 포함하는지, 대소문자 구분 없이 하기 위해 둘다 소문자 처리해서 비교
-                                results[i][header[0]] = file
+                                results[i][header[0]] = fpath
                                 results[i][header[1]] = key.context.value[header[1]]
                                 results[i].update(match.context.value)
                                 i += 1
@@ -64,7 +64,6 @@ class Form(QWidget):
         self.lb_search = QLabel("검색 :")
         self.ln = QLineEdit('')
         self.btn_name = QPushButton("Search")
-        self.btn_all = QPushButton("Search All")
         self.btn_open = QPushButton("Open Selected Json")
         self.btn_play = QPushButton("Post Selected Event")
         self.btn_stop = QPushButton("Stop All")
@@ -80,7 +79,6 @@ class Form(QWidget):
         self.hbTop.addWidget(self.lb_search)
         self.hbTop.addWidget(self.ln)
         self.hbTop.addWidget(self.btn_name)
-        self.hbTop.addWidget(self.btn_all)
         self.hbMid.addWidget(self.lb_result)
         self.hbMid.addWidget(self.tb_result)
         self.hbMidBot.addWidget(self.btn_open)
@@ -91,15 +89,12 @@ class Form(QWidget):
 
         self.ln.returnPressed.connect(self.search)
         self.btn_name.clicked.connect(self.search)
-        self.btn_all.clicked.connect(self.search_all)
         self.btn_save.clicked.connect(self.savefile)
         self.btn_play.clicked.connect(self.play)
         self.btn_play.clicked.connect(self.stop)
         self.btn_open.clicked.connect(self.open)
         self.btn_check.clicked.connect(self.check)
 
-    def search_all(self):
-        self.showresult(jsontodict(''))
         return
 
     def search(self):
