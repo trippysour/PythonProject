@@ -3,7 +3,7 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-from PySide2.QtWidgets import QWidget, QGroupBox, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
+from PySide2.QtWidgets import QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
 from PySide2.QtGui import QColor
 
 
@@ -141,7 +141,6 @@ def sound_in_lyr(sound):
                         else:
                             for v in object.iter():
                                 if v.tag.startswith('Sound') and sound.lower() in v.attrib['sndSound'].lower():
-                                    print('sound')
                                     for k in range(1, 3):
                                         results_RA[i][header_RA[k]] = object.get(header_RA[k])
                                         results_RA[i].update(v.attrib)
@@ -156,37 +155,57 @@ def sound_in_lyr(sound):
                         else:
                             pass
 
-    return
+    return results_RA, results_Shape, results_SoundSpot
 
-#sound_in_lyr('')
 class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SoundSearch_AION")
-        self.setMinimumSize(875, 600)
+        self.setMinimumSize(900, 600)
 
 
         self.vb = QVBoxLayout()
         self.setLayout(self.vb)
 
         self.hbTop = QHBoxLayout()
-        self.hbTopL = QVBoxLayout()
-        self.hbTopR = QVBoxLayout()
         self.hbMid = QVBoxLayout()
         self.hbMidBot = QHBoxLayout()
         self.hbBot = QHBoxLayout()
 
+
+        '''
+        '''
+
+        self.gb_data = QGroupBox('Data Type')
+
+        self.CB_Anim = QCheckBox("AnimationMarkers")
+        self.CB_Particle = QCheckBox("Particles")
+        self.CB_Layers = QCheckBox("Layers")
+
+        self.CB_Anim.setChecked(True)
+        self.CB_Particle.setChecked(True)
+        self.CB_Layers.setChecked(True)
+
+        self.ln = QLineEdit("")
+        self.btn_name = QPushButton("Search")
+
+
+        self.vbox = QHBoxLayout()
+        self.vbox.addWidget(self.CB_Anim)
+        self.vbox.addWidget(self.CB_Particle)
+        self.vbox.addWidget(self.CB_Layers)
+        self.vbox.addWidget(self.ln)
+        self.vbox.addWidget(self.btn_name)
+        self.gb_data.setLayout(self.vbox)
+        self.hbTop.addWidget(self.gb_data)
+
         self.vb.addLayout(self.hbTop)
-        self.hbTop.addLayout(self.hbTopL)
-        self.hbTop.addLayout(self.hbTopR)
         self.vb.addLayout(self.hbMid)
         self.vb.addLayout(self.hbMidBot)
         self.vb.addLayout(self.hbBot)
 
 
-        self.ln = QLineEdit("검색 할 사운드를 입력해 주세요.")
-        self.btn_name = QPushButton("Search")
-        self.btn_all = QPushButton("Search All")
+
         self.btn_open = QPushButton("Open Selected Data File")
         self.btn_play = QPushButton("Open Selected Sound")
         self.lb_result = QLabel("결과 :")
@@ -197,46 +216,18 @@ class Form(QWidget):
         self.btn_save = QPushButton("Save And Open xlsx")
         self.message = QMessageBox()
 
-        self.hbTopR.addWidget(self.ln)
-        self.hbTopR.addWidget(self.btn_name)
-        self.hbTopR.addWidget(self.btn_all)
         self.hbMid.addWidget(self.lb_result)
         self.hbMid.addWidget(self.tb_result)
         self.hbMidBot.addWidget(self.btn_open)
         self.hbMidBot.addWidget(self.btn_play)
         self.hbBot.addWidget(self.btn_save)
 
-        self.ln.returnPressed.connect(self.search)
-        self.btn_name.clicked.connect(self.search)
-        self.btn_all.clicked.connect(self.search_all)
+        # self.ln.returnPressed.connect(self.search)
+        # self.btn_name.clicked.connect(self.search)
         self.btn_save.clicked.connect(self.savefile)
         self.btn_play.clicked.connect(self.play)
         self.btn_open.clicked.connect(self.open)
 
-    def createDescription(self):
-        Box_Data = QGroupBox("Wave 파일 분류기")
-
-        CB_All = QCheckBox("Data Type")
-        CB_Anim = QCheckBox("AnimationMarkers")
-        CB_Particle = QCheckBox("Particles")
-        CB_Layers = QCheckBox("Layers")
-
-        BoxLayout_TL = QVBoxLayout()
-
-        desc = QLabel()
-        desc.setText('User Input에 폴더 경로를 입력하시고 Apply 버튼을 클릭하시면 Wave 파일을 자동으로 분류합니다.')
-        BoxLayout_TL.addWidget(desc)
-        BoxLayout_TL.addWidget(CB_All)
-        BoxLayout_TL.addWidget(CB_Anim)
-        BoxLayout_TL.addWidget(CB_Particle)
-        BoxLayout_TL.addWidget(CB_Layers)
-        Box_Data.setLayout(BoxLayout_TL)
-
-
-
-    def search_all(self):
-        self.showresult(jsontodict(''))
-        return
 
     def search(self):
         self.showresult(jsontodict(self.ln.text()))
