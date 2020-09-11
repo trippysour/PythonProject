@@ -155,7 +155,7 @@ def sound_in_lyr(sound):
                         else:
                             pass
 
-    return [results_RA, header_RA], [results_Shape, header_Shape], [results_SoundSpot, header_SoundSpot]
+    return [results_SoundSpot, header_SoundSpot], [results_RA, header_RA], [results_Shape, header_Shape],
 
 #print(sound_in_lyr('')[2])
 
@@ -213,16 +213,10 @@ class Form(QWidget):
 
         self.btn_open = QPushButton("Open Selected Data File")
         self.btn_play = QPushButton("Open Selected Sound")
-        # self.lb_result = QLabel("결과 :")
-        # self.tb_result = QTableWidget()
-        # self.tb_result.setAutoScroll(True)
-        # self.tb_result.showGrid()
-        #
+
         self.btn_save = QPushButton("Save And Open xlsx")
         self.message = QMessageBox()
-        #
-        # self.hbMid.addWidget(self.lb_result)
-        # self.hbMid.addWidget(self.tb_result)
+
         self.hbMidBot.addWidget(self.btn_open)
         self.hbMidBot.addWidget(self.btn_play)
         self.hbBot.addWidget(self.btn_save)
@@ -385,59 +379,6 @@ class Tabs(QWidget):
             self.tab3 = QWidget()
             self.tabs.addTab(self.tab3, 'Shape')
 
-            self.tab1.layout = QVBoxLayout(self)
-            self.tab1.setLayout(self.tab1.layout)
-
-            self.tb_result_Spot = QTableWidget()
-            self.tb_result_Spot.setAutoScroll(True)
-            self.tb_result_Spot.showGrid()
-            self.tb_result_Spot.clear()  # 채우기 전에 초기화
-
-            self.tb_result_Spot.setRowCount(len(dicts[0][0]))
-            self.tb_result_Spot.setMinimumHeight(200)
-            self.repaint()  # 이걸 해줘야 레이블이 업데이트 됨
-
-            self.tb_result_Spot.setColumnCount(len(dicts[0][1]))
-            self.tb_result_Spot.setHorizontalHeaderLabels(dicts[0][1])
-
-            for i in dicts[0][0]:
-                for k in range(len(dicts[0][1])):
-                    item = QTableWidgetItem(str(dicts[0][0][i][dicts[0][1][k]]))
-                    self.tb_result_Spot.setItem(i, k, item)
-
-            self.tb_result_Spot.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
-            self.tb_result_Spot.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
-            self.tab1.layout.addWidget(self.tb_result_Spot)
-
-            self.tab2.layout = QVBoxLayout(self)
-            self.tab2.setLayout(self.tab2.layout)
-
-            self.tb_result_RA = QTableWidget()
-            self.tb_result_RA.setAutoScroll(True)
-            self.tb_result_RA.showGrid()
-            self.tb_result_RA.clear()  # 채우기 전에 초기화
-
-            self.tb_result_RA.setRowCount(len(dicts[1][0]))
-            self.tb_result_RA.setMinimumHeight(200)
-            self.repaint()  # 이걸 해줘야 레이블이 업데이트 됨
-
-            self.tb_result_RA.setColumnCount(len(dicts[1][1]))
-            self.tb_result_RA.setHorizontalHeaderLabels(dicts[1][1])
-
-            for i in dicts[1][0]:
-                for k in range(len(dicts[1][1])):
-                    item = QTableWidgetItem(str(dicts[1][0][i][dicts[1][1][k]]))
-                    self.tb_result_RA.setItem(i, k, item)
-
-            self.tb_result_RA.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
-            self.tb_result_RA.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
-            self.tab2.layout.addWidget(self.tb_result_RA)
-            #
-            # self.tab3.layout = QVBoxLayout(self)
-            # self.tab3.setLayout(self.tab3.layout)
-            # self.tb_result3 = QTableWidget
-            # self.tab3.layout.addWidget(self.tb_result3)
-
 
         else:
             self.tab1 = QWidget()
@@ -469,7 +410,6 @@ class Tabs(QWidget):
             self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
             self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
             self.tab1.layout.addWidget(self.tb_result)
-            #print(type(Result(self, dict=dicts[0], header=dicts[1])))
 
 # class Result(QWidget):
 #     def __init__(self, parent, dict, header):
