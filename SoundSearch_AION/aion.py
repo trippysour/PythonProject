@@ -94,7 +94,7 @@ def sound_in_particles(name):
 
 def sound_in_lyr(sound):
 
-    header_SoundSpot = ['lyr', 'Layer', 'Name', 'Pos', 'EventType', 'bLoop', 'bOnce', 'bPlay', 'sndSource', 'InnerRadius', 'OuterRadius', 'Volume']
+    header_SoundSpot = ['lyr', 'Layer', 'Name', 'Pos', 'EventType', 'bLoop', 'bOnce', 'bPlay', 'sndSource', 'InnerRadius', 'OuterRadius', 'iVolume']
     header_RA = ['lyr', 'Layer', 'Name', 'EventType', 'sndSound', 'bCentered', 'iVolume', 'iChanceOfOccuring', 'bDoNotOverlap']
     header_Shape = ['lyr', 'Layer', 'Name']
 
@@ -116,7 +116,7 @@ def sound_in_lyr(sound):
                             results_SoundSpot[i][header_SoundSpot[0]] = file
                             for k in range(1, 4):
                                 results_SoundSpot[i][header_SoundSpot[k]] = object.get(header_SoundSpot[k])
-                            for k in range(5, 11):
+                            for k in range(5, 12):
                                 results_SoundSpot[i][header_SoundSpot[k]] = object.find('Properties').get(
                                     header_SoundSpot[k])
                             i += 1
@@ -124,7 +124,7 @@ def sound_in_lyr(sound):
                             results_SoundSpot[i][header_SoundSpot[0]] = file
                             for k in range(1, 4):
                                 results_SoundSpot[i][header_SoundSpot[k]] = object.get(header_SoundSpot[k])
-                            for k in range(5, 11):
+                            for k in range(5, 12):
                                 results_SoundSpot[i][header_SoundSpot[k]] = object.find('Properties').get(
                                     header_SoundSpot[k])
                             i += 1
@@ -156,6 +156,8 @@ def sound_in_lyr(sound):
                             pass
 
     return results_RA, results_Shape, results_SoundSpot
+
+print(sound_in_lyr('cricket'))
 
 class Form(QWidget):
     def __init__(self):
