@@ -57,8 +57,6 @@ def sound_in_anim(name):
                                         i += 1
     return results, header
 
-#print(sound_in_anim('ufo_fly_01'))
-
 
 def sound_in_particles(name):
     header = ['file', 'particle_name', 'Sound', 'SoundMinRange', 'SoundMaxRange', 'SoundVolume', 'SoundLoop']
@@ -89,8 +87,6 @@ def sound_in_particles(name):
                                 i += 1
     return results, header
 
-#print(sound_in_particles(''))
-
 
 def sound_in_lyr(sound):
 
@@ -102,6 +98,8 @@ def sound_in_lyr(sound):
     results_RA = defaultdict(dict)
     results_Shape = defaultdict(dict)
     i = 0
+    s = 0
+    r = 0
 
     for root, fir, files in os.walk('./'):
         for file in files:
@@ -113,49 +111,50 @@ def sound_in_lyr(sound):
 
                     if object.get('Type') == 'SoundSpot':
                         if sound == '':
-                            results_SoundSpot[i][header_SoundSpot[0]] = file
+                            results_SoundSpot[s][header_SoundSpot[0]] = file
                             for k in range(1, 5):
-                                results_SoundSpot[i][header_SoundSpot[k]] = object.get(header_SoundSpot[k])
+                                results_SoundSpot[s][header_SoundSpot[k]] = object.get(header_SoundSpot[k])
                             for k in range(5, 12):
-                                results_SoundSpot[i][header_SoundSpot[k]] = object.find('Properties').get(
+                                results_SoundSpot[s][header_SoundSpot[k]] = object.find('Properties').get(
                                     header_SoundSpot[k])
-                            i += 1
+                            s += 1
                         elif sound.lower() in object.find('Properties').get('sndSource').lower():
-                            results_SoundSpot[i][header_SoundSpot[0]] = file
+                            results_SoundSpot[s][header_SoundSpot[0]] = file
                             for k in range(1, 5):
-                                results_SoundSpot[i][header_SoundSpot[k]] = object.get(header_SoundSpot[k])
+                                results_SoundSpot[s][header_SoundSpot[k]] = object.get(header_SoundSpot[k])
                             for k in range(5, 12):
-                                results_SoundSpot[i][header_SoundSpot[k]] = object.find('Properties').get(
+                                results_SoundSpot[s][header_SoundSpot[k]] = object.find('Properties').get(
                                     header_SoundSpot[k])
-                            i += 1
+                            s += 1
 
                     elif object.get('Type') == 'RandomAmbient':
                         if sound == '':
                             for v in object.iter():
                                 if v.tag.startswith('Sound') and v.attrib['sndSound'] != '':
-                                    results_RA[i][header_RA[0]] = file
+                                    results_RA[r][header_RA[0]] = file
                                     for k in range(1, 4):
-                                        results_RA[i][header_RA[k]] = object.get(header_RA[k])
-                                        results_RA[i].update(v.attrib)
-                                    i += 1
+                                        results_RA[r][header_RA[k]] = object.get(header_RA[k])
+                                        results_RA[r].update(v.attrib)
+                                    r += 1
                         else:
                             for v in object.iter():
                                 if v.tag.startswith('Sound') and sound.lower() in v.attrib['sndSound'].lower():
+                                    results_RA[r][header_RA[0]] = file
                                     for k in range(1, 4):
-                                        results_RA[i][header_RA[k]] = object.get(header_RA[k])
-                                        results_RA[i].update(v.attrib)
-                                    i += 1
+                                        results_RA[r][header_RA[k]] = object.get(header_RA[k])
+                                        results_RA[r].update(v.attrib)
+                                    r += 1
 
-                    elif object.get('Type') == 'Shape':
-                        if sound == '':
-                            results_Shape[i][header_Shape[0]] = file
-                            for k in range(1, 3):
-                                results_Shape[i][header_Shape[k]] = object.get(header_Shape[k])
-                            i += 1
-                        else:
-                            pass
+                    # elif object.get('Type') == 'Shape':
+                    #     if sound == '':
+                    #         results_Shape[i][header_Shape[0]] = file
+                    #         for k in range(1, 3):
+                    #             results_Shape[i][header_Shape[k]] = object.get(header_Shape[k])
+                    #         i += 1
+                    #     else:
+                    #         pass
 
-    return [results_SoundSpot, header_SoundSpot], [results_RA, header_RA], [results_Shape, header_Shape],
+    return [results_SoundSpot, header_SoundSpot], [results_RA, header_RA], [results_Shape, header_Shape]
 
 #print(sound_in_lyr('')[2])
 
@@ -163,7 +162,7 @@ class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SoundSearch_AION")
-        self.setMinimumSize(1000, 0)
+        self.setMinimumSize(1000, 800)
         '''
         Layout_Base
         '''
@@ -179,17 +178,13 @@ class Form(QWidget):
         '''
         Groubbox
         '''
-
         self.gb_data = QGroupBox('Data Type')
-
         self.CB_Anim = QCheckBox("AnimationMarkers")
         self.CB_Particle = QCheckBox("Particles")
         self.CB_Layers = QCheckBox("Layers")
-
         self.CB_Anim.setChecked(True)
         self.CB_Particle.setChecked(True)
         self.CB_Layers.setChecked(True)
-
         self.ln = QLineEdit("")
         self.btn_name = QPushButton("Search")
 
@@ -227,27 +222,68 @@ class Form(QWidget):
         self.btn_play.clicked.connect(self.play)
         self.btn_open.clicked.connect(self.open)
 
+        '''
+        result
+        '''
+        self.tabs = QTabWidget()
+        self.hbMid.addWidget(self.tabs)
+        self.tab1 = QWidget()
+        self.tabs.addTab(self.tab1, 'Result')
+
+
+
+    def addTab(self, name, dicts):
+        self.tab1 = QWidget()
+        self.tabs.addTab(self.tab1, name)
+
+        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.setLayout(self.tab1.layout)
+
+        dict = dicts[0]
+        header = dicts[1]
+
+        self.tb_result = QTableWidget()
+        self.tb_result.setAutoScroll(True)
+        self.tb_result.showGrid()
+        self.tb_result.clear()  # 채우기 전에 초기화
+
+        self.tb_result.setRowCount(len(dict))
+        self.tb_result.setMinimumHeight(200)
+        self.repaint()  # 이걸 해줘야 레이블이 업데이트 됨
+
+        self.tb_result.setColumnCount(len(header))
+        self.tb_result.setHorizontalHeaderLabels(header)
+
+        for i in dict:
+            for k in range(len(header)):
+                item = QTableWidgetItem(str(dict[i][header[k]]))
+                self.tb_result.setItem(i, k, item)
+
+        # len(dict) == i 는 row, 행의 갯수
+        # len(dict[0]) == len(header) == k 는 col, 열의 갯수
+
+        self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
+        for i in range(len(header)):
+            self.tb_result.setColumnWidth(i, 905 // len(header))
+        self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
+        self.tab1.layout.addWidget(self.tb_result)
 
 
     def search(self):
-        #self.showresult(jsontodict(self.ln.text()))
 
-        while self.hbMid.count(): # 오브젝트 생성 전에 레이아웃(지우기)
-            child = self.hbMid.takeAt(0)
-            if child.widget():
-                child.widget().deleteLater()
+        self.tabs.clear()
 
-        if self.CB_Anim.isChecked():
-            self.tabs = Tabs(self, name='AnimationMarkers', dicts=sound_in_anim(self.ln.text()))
-            self.hbMid.addWidget(self.tabs)
+        if self.CB_Anim.isChecked() and len(sound_in_anim(self.ln.text())[0]) != 0:
+            self.addTab('AnimationMarkers', sound_in_anim(self.ln.text()))
 
-        if self.CB_Particle.isChecked():
-            self.tabs2 = Tabs(self, name='Particles', dicts=sound_in_particles(self.ln.text()))
-            self.hbMid.addWidget(self.tabs2)
+        if self.CB_Particle.isChecked() and len(sound_in_particles(self.ln.text())[0]) != 0:
+            self.addTab('Particles', sound_in_particles(self.ln.text()))
 
         if self.CB_Layers.isChecked():
-            self.tabs3 = Tabs(self, name='Layers', dicts=sound_in_lyr(self.ln.text()))
-            self.hbMid.addWidget(self.tabs3)
+            if len(sound_in_lyr(self.ln.text())[0][0]) != 0:
+                self.addTab('Layer_Spot', sound_in_lyr(self.ln.text())[0])
+            if len(sound_in_lyr(self.ln.text())[1][0]) != 0:
+                self.addTab('Layer_RA', sound_in_lyr(self.ln.text())[1])
 
         return
 
@@ -260,45 +296,25 @@ class Form(QWidget):
         return
 
 
-    # def showresult(self, dict, header):
-    #
-    #     self.tb_result.clear() # 채우기 전에 초기화
-    #
-    #     self.tb_result.setRowCount(len(dict))
-    #     self.lb_result.setText("결과 : 총 " + str(len(dict)) + " 개의 Event를 찾았습니다.")
-    #     self.repaint() # 이걸 해줘야 레이블이 업데이트 됨
-    #
-    #     self.tb_result.setColumnCount(len(header))
-    #     self.tb_result.setHorizontalHeaderLabels(header)
-    #
-    #     for i in dict:
-    #         for k in range(len(header)):
-    #             item = QTableWidgetItem(str(dict[i][header[k]]))
-    #             self.tb_result.setItem(i, k, item)
-    #
-    #     # len(dict) == i 는 row, 행의 갯수
-    #     # len(dict[0]) == len(header) == k 는 col, 열의 갯수
-    #
-    #     self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers) # 에디팅 막음
-    #     self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection) # 중복선택 불가능 하게
-    #
-    #     return
 
 
     def openjson(self): #아무 응답이 없을 때는 연결프로그램 확인
+
+        print(self.tabs.children())
+
 
         try:
             os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
 
         except AttributeError:
             self.message0 = QMessageBox()
-            self.message0.setWindowTitle("SoundSearch_Spoonz")
+            self.message0.setWindowTitle("SoundSearch_AION")
             self.message0.setIcon(QMessageBox.Warning)
             self.message0.setText("실행할 Json을 선택해 주세요.")
             self.message0.exec()
         return
 
-    def savefile(self):
+    def savefile(self, header):
         filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xlsx(*.xlsx)")
 
         wb = Workbook()
@@ -356,70 +372,6 @@ class Form(QWidget):
         wb.close()
 
         return
-
-
-class Tabs(QWidget):
-    def __init__(self, parent, name, dicts):
-        super(Tabs, self).__init__(parent)
-        self.name = name # tab 이름
-        self.dicts = dicts # 받아서 테이블위젯에 그릴 결과
-
-
-        self.layout = QVBoxLayout(self)
-        self.tabs = QTabWidget()
-        self.layout.addWidget(self.tabs)
-        self.setLayout(self.layout)
-
-        # Add tabs
-        if self.name == 'Layers':
-            self.tab1 = QWidget()
-            self.tabs.addTab(self.tab1, 'Spot')
-            self.tab2 = QWidget()
-            self.tabs.addTab(self.tab2, 'RandomAmbient')
-            self.tab3 = QWidget()
-            self.tabs.addTab(self.tab3, 'Shape')
-
-
-        else:
-            self.tab1 = QWidget()
-            self.tabs.addTab(self.tab1, name)
-
-            self.tab1.layout = QVBoxLayout(self)
-            self.tab1.setLayout(self.tab1.layout)
-
-            self.tb_result = QTableWidget()
-            self.tb_result.setAutoScroll(True)
-            self.tb_result.showGrid()
-            self.tb_result.clear()  # 채우기 전에 초기화
-
-            self.tb_result.setRowCount(len(dicts[0]))
-            self.tb_result.setMinimumHeight(200)
-            self.repaint()  # 이걸 해줘야 레이블이 업데이트 됨
-
-            self.tb_result.setColumnCount(len(dicts[1]))
-            self.tb_result.setHorizontalHeaderLabels(dicts[1])
-
-            for i in dicts[0]:
-                for k in range(len(dicts[1])):
-                    item = QTableWidgetItem(str(dicts[0][i][dicts[1][k]]))
-                    self.tb_result.setItem(i, k, item)
-
-            # len(dict) == i 는 row, 행의 갯수
-            # len(dict[0]) == len(header) == k 는 col, 열의 갯수
-
-            self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
-            self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
-            self.tab1.layout.addWidget(self.tb_result)
-
-# class Result(QWidget):
-#     def __init__(self, parent, dict, header):
-#         super(Result, self).__init__(parent)
-#         self.dict = dict
-#         self.header = header
-#
-#
-#
-#         return
 
 
 app = QApplication([])
