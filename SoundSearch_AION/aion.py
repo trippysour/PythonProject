@@ -162,7 +162,7 @@ class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SoundSearch_AION")
-        self.setMinimumSize(1000, 800)
+        self.setMinimumSize(1250, 800)
         '''
         Layout_Base
         '''
@@ -236,6 +236,8 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, name)
 
+        # self.tabs.addTab(self.tab1, name)
+
         self.tab1.layout = QVBoxLayout(self)
         self.tab1.setLayout(self.tab1.layout)
 
@@ -264,9 +266,15 @@ class Form(QWidget):
 
         self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
         for i in range(len(header)):
-            self.tb_result.setColumnWidth(i, 905 // len(header))
+            self.tb_result.setColumnWidth(i, 900 // len(header))
+            if 'snd' in header[i]:
+                self.tb_result.setColumnWidth(i, 300)
         self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
         self.tab1.layout.addWidget(self.tb_result)
+
+        return
+
+
 
 
     def search(self):
@@ -274,10 +282,90 @@ class Form(QWidget):
         self.tabs.clear()
 
         if self.CB_Anim.isChecked() and len(sound_in_anim(self.ln.text())[0]) != 0:
-            self.addTab('AnimationMarkers', sound_in_anim(self.ln.text()))
+            self.tab1 = QWidget()
+            self.tabs.addTab(self.tab1, 'Animation')
 
+            #self.tabs.addTab(self.tab1, name)
+
+            self.tab1.layout = QVBoxLayout(self)
+            self.tab1.setLayout(self.tab1.layout)
+
+            dict = sound_in_anim(self.ln.text())[0]
+            header = sound_in_anim(self.ln.text())[1]
+
+            self.tb_result = QTableWidget()
+            self.tb_result.setAutoScroll(True)
+            self.tb_result.showGrid()
+            self.tb_result.clear()  # 채우기 전에 초기화
+
+            self.tb_result.setRowCount(len(dict))
+            self.tb_result.setMinimumHeight(200)
+            self.repaint()  # 이걸 해줘야 레이블이 업데이트 됨
+
+            self.tb_result.setColumnCount(len(header))
+            self.tb_result.setHorizontalHeaderLabels(header)
+
+            for i in dict:
+                for k in range(len(header)):
+                    item = QTableWidgetItem(str(dict[i][header[k]]))
+                    self.tb_result.setItem(i, k, item)
+
+            # len(dict) == i 는 row, 행의 갯수
+            # len(dict[0]) == len(header) == k 는 col, 열의 갯수
+
+            self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
+            for i in range(len(header)):
+                self.tb_result.setColumnWidth(i, 900 // len(header))
+                if i == 2 :
+                    self.tb_result.setColumnWidth(i, 400)
+            self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
+            self.tab1.layout.addWidget(self.tb_result)
+
+        #     self.addTab('AnimationMarkers', sound_in_anim(self.ln.text()))
+        #
         if self.CB_Particle.isChecked() and len(sound_in_particles(self.ln.text())[0]) != 0:
-            self.addTab('Particles', sound_in_particles(self.ln.text()))
+            self.tab2 = QWidget()
+            self.tabs.addTab(self.tab2, 'Particles')
+
+            # self.tabs.addTab(self.tab1, name)
+
+            self.tab2.layout = QVBoxLayout(self)
+            self.tab2.setLayout(self.tab2.layout)
+
+            dict = sound_in_particles(self.ln.text())[0]
+            header = sound_in_particles(self.ln.text())[1]
+
+            self.tb_result_2 = QTableWidget()
+            self.tb_result_2.setAutoScroll(True)
+            self.tb_result_2.showGrid()
+            self.tb_result_2.clear()  # 채우기 전에 초기화
+
+            self.tb_result_2.setRowCount(len(dict))
+            self.tb_result_2.setMinimumHeight(200)
+            self.repaint()  # 이걸 해줘야 레이블이 업데이트 됨
+
+            self.tb_result_2.setColumnCount(len(header))
+            self.tb_result_2.setHorizontalHeaderLabels(header)
+
+            for i in dict:
+                for k in range(len(header)):
+                    item = QTableWidgetItem(str(dict[i][header[k]]))
+                    self.tb_result_2.setItem(i, k, item)
+
+            # len(dict) == i 는 row, 행의 갯수
+            # len(dict[0]) == len(header) == k 는 col, 열의 갯수
+
+            self.tb_result_2.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
+
+            for i in range(len(header)):
+                self.tb_result_2.setColumnWidth(i, 900 // len(header))
+                if i == 2 :
+                    self.tb_result_2.setColumnWidth(i, 400)
+
+            self.tb_result_2.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
+            self.tab2.layout.addWidget(self.tb_result_2)
+
+            #self.addTab('Particles', sound_in_particles(self.ln.text()))
 
         if self.CB_Layers.isChecked():
             if len(sound_in_lyr(self.ln.text())[0][0]) != 0:
@@ -288,8 +376,9 @@ class Form(QWidget):
         return
 
     def play(self):
-        self.postevent()
-        return
+        #self.openjson()
+        print(self.tabs.count())
+        print(self.tabs.indexOf(0))
 
     def open(self):
         self.openjson()
@@ -305,6 +394,7 @@ class Form(QWidget):
 
         try:
             os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
+            os.startfile(parents + '/' + self.tb_result_2.item(self.tb_result.currentRow(), 0).text())
 
         except AttributeError:
             self.message0 = QMessageBox()
