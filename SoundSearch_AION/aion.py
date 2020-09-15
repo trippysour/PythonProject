@@ -91,8 +91,7 @@ def sound_in_particles(name):
 def sound_in_lyr(sound):
 
     header_SoundSpot = ['lyr', 'Layer', 'Name', 'Pos', 'EventType', 'bLoop', 'bOnce', 'bPlay', 'sndSource', 'InnerRadius', 'OuterRadius', 'iVolume']
-    header_RA = ['lyr', 'Layer', 'Name', 'EventType', 'sndSound', 'bCentered', 'iVolume', 'iChanceOfOccuring', 'bDoNotOverlap']
-    header_Shape = ['lyr', 'Layer', 'Name']
+    header_RA = ['lyr', 'Layer', 'Name', 'EventType', 'sndSound', 'bCentered', 'iVolume', 'iChanceOfOccuring', 'bDoNotOverlap', 'Shape']
 
     results_SoundSpot = defaultdict(dict)
     results_RA = defaultdict(dict)
@@ -108,6 +107,15 @@ def sound_in_lyr(sound):
                 root = xml.getroot()
 
                 for object in root.iter('Object'):
+
+                    if object.get('Type') == 'Shape':
+                        for ids in object.iter('Entities'):
+                            idlist = []
+                            for id in ids.iter('Entity'):
+                                results_Shape[i]['Name'] = object.get('Name')
+                                results_Shape[i]['Id'] = idlist
+                                idlist.append(id.get('Id'))
+                                i += 1
 
                     if object.get('Type') == 'SoundSpot':
                         if sound == '':
@@ -129,13 +137,34 @@ def sound_in_lyr(sound):
 
                     elif object.get('Type') == 'RandomAmbient':
                         if sound == '':
+
                             for v in object.iter():
+
+                                shapelist = []
+
                                 if v.tag.startswith('Sound') and v.attrib['sndSound'] != '':
                                     results_RA[r][header_RA[0]] = file
+
                                     for k in range(1, 4):
                                         results_RA[r][header_RA[k]] = object.get(header_RA[k])
                                         results_RA[r].update(v.attrib)
+
+                                    print(object.get('Id'))
+
+
+
+                                    for c in range(len(results_Shape)):
+                                        for i in range(len(results_Shape[c]['Id'])):
+                                            # if object.get('Id') == results_Shape[c]['Id'][i]:
+                                            if object.get('Id') in results_Shape[c]['Id']:
+                                                shapelist.append(results_Shape[c]['Name'])
+
+                                    results_RA[r]['Shape'] = shapelist
+
                                     r += 1
+
+
+
                         else:
                             for v in object.iter():
                                 if v.tag.startswith('Sound') and sound.lower() in v.attrib['sndSound'].lower():
@@ -145,19 +174,9 @@ def sound_in_lyr(sound):
                                         results_RA[r].update(v.attrib)
                                     r += 1
 
-                    # elif object.get('Type') == 'Shape':
-                    #     if sound == '':
-                    #         results_Shape[i][header_Shape[0]] = file
-                    #         for k in range(1, 3):
-                    #             results_Shape[i][header_Shape[k]] = object.get(header_Shape[k])
-                    #         i += 1
-                    #     else:
-                    #         pass
+    return [results_SoundSpot, header_SoundSpot], [results_RA, header_RA]
 
-    return [results_SoundSpot, header_SoundSpot], [results_RA, header_RA], [results_Shape, header_Shape]
-
-#print(sound_in_lyr('')[2])
-
+print(sound_in_lyr('')[1])
 class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
@@ -305,7 +324,7 @@ class Form(QWidget):
         return
 
 
-    def playsound(self): #아무 응답이 없을 때는 연결프로그램 확인
+    def playsound(self):
 
         try:
             result = self.tabs.currentWidget().findChildren(QTableWidget)[0]
@@ -329,16 +348,16 @@ class Form(QWidget):
             self.message0.setText("실행할 파일을 선택해 주세요.")
             self.message0.exec()
 
-        # except OSError:
-        #     self.message0 = QMessageBox()
-        #     self.message0.setWindowTitle("SoundSearch_AION")
-        #     self.message0.setIcon(QMessageBox.Warning)
-        #     self.message0.setText("지정된 파일 열기 위한 응용 프로그램이 설정 되어 있지 않습니다.")
-        #     self.message0.exec()
+        except OSError:
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("SoundSearch_AION")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("지정된 파일 열기 위한 응용 프로그램이 설정 되어 있지 않습니다.")
+            self.message0.exec()
 
         return
 
-    def openjson(self): #아무 응답이 없을 때는 연결프로그램 확인
+    def openjson(self):
 
         try:
             result = self.tabs.currentWidget().findChildren(QTableWidget)[0]
