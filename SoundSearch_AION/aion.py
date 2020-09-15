@@ -117,6 +117,8 @@ def sound_in_lyr(sound):
                                 idlist.append(id.get('Id'))
                                 i += 1
 
+                for object in root.iter('Object'):
+
                     if object.get('Type') == 'SoundSpot':
                         if sound == '':
                             results_SoundSpot[s][header_SoundSpot[0]] = file
@@ -149,34 +151,36 @@ def sound_in_lyr(sound):
                                         results_RA[r][header_RA[k]] = object.get(header_RA[k])
                                         results_RA[r].update(v.attrib)
 
-                                    print(object.get('Id'))
-
-
-
                                     for c in range(len(results_Shape)):
-                                        for i in range(len(results_Shape[c]['Id'])):
-                                            # if object.get('Id') == results_Shape[c]['Id'][i]:
-                                            if object.get('Id') in results_Shape[c]['Id']:
-                                                shapelist.append(results_Shape[c]['Name'])
+                                        if object.get('Id') in results_Shape[c]['Id']:
+                                            shapelist.append(results_Shape[c]['Name'])
 
                                     results_RA[r]['Shape'] = shapelist
 
                                     r += 1
 
-
-
                         else:
                             for v in object.iter():
+
+                                shapelist = []
+
                                 if v.tag.startswith('Sound') and sound.lower() in v.attrib['sndSound'].lower():
                                     results_RA[r][header_RA[0]] = file
+
                                     for k in range(1, 4):
                                         results_RA[r][header_RA[k]] = object.get(header_RA[k])
                                         results_RA[r].update(v.attrib)
+
+                                    for c in range(len(results_Shape)):
+                                        if object.get('Id') in results_Shape[c]['Id']:
+                                            shapelist.append(results_Shape[c]['Name'])
+
+                                    results_RA[r]['Shape'] = shapelist
+
                                     r += 1
 
     return [results_SoundSpot, header_SoundSpot], [results_RA, header_RA]
 
-print(sound_in_lyr('')[1])
 class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
