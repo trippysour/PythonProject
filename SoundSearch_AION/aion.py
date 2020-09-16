@@ -3,8 +3,8 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-from PySide2.QtWidgets import QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
-from PySide2.QtGui import QColor
+from PySide2.QtWidgets import QListWidget, QDialog, QFormLayout, QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QTableWidgetItem, QFileDialog, QAbstractItemView
+from PySide2 import QtCore
 
 
 #parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
@@ -205,18 +205,23 @@ class Form(QWidget):
         self.CB_Anim = QCheckBox("AnimationMarkers")
         self.CB_Particle = QCheckBox("Particles")
         self.CB_Layers = QCheckBox("Layers")
+        self.CB_files = QCheckBox("Droped Files")
         self.CB_Anim.setChecked(True)
         self.CB_Particle.setChecked(True)
         self.CB_Layers.setChecked(True)
         self.ln = QLineEdit("")
         self.btn_name = QPushButton("Search")
+        self.btn_clear = QPushButton("Clear")
+
 
         self.vbox = QHBoxLayout()
         self.vbox.addWidget(self.CB_Anim)
         self.vbox.addWidget(self.CB_Particle)
         self.vbox.addWidget(self.CB_Layers)
+        self.vbox.addWidget(self.CB_files)
         self.vbox.addWidget(self.ln)
         self.vbox.addWidget(self.btn_name)
+        self.vbox.addWidget(self.btn_clear)
         self.gb_data.setLayout(self.vbox)
         self.hbTop.addWidget(self.gb_data)
 
@@ -241,19 +246,34 @@ class Form(QWidget):
 
         self.ln.returnPressed.connect(self.search)
         self.btn_name.clicked.connect(self.search)
+        self.btn_clear.clicked.connect(self.clear)
         self.btn_save.clicked.connect(self.savefile)
         self.btn_play.clicked.connect(self.play)
         self.btn_open.clicked.connect(self.open)
 
         '''
-        result
+        result tab
         '''
         self.tabs = QTabWidget()
         self.hbMid.addWidget(self.tabs)
+
+        '''
+        drop
+        '''
         self.tab1 = QWidget()
-        self.tabs.addTab(self.tab1, 'Result')
+        self.tabs.addTab(self.tab1, 'Drop Files')
+        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.setLayout(self.tab1.layout)
+        self.tab1.layout.addWidget(testDialog())
 
 
+    def clear(self):
+        self.tabs.clear()
+        self.tab1 = QWidget()
+        self.tabs.addTab(self.tab1, 'Drop Files')
+        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.setLayout(self.tab1.layout)
+        self.tab1.layout.addWidget(testDialog())
 
     def addTab(self, name, dicts):
         self.tab1 = QWidget()
@@ -448,6 +468,28 @@ class Form(QWidget):
         wb.close()
 
         return
+
+
+class testDialog(QDialog):
+    def __init__(self, parent=None):
+        super(testDialog, self).__init__(parent)
+
+        form = QFormLayout()
+        form.setHorizontalSpacing(0)
+
+        self.myedit = QListWidget()
+        self.myedit.setDragEnabled(True)
+        self.myedit.setAcceptDrops(True)
+        self.myedit.installEventFilter(self)
+
+        form.addWidget(self.myedit)
+
+        self.setLayout(form)
+        self.setWindowTitle('drop test')
+
+
+
+
 
 
 app = QApplication([])
