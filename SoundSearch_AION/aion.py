@@ -1,26 +1,26 @@
 import os
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
+from openpyxl.utils.cell import get_column_letter
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from PySide2.QtWidgets import QListWidget, QDialog, QFormLayout, QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QTableWidgetItem, QFileDialog, QAbstractItemView
 from PySide2 import QtCore
 
 
-#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
-parents = os.getcwd()  # 개발전용
-os.chdir(parents)  # json 폴더 지정
-
-
 def sound_in_anim(name):
-    header = ['xml', 'seq_name', 'file', 'TOOL_InRadius', 'TOOL_OutRadius', 'vol']
+    header = ['data', 'seq_name', 'file', 'TOOL_InRadius', 'TOOL_OutRadius', 'vol']
     results = defaultdict(dict)
     i = 0
 
-    for root, dirs, files in os.walk('./'):
+    parents = os.path.abspath(os.path.join(os.path.abspath(os.pardir), os.pardir))
+    current = 'AION_Data//Data//animationmarkers'
+    path = os.path.join(parents, current)
+
+    for root, dirs, files in os.walk(path):
         for file in files:
             if file.lower().endswith('.xml'):  # 특정 확장자만 열기
-                xml = ET.parse(file)
+                xml = ET.parse(os.path.join(path, file))
                 root = xml.getroot()
 
                 for seq in root.iter('animation'):
@@ -59,14 +59,18 @@ def sound_in_anim(name):
 
 
 def sound_in_particles(name):
-    header = ['file', 'particle_name', 'Sound', 'SoundMinRange', 'SoundMaxRange', 'SoundVolume', 'SoundLoop']
+    header = ['data', 'particle_name', 'Sound', 'SoundMinRange', 'SoundMaxRange', 'SoundVolume', 'SoundLoop']
     results = defaultdict(dict)
     i = 0
 
-    for root, dirs, files in os.walk('./'):
+    parents = os.path.abspath(os.path.join(os.path.abspath(os.pardir), os.pardir))
+    current = 'AION_Data//Editor//particles'
+    path = os.path.join(parents, current)
+
+    for root, dirs, files in os.walk(path):
         for file in files:
             if file.lower().endswith('.xml'):  # 특정 확장자만 열기
-                xml = ET.parse(file)
+                xml = ET.parse(os.path.join(path, file))
                 root = xml.getroot()
 
                 for particles in root.iter('Particles'):
@@ -90,8 +94,8 @@ def sound_in_particles(name):
 
 def sound_in_lyr(sound):
 
-    header_SoundSpot = ['lyr', 'Layer', 'Name', 'Pos', 'EventType', 'bLoop', 'bOnce', 'bPlay', 'sndSource', 'InnerRadius', 'OuterRadius', 'iVolume']
-    header_RA = ['lyr', 'Layer', 'Name', 'EventType', 'sndSound', 'bCentered', 'iVolume', 'iChanceOfOccuring', 'bDoNotOverlap', 'Shape']
+    header_SoundSpot = ['data', 'Layer', 'Name', 'Pos', 'EventType', 'bLoop', 'bOnce', 'bPlay', 'sndSource', 'InnerRadius', 'OuterRadius', 'iVolume']
+    header_RA = ['data', 'Layer', 'Name', 'EventType', 'sndSound', 'bCentered', 'iVolume', 'iChanceOfOccuring', 'bDoNotOverlap', 'Shape']
 
     results_SoundSpot = defaultdict(dict)
     results_RA = defaultdict(dict)
@@ -100,10 +104,14 @@ def sound_in_lyr(sound):
     s = 0
     r = 0
 
-    for root, fir, files in os.walk('./'):
+    parents = os.path.abspath(os.path.join(os.path.abspath(os.pardir), ''))
+    current = '80) Sound//02) Ambient'
+    path = os.path.join(parents, current)
+
+    for root, fir, files in os.walk(path):
         for file in files:
             if file.lower().endswith('.lyr'):
-                xml = ET.parse(file)
+                xml = ET.parse(os.path.join(path, file))
                 root = xml.getroot()
 
                 for object in root.iter('Object'):
@@ -185,7 +193,7 @@ class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SoundSearch_AION")
-        self.setMinimumSize(1250, 800)
+        self.setMinimumSize(1400, 800)
         '''
         Layout_Base
         '''
@@ -353,9 +361,14 @@ class Form(QWidget):
         try:
             result = self.tabs.currentWidget().findChildren(QTableWidget)[0]
 
+            parents = os.path.abspath(os.path.join(os.path.abspath(os.pardir), os.pardir))
+            current = 'AION_Data//'
+            path = os.path.join(parents, current)
+
             for i in range(result.columnCount()):
                 if result.item(result.currentRow(), i).text().endswith('ogg'):
-                    os.startfile(parents + '\\' + result.item(result.currentRow(), i).text())
+
+                    os.startfile(path + '\\' + result.item(result.currentRow(), i).text())
 
 
         except AttributeError:
@@ -382,10 +395,26 @@ class Form(QWidget):
         return
 
     def openjson(self):
-
         try:
+
             result = self.tabs.currentWidget().findChildren(QTableWidget)[0]
-            os.startfile(parents + '\\' + result.item(result.currentRow(), 0).text())
+
+            if self.tabs.tabText(self.tabs.currentIndex()) == 'AnimationMarkers':
+                parents = os.path.abspath(os.path.join(os.path.abspath(os.pardir), os.pardir))
+                current = 'AION_Data//Data//animationmarkers'
+                path = os.path.join(parents, current)
+
+            elif self.tabs.tabText(self.tabs.currentIndex()) == 'Particles':
+                parents = os.path.abspath(os.path.join(os.path.abspath(os.pardir), os.pardir))
+                current = 'AION_Data//Editor//particles'
+                path = os.path.join(parents, current)
+
+            else:
+                parents = os.path.abspath(os.path.join(os.path.abspath(os.pardir), ''))
+                current = '80) Sound//02) Ambient'
+                path = os.path.join(parents, current)
+
+            os.startfile(path + '\\' + result.item(result.currentRow(), 0).text())
 
         except AttributeError:
             self.message0 = QMessageBox()
@@ -410,43 +439,53 @@ class Form(QWidget):
 
         return
 
-    def savefile(self, header):
+
+    def savefile(self):
+
         filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xlsx(*.xlsx)")
 
         wb = Workbook()
         ws = wb.active
-        ws.title = 'Sound'
 
-        rowindex = 1
-        colindex = 1
+        for i in range(self.tabs.count()):
 
-        for h in header:
-            ws.cell(row=rowindex, column=colindex).value = h
-            ws.cell(row=rowindex, column=colindex).font = Font(bold=True, color='ffffff')
-            ws.cell(row=rowindex, column=colindex).fill = PatternFill("solid", fgColor="404040")
-            colindex += 1
+            self.tabs.setCurrentIndex(i)
+            tab = self.tabs.currentWidget()
+            result = tab.findChildren(QTableWidget)[0]
 
-        ws.freeze_panes = 'A2'
-        ws.column_dimensions['A'].width = 30
-        ws.column_dimensions['B'].width = 30
-        ws.column_dimensions['C'].width = 30
-        ws.column_dimensions['D'].width = 30
-        ws.column_dimensions['E'].width = 30
-        ws.column_dimensions['F'].width = 30
-        ws.column_dimensions['G'].width = 30
-        ws.column_dimensions['H'].width = 30
+            ws.title = self.tabs.tabText(i)
 
-        ws.auto_filter.ref = "A1:H1"
+            header = []
+
+            for i in range(result.columnCount()):
+                header.append(result.horizontalHeaderItem(i).text())
+
+            rowindex = 1
+            colindex = 1
+
+            for h in header:
+                ws.cell(row=rowindex, column=colindex).value = h
+                ws.cell(row=rowindex, column=colindex).font = Font(bold=True, color='ffffff')
+                ws.cell(row=rowindex, column=colindex).fill = PatternFill("solid", fgColor="404040")
+                colindex += 1
+
+            ws.freeze_panes = 'A2'
+
+            for i in range(1, len(header)+1):
+                ws.column_dimensions[get_column_letter(i)].width = 30
 
 
-        for currentColumn in range(1, self.tb_result.columnCount()+1):
-            for currentRow in range(1, self.tb_result.rowCount()+1):
-                try:
-                    teext = str(self.tb_result.item(currentRow-1, currentColumn-1).text())
-                    ws.cell(currentRow+1, currentColumn).value = teext
+            ws.auto_filter.ref = "A1:" + get_column_letter(len(header)) + "1"
 
-                except AttributeError:
-                    pass
+
+            for currentColumn in range(1, result.columnCount()+1):
+                for currentRow in range(1, result.rowCount()+1):
+                    try:
+                        teext = str(result.item(currentRow-1, currentColumn-1).text())
+                        ws.cell(currentRow+1, currentColumn).value = teext
+
+                    except AttributeError:
+                        pass
 
 
         try:
