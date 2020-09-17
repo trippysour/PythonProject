@@ -193,7 +193,7 @@ class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SoundSearch_AION")
-        self.setMinimumSize(1400, 800)
+        self.setMinimumSize(1300, 800)
         '''
         Layout_Base
         '''
@@ -287,8 +287,6 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, name)
 
-        # self.tabs.addTab(self.tab1, name)
-
         self.tab1.layout = QVBoxLayout(self)
         self.tab1.setLayout(self.tab1.layout)
 
@@ -298,11 +296,11 @@ class Form(QWidget):
         self.tb_result = QTableWidget()
         self.tb_result.setAutoScroll(True)
         self.tb_result.showGrid()
-        self.tb_result.clear()  # 채우기 전에 초기화
+        self.tb_result.clear()
 
         self.tb_result.setRowCount(len(dict))
         self.tb_result.setMinimumHeight(200)
-        self.repaint()  # 이걸 해줘야 레이블이 업데이트 됨
+        self.repaint()
 
         self.tb_result.setColumnCount(len(header))
         self.tb_result.setHorizontalHeaderLabels(header)
@@ -318,11 +316,13 @@ class Form(QWidget):
         self.tb_result.setEditTriggers(QTableWidget.NoEditTriggers)  # 에디팅 막음
 
         for i in range(len(header)):
-            self.tb_result.setColumnWidth(i, 900 // len(header))
-            if 'Sound' in header[2] or 'file' in header[2]:
-                self.tb_result.setColumnWidth(2, 370)
-            elif 'snd' in header[i]:
-                self.tb_result.setColumnWidth(i, 300)
+
+            if 'Sound' == header[i] or 'file' in header[i] or 'snd' in header[i]:
+                self.tb_result.setColumnWidth(i, 370)
+            elif header[i].startswith('i') or header[i].startswith('b') or header[i].startswith('Event'):
+                self.tb_result.setColumnWidth(i, 50)
+            else:
+                self.tb_result.setColumnWidth(i, 1100 // len(header))
         self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection)  # 중복선택 불가능 하게
         self.tab1.layout.addWidget(self.tb_result)
 
@@ -445,7 +445,7 @@ class Form(QWidget):
         filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xlsx(*.xlsx)")
 
         wb = Workbook()
-        ws = wb.active
+
 
         for i in range(self.tabs.count()):
 
@@ -453,7 +453,11 @@ class Form(QWidget):
             tab = self.tabs.currentWidget()
             result = tab.findChildren(QTableWidget)[0]
 
-            ws.title = self.tabs.tabText(i)
+            # ws = wb.active
+            # ws.title = self.tabs.tabText(i)
+            #
+            ws = wb.create_sheet(self.tabs.tabText(i))
+
 
             header = []
 
@@ -472,7 +476,12 @@ class Form(QWidget):
             ws.freeze_panes = 'A2'
 
             for i in range(1, len(header)+1):
-                ws.column_dimensions[get_column_letter(i)].width = 30
+                if 'Sound' == header[i-1] or 'file' in header[i-1] or 'snd' in header[i-1]:
+                    ws.column_dimensions[get_column_letter(i)].width = 60
+                elif header[i-1].startswith('b') or header[i-1].startswith('i') or header[i-1].startswith('Event'):
+                    ws.column_dimensions[get_column_letter(i)].width = 7
+                else:
+                    ws.column_dimensions[get_column_letter(i)].width = 20
 
 
             ws.auto_filter.ref = "A1:" + get_column_letter(len(header)) + "1"
@@ -487,6 +496,9 @@ class Form(QWidget):
                     except AttributeError:
                         pass
 
+            # wb.remove(wb['Sheet'])
+        self.tabs.setCurrentIndex(0)
+        wb.remove(wb['Sheet'])
 
         try:
             wb.save(filename[0])
@@ -500,8 +512,6 @@ class Form(QWidget):
             self.message1.setWindowTitle("SoundSearch_AION")
             self.message1.setText("저장 권한이 없습니다. 엑셀이 닫혀있는지 확인해 주세요.")
             self.message1.exec()
-
-
 
 
         wb.close()
