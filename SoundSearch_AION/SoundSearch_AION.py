@@ -4,7 +4,7 @@ from openpyxl.styles import PatternFill, Font
 from openpyxl.utils.cell import get_column_letter
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-from PySide2.QtWidgets import QListWidgetItem, QMainWindow, QLabel, QListWidget, QDialog, QFormLayout, QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QTableWidgetItem, QFileDialog, QAbstractItemView
+from PySide2.QtWidgets import QListWidgetItem, QListWidget, QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QTableWidgetItem, QFileDialog, QAbstractItemView
 from PySide2 import QtCore
 
 dropedlist = []
@@ -162,12 +162,14 @@ def sound_in_particles(name):
         path = ''
         for file in dropedlist:
             if file.lower().endswith('.xml'):  # 특정 확장자만 열기
+                xml = ET.parse(os.path.join(path, file))
+                root = xml.getroot()
+
                 try:
                     if root.iter('Particles') is not None: print('Particles - ' + file + ' 탐색중...')
                 except:
                     pass
-                xml = ET.parse(os.path.join(path, file))
-                root = xml.getroot()
+
 
                 for particles in root.iter('Particles'):
                     for sounds in particles:
@@ -458,7 +460,7 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
         self.tab1.layout = QVBoxLayout(self)
-        self.tab1.setLayout(self.tab1.layout)
+        # self.tab1.setLayout(self.tab1.layout)
 
         self.view = TestListView()
         self.view.fileDropped.connect(self.pictureDropped)
@@ -480,7 +482,7 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
         self.tab1.layout = QVBoxLayout(self)
-        self.tab1.setLayout(self.tab1.layout)
+        # self.tab1.setLayout(self.tab1.layout)
 
         classfier.remove()
         self.view = TestListView()
@@ -667,7 +669,11 @@ class Form(QWidget):
 
     def savefile(self):
 
+
+
         filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xlsx(*.xlsx)")
+
+        print(filename + ' 저장 중...')
 
         wb = Workbook()
 
