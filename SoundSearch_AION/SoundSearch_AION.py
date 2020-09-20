@@ -1,4 +1,5 @@
 import os
+import sys
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 from openpyxl.utils.cell import get_column_letter
@@ -460,7 +461,7 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
         self.tab1.layout = QVBoxLayout(self)
-        # self.tab1.setLayout(self.tab1.layout)
+        self.tab1.setLayout(self.tab1.layout)
 
         self.view = TestListView()
         self.view.fileDropped.connect(self.pictureDropped)
@@ -482,7 +483,7 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
         self.tab1.layout = QVBoxLayout(self)
-        # self.tab1.setLayout(self.tab1.layout)
+        self.tab1.setLayout(self.tab1.layout)
 
         classfier.remove()
         self.view = TestListView()
@@ -673,7 +674,7 @@ class Form(QWidget):
 
         filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xlsx(*.xlsx)")
 
-        print(filename + ' 저장 중...')
+        print('xlxs 저장 중...')
 
         wb = Workbook()
 
@@ -724,7 +725,6 @@ class Form(QWidget):
                     except AttributeError:
                         pass
 
-            # wb.remove(wb['Sheet'])
         self.tabs.setCurrentIndex(0)
         wb.remove(wb['Sheet'])
 
@@ -743,6 +743,8 @@ class Form(QWidget):
 
 
         wb.close()
+
+        print('xlxs 저장 완료')
 
         return
 
@@ -786,4 +788,4 @@ class TestListView(QListWidget):
 app = QApplication([])
 GUI = Form()
 GUI.show()
-app.exec_()
+sys.exit(app.exec_()) # X버튼 닫을 때 콘솔창도 닫기
