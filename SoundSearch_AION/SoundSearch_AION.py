@@ -570,7 +570,7 @@ class Form(QWidget):
             if len(layer[1][0]) != 0:
                 self.addTab('Layer_RA', layer[1])
 
-        print('완료')
+        print('탐색 완료')
         return
 
     def play(self):
