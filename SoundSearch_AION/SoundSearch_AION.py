@@ -1,4 +1,5 @@
 import os
+import sys
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 from openpyxl.utils.cell import get_column_letter
@@ -780,4 +781,4 @@ class TestListView(QListWidget):
 app = QApplication([])
 GUI = Form()
 GUI.show()
-app.exec_()
+sys.exit(app.exec_())
