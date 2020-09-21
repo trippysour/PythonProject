@@ -548,27 +548,49 @@ class Form(QWidget):
 
         self.tabs.clear()
 
+        self.anim_bool = False
+        self.particle_bool = False
+        self.layer_bool = False
+
+
+
         if self.CB_Anim.isChecked():
             anim = sound_in_anim(self.ln.text())
             if len(anim[0]) != 0:
                 print('AnimationMarkers - 결과 저장 중...')
                 self.addTab('AnimationMarkers', anim)
+                self.anim_bool = True
 
         if self.CB_Particle.isChecked():
             particle = sound_in_particles(self.ln.text())
             if len(particle[0]) != 0:
                 print('Particles - 결과 저장 중...')
                 self.addTab('Particles', particle)
+                self.particle_bool = True
 
         if self.CB_Layers.isChecked():
             layer = sound_in_lyr(self.ln.text())
             if len(layer[0][0]) != 0:
                 print('Layer - 결과 저장 중...')
                 self.addTab('Layer_Spot', layer[0])
+                self.layer_bool = True
             if len(layer[1][0]) != 0:
                 self.addTab('Layer_RA', layer[1])
 
         print('탐색 완료')
+
+        if self.anim_bool == False and self.particle_bool == False and self.layer_bool == False:
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("SoundSearch_AION")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("Sound를 찾지 못했습니다.")
+            self.message0.exec()
+            self.clear()
+
+
+
+
+
         return
 
     def play(self):
