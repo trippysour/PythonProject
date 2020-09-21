@@ -1,5 +1,4 @@
 import os
-import sys
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 from openpyxl.utils.cell import get_column_letter
@@ -165,12 +164,10 @@ def sound_in_particles(name):
             if file.lower().endswith('.xml'):  # 특정 확장자만 열기
                 xml = ET.parse(os.path.join(path, file))
                 root = xml.getroot()
-
                 try:
                     if root.iter('Particles') is not None: print('Particles - ' + file + ' 탐색중...')
                 except:
                     pass
-
 
                 for particles in root.iter('Particles'):
                     for sounds in particles:
@@ -460,7 +457,7 @@ class Form(QWidget):
         '''
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
-        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.layout = QVBoxLayout()
         self.tab1.setLayout(self.tab1.layout)
 
         self.view = TestListView()
@@ -482,7 +479,7 @@ class Form(QWidget):
         self.tabs.clear()
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
-        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.layout = QVBoxLayout()
         self.tab1.setLayout(self.tab1.layout)
 
         classfier.remove()
@@ -497,7 +494,7 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, name)
 
-        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.layout = QVBoxLayout()
         self.tab1.setLayout(self.tab1.layout)
 
         dict = dicts[0]
@@ -670,14 +667,11 @@ class Form(QWidget):
 
     def savefile(self):
 
-
-
         filename = QFileDialog.getSaveFileName(self, 'Save file', "", ".xlsx(*.xlsx)")
-
-        print('xlxs 저장 중...')
 
         wb = Workbook()
 
+        print('xlsx 저장 중...')
 
         for i in range(self.tabs.count()):
 
@@ -744,8 +738,6 @@ class Form(QWidget):
 
         wb.close()
 
-        print('xlxs 저장 완료')
-
         return
 
 class TestListView(QListWidget):
@@ -788,4 +780,4 @@ class TestListView(QListWidget):
 app = QApplication([])
 GUI = Form()
 GUI.show()
-sys.exit(app.exec_()) # X버튼 닫을 때 콘솔창도 닫기
+app.exec_()

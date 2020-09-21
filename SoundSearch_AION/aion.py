@@ -4,7 +4,7 @@ from openpyxl.styles import PatternFill, Font
 from openpyxl.utils.cell import get_column_letter
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-from PySide2.QtWidgets import QListWidgetItem, QMainWindow, QLabel, QListWidget, QDialog, QFormLayout, QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QTableWidgetItem, QFileDialog, QAbstractItemView
+from PySide2.QtWidgets import QListWidgetItem, QListWidget, QWidget, QGroupBox, QTabWidget, QCheckBox, QMessageBox, QHBoxLayout, QVBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QTableWidgetItem, QFileDialog, QAbstractItemView
 from PySide2 import QtCore
 
 dropedlist = []
@@ -162,12 +162,12 @@ def sound_in_particles(name):
         path = ''
         for file in dropedlist:
             if file.lower().endswith('.xml'):  # 특정 확장자만 열기
+                xml = ET.parse(os.path.join(path, file))
+                root = xml.getroot()
                 try:
                     if root.iter('Particles') is not None: print('Particles - ' + file + ' 탐색중...')
                 except:
                     pass
-                xml = ET.parse(os.path.join(path, file))
-                root = xml.getroot()
 
                 for particles in root.iter('Particles'):
                     for sounds in particles:
@@ -457,7 +457,7 @@ class Form(QWidget):
         '''
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
-        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.layout = QVBoxLayout()
         self.tab1.setLayout(self.tab1.layout)
 
         self.view = TestListView()
@@ -479,7 +479,7 @@ class Form(QWidget):
         self.tabs.clear()
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, 'Drop Files')
-        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.layout = QVBoxLayout()
         self.tab1.setLayout(self.tab1.layout)
 
         classfier.remove()
@@ -494,7 +494,7 @@ class Form(QWidget):
         self.tab1 = QWidget()
         self.tabs.addTab(self.tab1, name)
 
-        self.tab1.layout = QVBoxLayout(self)
+        self.tab1.layout = QVBoxLayout()
         self.tab1.setLayout(self.tab1.layout)
 
         dict = dicts[0]
@@ -567,7 +567,7 @@ class Form(QWidget):
             if len(layer[1][0]) != 0:
                 self.addTab('Layer_RA', layer[1])
 
-        print('완료')
+        print('탐색 완료')
         return
 
     def play(self):
@@ -671,6 +671,7 @@ class Form(QWidget):
 
         wb = Workbook()
 
+        print('xlsx 저장 중...')
 
         for i in range(self.tabs.count()):
 
@@ -718,7 +719,6 @@ class Form(QWidget):
                     except AttributeError:
                         pass
 
-            # wb.remove(wb['Sheet'])
         self.tabs.setCurrentIndex(0)
         wb.remove(wb['Sheet'])
 
