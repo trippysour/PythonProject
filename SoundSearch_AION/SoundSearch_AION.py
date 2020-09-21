@@ -541,12 +541,14 @@ class Form(QWidget):
         self.tb_result.setSelectionMode(QAbstractItemView.SingleSelection)
         self.tab1.layout.addWidget(self.tb_result)
 
+
         return
 
 
     def search(self):
 
         self.tabs.clear()
+
 
         self.anim_bool = False
         self.particle_bool = False
@@ -587,8 +589,7 @@ class Form(QWidget):
             self.message0.exec()
             self.clear()
 
-
-
+        classfier.remove()
 
 
         return
