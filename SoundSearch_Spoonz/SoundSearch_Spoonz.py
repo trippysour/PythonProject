@@ -8,10 +8,10 @@ from collections import defaultdict
 from PySide2.QtWidgets import QWidget, QVBoxLayout, QMessageBox, QHBoxLayout, QTableWidget, QLineEdit, QPushButton, QApplication, QLabel, QTableWidgetItem, QFileDialog, QAbstractItemView
 from PySide2.QtGui import QColor
 
-
-#parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound' # 실제 path
-parents = os.getcwd()  # 개발전용
-os.chdir(parents)  # json 폴더 지정
+parents = '..\\Assets\\Resources\\Outgame\\Data\\Sound'
+current = os.getcwd()
+jsonpath = os.path.join(current, parents)
+os.chdir(jsonpath)  # json 폴더 지정
 
 header = ['file', 'ContentsKey', 'animName', 'soundName', 'targetObjName', 'sequenceTime', 'playOneShot', 'dontDestroy']
 
@@ -31,12 +31,12 @@ def jsontodict(sound):
                         data = key.context.value['m_saveDataList']
                         for match in parse('$..soundName').find(data):
                             if sound == '':  # 빈 칸이면 모두
-                                results[i][header[0]] = file
+                                results[i][header[0]] = fpath
                                 results[i][header[1]] = key.context.value[header[1]]
                                 results[i].update(match.context.value)
                                 i += 1
                             elif sound.lower() in match.value.lower():  # 특정 단어 포함하는지, 대소문자 구분 없이 하기 위해 둘다 소문자 처리해서 비교
-                                results[i][header[0]] = file
+                                results[i][header[0]] = fpath
                                 results[i][header[1]] = key.context.value[header[1]]
                                 results[i].update(match.context.value)
                                 i += 1
@@ -48,7 +48,7 @@ class Form(QWidget):
     def __init__(self):
         super(Form, self).__init__()
         self.setWindowTitle("SoundSearch_Spoonz")
-        self.setMinimumSize(875, 600)
+        self.setMinimumSize(900, 600)
 
         self.vb = QVBoxLayout()
         self.setLayout(self.vb)
@@ -61,41 +61,40 @@ class Form(QWidget):
         self.vb.addLayout(self.hbMidBot)
         self.vb.addLayout(self.hbBot)
 
-        self.ln = QLineEdit("검색 할 Event 명에 들어간 단어를 입력해 주세요")
+        self.lb_search = QLabel("검색 :")
+        self.ln = QLineEdit('')
         self.btn_name = QPushButton("Search")
-        self.btn_all = QPushButton("Search All")
         self.btn_open = QPushButton("Open Selected Json")
         self.btn_play = QPushButton("Post Selected Event")
+        self.btn_stop = QPushButton("Stop All")
         self.lb_result = QLabel("결과 :")
         self.tb_result = QTableWidget()
         self.tb_result.setAutoScroll(True)
         self.tb_result.showGrid()
 
         self.btn_check = QPushButton("Check Events in Wwise")
-        self.btn_save = QPushButton("Save And Open xlsx")
+        self.btn_save = QPushButton("Save result as xlsx")
         self.message = QMessageBox()
 
+        self.hbTop.addWidget(self.lb_search)
         self.hbTop.addWidget(self.ln)
         self.hbTop.addWidget(self.btn_name)
-        self.hbTop.addWidget(self.btn_all)
         self.hbMid.addWidget(self.lb_result)
         self.hbMid.addWidget(self.tb_result)
         self.hbMidBot.addWidget(self.btn_open)
         self.hbMidBot.addWidget(self.btn_play)
+        self.hbMidBot.addWidget(self.btn_stop)
         self.hbMidBot.addWidget(self.btn_check)
         self.hbBot.addWidget(self.btn_save)
 
         self.ln.returnPressed.connect(self.search)
         self.btn_name.clicked.connect(self.search)
-        self.btn_all.clicked.connect(self.search_all)
         self.btn_save.clicked.connect(self.savefile)
         self.btn_play.clicked.connect(self.play)
+        self.btn_play.clicked.connect(self.stop)
         self.btn_open.clicked.connect(self.open)
         self.btn_check.clicked.connect(self.check)
 
-
-    def search_all(self):
-        self.showresult(jsontodict(''))
         return
 
     def search(self):
@@ -113,6 +112,9 @@ class Form(QWidget):
     def check(self):
         self.checkevents()
 
+    def stop(self):
+        self.stopall()
+
 
     def checkevents(self):
         try:
@@ -126,18 +128,12 @@ class Form(QWidget):
 
                 arg = {
                     "from": {
-                        "search": [
-                            event
-                        ],
+                        "ofType": [
+                            'Event'
+                        ]
                     },
                     "transform": [
                         {
-                            "where": [
-                                "type:isIn",
-                                [
-                                    "Event"
-                                ]
-                            ],
                             "where": [
                                 "name:matches", event
                             ]
@@ -145,7 +141,7 @@ class Form(QWidget):
                     ]
                 }
                 options = {
-                "return": ['name']
+                    "return": ['name']
                 }
 
                 if not client.call("ak.wwise.core.object.get", arg, options=options)['return']:
@@ -153,15 +149,11 @@ class Form(QWidget):
                     self.tb_result.item(i, 3).setBackgroundColor(QColor(255,0,0))
                     self.tb_result.repaint()
 
-                elif event != client.call("ak.wwise.core.object.get", arg, options=options)['return'][0]['name']:
-                    notfounds.append(event)
-                    self.tb_result.item(i, 3).setBackgroundColor(QColor(255, 0, 0))
-                    self.tb_result.repaint()
 
             self.message0 = QMessageBox()
             self.message0.setWindowTitle("SoundSearch_Spoonz")
             self.message0.setIcon(QMessageBox.Warning)
-            self.message0.setText("총 " + str(len(notfounds)) + "개의 Event를 찾을 수 없습니다.")
+            self.message0.setText("총 " + str(len(set(notfounds))) + "개 Event를 찾을 수 없습니다.")
             self.message0.exec()
 
 
@@ -208,18 +200,12 @@ class Form(QWidget):
 
                 arg = {
                     "from": {
-                        "search": [
-                            event
-                        ],
+                        "ofType": [
+                            'Event'
+                        ]
                     },
                     "transform": [
                         {
-                            "where": [
-                                "type:isIn",
-                                [
-                                    "Event"
-                                ]
-                            ],
                             "where": [
                                 "name:matches", event
                             ]
@@ -228,31 +214,25 @@ class Form(QWidget):
                 }
                 result = client.call("ak.wwise.core.object.get", arg)
 
-                try:
-                    if result['return'][0]['name'] == event:
+                names = []
+                for name in parse('$..name').find(result):
+
+                    if name.value == event:
+                        names.append(name.value)
                         arg = {
-                            "event": result['return'][0]['id'],
+                            "event": name.value,
                             "gameObject": 18446744073709551614  # Transport ID
                         }
 
                         client.call("ak.wwise.ui.bringToForeground")
                         client.call("ak.soundengine.postEvent", arg)
 
-                    else:
-                        self.message0 = QMessageBox()
-                        self.message0.setWindowTitle("SoundSearch_Spoonz")
-                        self.message0.setIcon(QMessageBox.Warning)
-                        self.message0.setText("Event를 찾을 수 없습니다.")
-                        self.message0.exec()
-
-
-                except IndexError:
+                if not names:
                     self.message0 = QMessageBox()
                     self.message0.setWindowTitle("SoundSearch_Spoonz")
                     self.message0.setIcon(QMessageBox.Warning)
                     self.message0.setText("Event를 찾을 수 없습니다.")
                     self.message0.exec()
-
 
             except AttributeError:
                 self.message0 = QMessageBox()
@@ -269,11 +249,28 @@ class Form(QWidget):
             self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크해 주세요.")
             self.message0.exec()
 
+    def stopall(self):
+        try:
+            client = WaapiClient()
+
+            arg = {
+                "gameObject": 18446744073709551614  # Transport ID
+            }
+
+            client.call("ak.soundengine.stopAll", arg)
+
+        except CannotConnectToWaapiException:
+            self.message0 = QMessageBox()
+            self.message0.setWindowTitle("SoundSearch_Spoonz")
+            self.message0.setIcon(QMessageBox.Warning)
+            self.message0.setText("WAAPI에 연결하지 못했습니다. : Wwise가 켜져있고 WAAPI가 Enabled 되어 있는지 체크해 주세요.")
+            self.message0.exec()
+
 
     def openjson(self): #아무 응답이 없을 때는 연결프로그램 확인
 
         try:
-            os.startfile(parents + '/' + self.tb_result.item(self.tb_result.currentRow(), 0).text())
+            os.startfile(jsonpath + '\\' + self.tb_result.item(self.tb_result.currentRow(), 0).text()[2:])
 
         except AttributeError:
             self.message0 = QMessageBox()
